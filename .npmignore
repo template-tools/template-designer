@@ -1,0 +1,12 @@
+*.css.map
+rollup.config.*
+build
+tests
+doc
+*.log
+*.tmp
+.tmp
+.test
+.vscode
+*.js.map
+*.mjs.map
