@@ -20,6 +20,7 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
+    "github-repository-provider": "^7.9.20",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
     "svelte-session-manager": "^1.0.12"
@@ -58,9 +59,9 @@
   },
   "homepage": "https://github.com/arlac77/component-template-designer#readme",
   "config": {
-    "api": "/services/@component-template/designer/api",
+    "api": "/services/component-template-designer/api",
     "proxyTarget": "https://somewhere/",
-    "base": "/services/@component-template/designer"
+    "base": "/services/component-template-designer"
   },
   "pacman": {
     "groups": "web",
@@ -70,7 +71,7 @@
       },
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     },
-    "installdir": "/services/@component-template/designer/frontend",
+    "installdir": "/services/component-template-designer/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
       "nginx-mainline": ">=1.17.10"
