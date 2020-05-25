@@ -7,5 +7,5 @@
 </script>
 
 <div>
- Name: {{provider.name}}
+ Name: {provider.name}
 </div>

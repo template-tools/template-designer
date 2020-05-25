@@ -6,7 +6,8 @@
   },
   "keywords": [
     "web",
-    "svelte"
+    "svelte",
+    "component-template"
   ],
   "contributors": [
     {
@@ -23,7 +24,8 @@
     "github-repository-provider": "^7.9.20",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
-    "svelte-session-manager": "^1.0.12"
+    "svelte-session-manager": "^1.0.12",
+    "mf-styling": "arlac77/mf-styling"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
