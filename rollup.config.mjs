@@ -20,6 +20,7 @@ export default () => {
   );
 
   return {
+    external: ["fs","util", "path", "stream"],
     input: "src/main.mjs",
     output: {
       sourcemap: true,

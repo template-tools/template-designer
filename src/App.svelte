@@ -1,9 +1,9 @@
 <script>
   import * as style from "./main.css";
-  import { GithubProvider } from "github-repository-provider";
+  import { BitbucketProvider } from "bitbucket-repository-provider";
 
   const config = {};
-  const provider = new GithubProvider(config);
+  const provider = new BitbucketProvider(config);
 </script>
 
 <div>Name: {provider.name}</div>
