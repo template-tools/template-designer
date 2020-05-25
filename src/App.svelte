@@ -6,6 +6,4 @@
   const provider = new GithubProvider(config);
 </script>
 
-<div>
- Name: {provider.name}
-</div>
+<div>Name: {provider.name}</div>
