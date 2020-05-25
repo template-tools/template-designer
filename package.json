@@ -1,3 +1,97 @@
 {
-    "name": "@component-template/designer"
+  "name": "@component-template/designer",
+  "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "web",
+    "svelte"
+  ],
+  "contributors": [
+    {
+      "name": "Markus Felten",
+      "email": "markus.felten@gmx.de"
+    }
+  ],
+  "license": "BSD-2-Clause",
+  "scripts": {
+    "prepare": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "dependencies": {
+    "svelte-common": "^2.0.3",
+    "svelte-guard-history-router": "^1.1.18",
+    "svelte-session-manager": "^1.0.12"
+  },
+  "devDependencies": {
+    "rollup-plugin-postcss": "^3.1.1",
+    "postcss-import": "^12.0.1",
+    "npm-pkgbuild": "^6.11.19",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "semantic-release": "^17.0.8",
+    "rollup-plugin-svelte": "^5.2.2",
+    "svelte": "^3.22.3",
+    "builtin-modules": "^3.1.0",
+    "rollup": "^2.10.9",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@rollup/plugin-json": "^4.0.3",
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-typescript": "^4.1.1",
+    "@rollup/plugin-babel": "^5.0.2",
+    "rollup-plugin-executable": "^1.6.0",
+    "rollup-plugin-native": "^1.2.13",
+    "rollup-plugin-consts": "^1.0.2",
+    "rollup-plugin-cleanup": "^3.1.1",
+    "rollup-plugin-dev": "^1.1.2",
+    "rollup-plugin-terser": "^6.1.0",
+    "rollup-plugin-gzip": "2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arlac77/component-template-designer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arlac77/component-template-designer/issues"
+  },
+  "homepage": "https://github.com/arlac77/component-template-designer#readme",
+  "config": {
+    "api": "/services/@component-template/designer/api",
+    "proxyTarget": "https://somewhere/",
+    "base": "/services/@component-template/designer"
+  },
+  "pacman": {
+    "groups": "web",
+    "content": {
+      "${installdir}/": {
+        "base": "public"
+      },
+      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
+    },
+    "installdir": "/services/@component-template/designer/frontend",
+    "hooks": "pacman/hooks.sh",
+    "depends": {
+      "nginx-mainline": ">=1.17.10"
+    }
+  },
+  "release": {
+    "plugins": [
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
+        }
+      ],
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator"
+    ]
+  },
+  "template": {
+    "inheritFrom": [
+      "arlac77/template-arlac77-github",
+      "arlac77/template-svelte-app"
+    ]
+  }
 }
