@@ -1,7 +1,7 @@
 import { readFileSync } from "fs";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-import virtual from '@rollup/plugin-virtual';
+import virtual from "@rollup/plugin-virtual";
 
 import svelte from "rollup-plugin-svelte";
 import postcss from "rollup-plugin-postcss";
@@ -21,7 +21,7 @@ export default () => {
   );
 
   return {
-    external: ["fs","util", "path", "stream"],
+    external: ["fs","path","util", /*"stream"*/],
     input: "src/main.mjs",
     output: {
       sourcemap: true,
@@ -31,9 +31,12 @@ export default () => {
     },
     plugins: [
       virtual({
-        'node-fetch': `export default fetch`
+        "node-fetch": "export default fetch",
+        "stream" : "export const Readable = {}",
+     //   "picomatch":  "export default class Y {}"
+     //   "path" : " export const sep='/'"
+           //  util: "export default class X {}",
       }),
-  
       consts({
         name,
         version,

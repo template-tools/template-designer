@@ -5353,9 +5353,9 @@ rollup-plugin-postcss@^3.1.1:
     safe-identifier "^0.4.1"
     style-inject "^0.3.0"
 
-"rollup-plugin-svelte@https://github.com/ctavan/rollup-plugin-svelte.git":
+"rollup-plugin-svelte@git+https://github.com/ctavan/rollup-plugin-svelte.git#handle-missing-exports-gracefully":
   version "5.2.2"
-  resolved "https://github.com/ctavan/rollup-plugin-svelte.git#e18e8aeafe8da947211dbf3f9e4c2310974a3d1a"
+  resolved "git+https://github.com/ctavan/rollup-plugin-svelte.git#9da2f9cd0dd1193fdbdedb13fc7389ac43e460ab"
   dependencies:
     require-relative "^0.8.7"
     rollup-pluginutils "^2.8.2"
