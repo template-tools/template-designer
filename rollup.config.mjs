@@ -2,6 +2,7 @@ import { readFileSync } from "fs";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import virtual from "@rollup/plugin-virtual";
+import inject from '@rollup/plugin-inject';
 
 import svelte from "rollup-plugin-svelte";
 import postcss from "rollup-plugin-postcss";
@@ -31,7 +32,11 @@ export default () => {
     },
     plugins: [
       virtual({
-        "node-fetch": "export default fetch"
+        "node-fetch": "export default fetch",
+        "stream":"export class Readable {}"
+      }),
+      inject({
+        Buffer: ['buffer', 'Buffer']
       }),
       consts({
         name,
@@ -51,6 +56,7 @@ export default () => {
       }),
       resolve.nodeResolve({
         browser: true,
+        preferBuiltins: false,
         dedupe: importee =>
           importee === "svelte" || importee.startsWith("svelte/")
       }),
