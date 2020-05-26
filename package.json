@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "bitbucket-repository-provider": "^3.5.28",
+    "buffer": "^5.6.0",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-inject": "^4.0.2",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-virtual": "^2.0.2",
     "@semantic-release/commit-analyzer": "^8.0.1",
