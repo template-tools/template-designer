@@ -21,9 +21,10 @@ export default () => {
   );
 
   return {
-    external: ["path","util", /*"stream"*/],
+    external: ["path", "util" /*"stream"*/],
     input: "src/main.mjs",
     output: {
+      interop: false,
       sourcemap: true,
       format: "esm",
       file: `${dist}/bundle.mjs`,
@@ -32,10 +33,10 @@ export default () => {
     plugins: [
       virtual({
         "node-fetch": "export default fetch",
-        "stream" : "export const Readable = {}",
-     //   "picomatch":  "export default class Y {}"
-     //   "path" : " export const sep='/'"
-           //  util: "export default class X {}",
+        stream: "export const Readable = {}",
+        //picomatch: "export default class Y {}"
+        //   "path" : " export const sep='/'"
+        //  util: "export default class X {}",
       }),
       consts({
         name,
@@ -58,7 +59,9 @@ export default () => {
         dedupe: importee =>
           importee === "svelte" || importee.startsWith("svelte/")
       }),
-      commonjs(),
+      commonjs({
+        /*ignore: ["picomatch"]*/
+      }),
       dev({
         port,
         dirs: [dist],
