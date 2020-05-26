@@ -1,5 +1,6 @@
 {
   "name": "@component-template/designer",
+  "description": "drag & drop your template",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
@@ -21,7 +22,7 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "bitbucket-repository-provider": "^3.5.25",
+    "bitbucket-repository-provider": "^3.5.26",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
