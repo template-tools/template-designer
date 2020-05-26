@@ -21,7 +21,7 @@ export default () => {
   );
 
   return {
-    external: ["fs","path","util", /*"stream"*/],
+    external: ["path","util", /*"stream"*/],
     input: "src/main.mjs",
     output: {
       sourcemap: true,
