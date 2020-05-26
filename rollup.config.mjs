@@ -1,6 +1,7 @@
 import { readFileSync } from "fs";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
+import virtual from '@rollup/plugin-virtual';
 
 import svelte from "rollup-plugin-svelte";
 import postcss from "rollup-plugin-postcss";
@@ -29,6 +30,10 @@ export default () => {
       plugins: [production && terser()]
     },
     plugins: [
+      virtual({
+        'node-fetch': `export default fetch`
+      }),
+  
       consts({
         name,
         version,
