@@ -2,13 +2,12 @@
   import * as style from "./main.css";
   import { BitbucketProvider } from "bitbucket-repository-provider";
 
-  const config = {};
-  const provider = new BitbucketProvider(config);
+  const provider = new BitbucketProvider(localStorage);
 </script>
 
 <div>Name: {provider.name}</div>
 
-{#await provider.repository('xhubio/decision-table-data-generator')}
+{#await provider.repository('arlac77/sync-test-repository')}
 	<p>...waiting</p>
 {:then repo}
 	<p>The repo is {repo.name}</p>
