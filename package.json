@@ -1,10 +1,10 @@
 {
   "name": "@component-template/designer",
-  "description": "drag & drop your template",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
+  "description": "drag & drop your template",
   "keywords": [
     "web",
     "svelte",
