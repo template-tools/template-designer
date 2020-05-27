@@ -61,7 +61,7 @@ export default () => {
           importee === "svelte" || importee.startsWith("svelte/")
       }),
       commonjs(),
-      dev({
+      !production && dev({
         port,
         dirs: [dist],
         spa: `${dist}/index.html`,
