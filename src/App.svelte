@@ -1,8 +1,10 @@
 <script>
   import * as style from "./main.css";
   import { BitbucketProvider } from "bitbucket-repository-provider";
+  import { GiteaProvider } from "gitea-repository-provider";
 
-  const provider = new BitbucketProvider(localStorage);
+  //const provider = new BitbucketProvider(localStorage);
+  const provider = new GiteaProvider(localStorage);
 </script>
 
 <div>Name: {provider.name}</div>
