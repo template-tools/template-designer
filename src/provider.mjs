@@ -11,12 +11,15 @@ export const provider = AggregationProvider.initialize(
   localStorage
 );
 
-export const repositories = readable([], async set => {
-    const rs = [];
-    for await (const r of provider.repositories()) {
-      rs.push(r);
+export const repositories = readable([], set => {
+    async function load() {
+      const rs = [];
+      for await (const r of provider.repositories()) {
+        rs.push(r);
+      }
+      set(rs);
     }
-    set(rs);
+    load();
     return () => {};
   });
   
@@ -24,19 +27,6 @@ export const repository = derived(
   undefined, //router.keys.repository,
   ($repository, set) => {
     provider.repository($repository).then(r => set(r));
-    return () => {};
-  }
-);
-
-export const repositoryGroups = readable([], async set => {
-    set([...provider.repositoryGroups()]);
-    return () => {};
-  });
-
-export const repositoryGroup = derived(
-  undefined, //router.keys.repositoryGroup,
-  ($repositoryGroup, set) => {
-    provider.repositoryGroup($repositoryGroup).then(g => set(g));
     return () => {};
   }
 );

@@ -1,5 +1,4 @@
 <script>
-  import RepositoryGroupLink from "./RepositoryGroupLink.svelte";
   export let repository;
 </script>
 
@@ -33,5 +32,4 @@
       </li>
     {/each}
   </ul>
-  <RepositoryGroupLink repositoryGroup={repository.owner} />
 </div>

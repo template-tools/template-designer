@@ -1,8 +1,9 @@
 <script>
   import RepositoryCard from '../components/RepositoryCard.svelte';
-  import { repository } from "../provider.mjs";
+
+  export let repository;
 </script>
 
-{#if $repository}
-  <RepositoryCard repository={$repository}/>
+{#if repository}
+  <RepositoryCard repository={repository}/>
 {:else}No such repository{/if}
