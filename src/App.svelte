@@ -3,8 +3,9 @@
   import { BitbucketProvider } from "bitbucket-repository-provider";
   import { GiteaProvider } from "gitea-repository-provider";
 
+  const config = {};
   //const provider = new BitbucketProvider(localStorage);
-  const provider = new GiteaProvider(localStorage);
+  const provider = GiteaProvider.initialize(config,localStorage);
 </script>
 
 <div>Name: {provider.name}</div>
