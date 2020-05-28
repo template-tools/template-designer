@@ -63,6 +63,7 @@
     "proxyTarget": "https://somewhere/"
   },
   "pacman": {
+    "name": "component-template-designer",
     "groups": "web",
     "content": {
       "${installdir}/": {
@@ -70,7 +71,7 @@
       },
       "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf"
     },
-    "installdir": "/services/component-template-designer/frontend",
+    "installdir": "/services/${name}/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
       "nginx-mainline": ">=1.17.10"
