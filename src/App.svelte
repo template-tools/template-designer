@@ -3,16 +3,7 @@
   import { Menue } from "svelte-common";
   import * as style from "./main.css";
   import { router } from "./router.mjs";
- /// import { repositories } from "./provider.mjs";
 </script>
-
-<!--
-  <ul>
-    {#each $repositories as r}
-    <li>{r.name}</li>
-    {/each}
-  </ul>
--->
 
 <nav>
   <a href="/" use:link={router} use:active={router}>
