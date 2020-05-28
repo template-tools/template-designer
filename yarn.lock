@@ -395,6 +395,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
+aggregation-repository-provider@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.0.tgz#e8a60416722d955011f6c4067a8a6878f19dca72"
+  integrity sha512-/NtGgSvSRimOEMeSYZI471Yq/gGz7So6NSFvC/GOU1+v9L0TiHrORwf1BGcrNQdfBvsM/Z+aAHh0udmT0Y8kjg==
+  dependencies:
+    repository-provider "^19.0.0"
+
 ajv@^6.5.5:
   version "6.12.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.2.tgz#c629c5eced17baf314437918d2da88c99d5958cd"
@@ -610,10 +617,10 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.5.30:
-  version "3.5.30"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.5.30.tgz#8d9055227ffc0eac5ee6135a87cd2d2b273de3d8"
-  integrity sha512-u/zPz/RnFauqfSfA8l6CrvJBaiCN9vx/3GWjCQt7RJp02bswDlTfaXmRf/x+RcIW3usshuDnJOMyjRMJkzWyBw==
+bitbucket-repository-provider@^3.5.31:
+  version "3.5.31"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.5.31.tgz#769b95cffe73f46d95efe0630abc991f335fd9f2"
+  integrity sha512-yX1noqbap4kFTTidfFLgr92VSCLvBaSWxyokr6fbpnc2gbsK2QvQhQI+lIP0LzwMnRZcy7g8TuC9MzsE5Stiyw==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
@@ -2169,10 +2176,10 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.26:
-  version "1.10.26"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.26.tgz#cd27b648ff2fc08e1d5dbc6ea258eed5c122b7e4"
-  integrity sha512-omRD1KtirUKoeCWLuKYCqlCmWZYZlOki4Ig/SLoScJxnwmaGcge4FRsuAjaPJ10p5ZkZ5mKUmm7x5a9SdrOXcg==
+gitea-repository-provider@^1.10.27:
+  version "1.10.27"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.27.tgz#68d4cb1e6a807f34df02cb89fb2dd0a44570661b"
+  integrity sha512-QPzWgFki8gYB7NoG8Cor7NADJpwkcj8xSYz3m4ImcxN4Z1LVN5+AAc3hEEoMzWxK75/v7KAfFVYw1+HJqz4WTA==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
@@ -5237,9 +5244,9 @@ regjsparser@^0.6.4:
     jsesc "~0.5.0"
 
 repository-provider@^19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.0.0.tgz#a324c92b2558d6724f790b0e91d183edeef9bf18"
-  integrity sha512-z6ZmRs2pGeITTsa8/vXLwuiDbjbLAo8SFNGRF2ZV+HnGcrq9MuaI8SqafKtdj4guDJF+/erBS4C2E+jJZIhAPg==
+  version "19.0.1"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.0.1.tgz#476d168723547a479adc4a12ea7f44e55aa9097d"
+  integrity sha512-FDbNfxK0nyeDSMYDjr7/b6KqAoEMFFYqu3jw+RgwluL5gfyZAapBHuYe7gVQE+GEJ0+9Yiy/OqH+a0I/ifnKuA==
   dependencies:
     loglevel-mixin "^5.0.3"
 

@@ -22,9 +22,10 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "bitbucket-repository-provider": "^3.5.30",
+    "aggregation-repository-provider": "^2.7.0",
+    "bitbucket-repository-provider": "^3.5.31",
     "buffer": "^5.6.0",
-    "gitea-repository-provider": "^1.10.26",
+    "gitea-repository-provider": "^1.10.27",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "^1.1.18",
