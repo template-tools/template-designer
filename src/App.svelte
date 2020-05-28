@@ -28,6 +28,9 @@
     <li>
       <a href="/about" use:link={router} use:active={router}>About</a>
     </li>
+    <li>
+      <a href="/settings" use:link={router} use:active={router}>Settings</a>
+    </li>
   </ul>
   <ul>
     <li />
