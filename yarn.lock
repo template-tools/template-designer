@@ -301,6 +301,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
+"@types/estree@0.0.44":
+  version "0.0.44"
+  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.44.tgz#980cc5a29a3ef3bea6ff1f7d021047d7ea575e21"
+  integrity sha512-iaIVzr+w2ZJ5HkidlZ3EJM8VTZb2MJLCjw3V+505yVts0gRC4UMvjw0d1HPtGqI/HQC/KdsYtayfzl+AXY2R8g==
+
 "@types/minimist@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
@@ -396,11 +401,11 @@ aggregate-error@^3.0.0:
     indent-string "^4.0.0"
 
 aggregation-repository-provider@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.0.tgz#e8a60416722d955011f6c4067a8a6878f19dca72"
-  integrity sha512-/NtGgSvSRimOEMeSYZI471Yq/gGz7So6NSFvC/GOU1+v9L0TiHrORwf1BGcrNQdfBvsM/Z+aAHh0udmT0Y8kjg==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.1.tgz#9564ba08591b31a8bf679d2fb4fb3ec787077249"
+  integrity sha512-KGLKLWioyv78yIhWX5WwY82Aw+qT3xOQWzgL8HkYxpalvxTKf62oVz3ddtdILcKQVWAAOGv1Bx+IMd1bPaJgRQ==
   dependencies:
-    repository-provider "^19.0.0"
+    repository-provider "^19.0.2"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -617,15 +622,15 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.5.31:
-  version "3.5.31"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.5.31.tgz#769b95cffe73f46d95efe0630abc991f335fd9f2"
-  integrity sha512-yX1noqbap4kFTTidfFLgr92VSCLvBaSWxyokr6fbpnc2gbsK2QvQhQI+lIP0LzwMnRZcy7g8TuC9MzsE5Stiyw==
+bitbucket-repository-provider@^3.5.32:
+  version "3.5.32"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.5.32.tgz#5cecd56b6c12ea6cfa01724c650875366618ef46"
+  integrity sha512-zDsttwxRifidMVAgpJ3ycOhU4Cefc8z9hFUA+jO4+F+SbA6LsoiEXY9laJbQFYuitTLrIfK+5yLhPJTT7UZEUA==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.0.0"
+    repository-provider "^19.0.2"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -2177,14 +2182,14 @@ git-log-parser@^1.2.0:
     traverse "~0.6.6"
 
 gitea-repository-provider@^1.10.27:
-  version "1.10.27"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.27.tgz#68d4cb1e6a807f34df02cb89fb2dd0a44570661b"
-  integrity sha512-QPzWgFki8gYB7NoG8Cor7NADJpwkcj8xSYz3m4ImcxN4Z1LVN5+AAc3hEEoMzWxK75/v7KAfFVYw1+HJqz4WTA==
+  version "1.10.28"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.28.tgz#9adafa67b81be28e9c197bbb87a705bcfc57a4b6"
+  integrity sha512-xlSvbkf5b6ShYKhF/VTbq6uEHH8fAb0Lt2XS4Q5w3NHxp53YjNQRpNFuBoyHeL/3vhPJW84rr8P6m4PFby+RUQ==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.0.0"
+    repository-provider "^19.0.2"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -2761,11 +2766,11 @@ is-redirect@^1.0.0:
   integrity sha1-HQPd7VO9jbDzDCbk+V02/HyH3CQ=
 
 is-reference@^1.1.2:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/is-reference/-/is-reference-1.1.4.tgz#3f95849886ddb70256a3e6d062b1a68c13c51427"
-  integrity sha512-uJA/CDPO3Tao3GTrxYn6AwkM4nUPJiGGYu5+cB8qbC7WGFlrKZbiRo7SFKxUAEpFUfiHofWCXBUNhvYJMh+6zw==
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/is-reference/-/is-reference-1.2.0.tgz#d938b0cf85a0df09849417b274f02fb509293599"
+  integrity sha512-ZVxq+5TkOx6GQdnoMm2aRdCKADdcrOWXLGzGT+vIA8DMpqEJaRk5AL1bS80zJ2bjHunVmjdzfCt0e4BymIEqKQ==
   dependencies:
-    "@types/estree" "0.0.39"
+    "@types/estree" "0.0.44"
 
 is-regex@^1.0.5:
   version "1.0.5"
@@ -5016,6 +5021,13 @@ qw@~1.0.1:
   resolved "https://registry.yarnpkg.com/qw/-/qw-1.0.1.tgz#efbfdc740f9ad054304426acb183412cc8b996d4"
   integrity sha1-77/cdA+a0FQwRCassYNBLMi5ltQ=
 
+randombytes@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.1.0.tgz#df6f84372f0270dc65cdf6291349ab7a473d4f2a"
+  integrity sha512-vYl3iOX+4CKUWuxGi9Ukhie6fsqXqS9FE2Zaic4tNFD2N2QQaXOMFbuKK4QmDHC0JO6B1Zp41J0LpT0oR68amQ==
+  dependencies:
+    safe-buffer "^5.1.0"
+
 raw-body@^2.2.0:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.4.1.tgz#30ac82f98bb5ae8c152e67149dac8d55153b168c"
@@ -5243,10 +5255,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^19.0.0:
-  version "19.0.1"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.0.1.tgz#476d168723547a479adc4a12ea7f44e55aa9097d"
-  integrity sha512-FDbNfxK0nyeDSMYDjr7/b6KqAoEMFFYqu3jw+RgwluL5gfyZAapBHuYe7gVQE+GEJ0+9Yiy/OqH+a0I/ifnKuA==
+repository-provider@^19.0.2:
+  version "19.0.2"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.0.2.tgz#e806b055859056a0523024c8cc0018a0ea06850a"
+  integrity sha512-QoB2CzZ6IIgSpFvmFTADt2PUuztu9LYu8JMk0tfU0Nx21Txo50eyHmUgYXL7GUbFxUhEfF+VmYzoYDhytuQvhg==
   dependencies:
     loglevel-mixin "^5.0.3"
 
@@ -5535,9 +5547,11 @@ semver@^7.1.2, semver@^7.3.2:
   integrity sha512-OrOb32TeeambH6UrhtShmF7CRDqhL6/5XpPNp2DuRH6+9QLw/orhp72j87v8Qa1ScDkvrrBNpZcDejAirJmfXQ==
 
 serialize-javascript@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-3.0.0.tgz#492e489a2d77b7b804ad391a5f5d97870952548e"
-  integrity sha512-skZcHYw2vEX4bw90nAr2iTTsz6x2SrHEnfxgKYmZlvJYBEZrvbKtobJWlQ20zczKb3bsHHXXTYt48zBA7ni9cw==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-3.1.0.tgz#8bf3a9170712664ef2561b44b691eafe399214ea"
+  integrity sha512-JIJT1DGiWmIKhzRsG91aS6Ze4sFUrYbltlkg2onR5OrnNM02Kl/hnY/T4FN2omvyeBbQmMJv+K4cPOpGzOTFBg==
+  dependencies:
+    randombytes "^2.1.0"
 
 set-blocking@^2.0.0, set-blocking@~2.0.0:
   version "2.0.0"
