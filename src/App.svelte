@@ -3,19 +3,15 @@
   import { Menue } from "svelte-common";
   import * as style from "./main.css";
   import { router } from "./router.mjs";
-  //import { provider } from "./provider.mjs";
+ /// import { repositories } from "./provider.mjs";
 </script>
 
 <!--
-<div>Name: {provider.name}</div>
-
-{#await provider.repository('arlac77/sync-test-repository')}
-  <p>...waiting</p>
-{:then repo}
-  <p>The repo is {repo.name}</p>
-{:catch error}
-  <p style="color: red">{error.message}</p>
-{/await}
+  <ul>
+    {#each $repositories as r}
+    <li>{r.name}</li>
+    {/each}
+  </ul>
 -->
 
 <nav>
@@ -24,11 +20,6 @@
     Template Designer
   </a>
   <ul class="left">
-    <li>
-      <a href="/group" use:link={router} use:active={router}>
-        Repository Groups
-      </a>
-    </li>
     <li>
       <a href="/repository" use:link={router} use:active={router}>
         Repositories

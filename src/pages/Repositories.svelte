@@ -1,23 +1,32 @@
 <script>
   import RepositoryLink from "../components/RepositoryLink.svelte";
-  import { repositories }  from "../provider.mjs";
+  import { repositories } from "../provider.mjs";
 </script>
 
 <div>
   <table class="bordered striped hoverable">
     <thead>
       <tr>
+        <th>Provider</th>
         <th aria-sort="none">Repository</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
-      {#each repositories as repository (repository.fullName)}
+      {#each $repositories as repository (repository.fullName)}
         <tr>
+          <td>
+            <img
+              src="images/{repository.provider.name}.svg"
+              width="16" height="16"
+              alt={repository.provider.name} />
+          </td>
           <td>
             <RepositoryLink {repository} />
           </td>
-          <td>{#if repository.description}{repository.description}{/if}</td>
+          <td>
+            {#if repository.description}{repository.description}{/if}
+          </td>
         </tr>
       {/each}
     </tbody>

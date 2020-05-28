@@ -4,7 +4,7 @@
 </script>
 
 {#if repository}
-<Link href="/group/{repository.owner.name}/{repository.name}">
+<Link href="/repository/{repository.owner.name}/{repository.name}">
   <slot>
     <div aria-label={repository.description} data-microtip-position="up" role="tooltip">{repository.fullName}</div>
   </slot>
