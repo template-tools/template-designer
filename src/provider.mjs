@@ -6,7 +6,7 @@ import AggregationProvider from "aggregation-repository-provider";
 //import { router } from './router.mjs';
 
 export const provider = AggregationProvider.initialize(
-  [BitbucketProvider /*, GiteaProvider*/],
+  [BitbucketProvider , GiteaProvider],
   { logLevel: "trace" },
   localStorage
 );
