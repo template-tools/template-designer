@@ -1,10 +1,7 @@
 import App from "./App.svelte";
 
-
-export async function initializeServiceWorker() {
-    return navigator.serviceWorker.register(
-      "service-worker-bundle.mjs"
-    );
+async function initializeServiceWorker() {
+  return navigator.serviceWorker.register("bundle.service-worker.mjs");
 }
 
 initializeServiceWorker();

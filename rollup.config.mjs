@@ -21,6 +21,31 @@ export default () => {
     readFileSync("./package.json", { endoding: "utf8" })
   );
 
+  const prePlugins = [
+    virtual({
+      "node-fetch": "export default fetch",
+      stream: "export class Readable {}"
+    }),
+    inject({
+      Buffer: ["buffer", "Buffer"]
+    }),
+    consts({
+      name,
+      version,
+      description,
+      ...config
+    })
+  ];
+  
+  const resolverPlugins = [
+    resolve.nodeResolve({
+      browser: true,
+      preferBuiltins: false,
+      dedupe: importee => importee === "svelte" || importee.startsWith("svelte/")
+    }),
+    commonjs()
+  ];
+  
   return [
     {
       input: "src/main.mjs",
@@ -29,22 +54,10 @@ export default () => {
         sourcemap: true,
         format: "esm",
         file: `${dist}/bundle.mjs`,
-        plugins: [production && terser({keep_classnames:true})]
+        plugins: [production && terser({ keep_classnames: true })]
       },
       plugins: [
-        virtual({
-          "node-fetch": "export default fetch",
-          stream: "export class Readable {}"
-        }),
-        inject({
-          Buffer: ["buffer", "Buffer"]
-        }),
-        consts({
-          name,
-          version,
-          description,
-          ...config
-        }),
+        ...prePlugins,
         postcss({
           extract: true,
           sourcemap: true,
@@ -55,13 +68,7 @@ export default () => {
           dev: !production,
           css: css => css.write(`${dist}/bundle.svelte.css`)
         }),
-        resolve.nodeResolve({
-          browser: true,
-          preferBuiltins: false,
-          dedupe: importee =>
-            importee === "svelte" || importee.startsWith("svelte/")
-        }),
-        commonjs(),
+        ...resolverPlugins,
         !production &&
           dev({
             port,
@@ -83,29 +90,10 @@ export default () => {
         interop: false,
         sourcemap: true,
         format: "esm",
-        file: `${dist}/service-worker-bundle.mjs`,
+        file: `${dist}/bundle.service-worker.mjs`,
         plugins: [production && terser()]
       },
-      plugins: [
-        virtual({
-          "node-fetch": "export default fetch",
-          stream: "export class Readable {}"
-        }),
-        inject({
-          Buffer: ["buffer", "Buffer"]
-        }),
-        consts({
-          name,
-          version,
-          description,
-          ...config
-        }),
-        resolve.nodeResolve({
-          browser: true,
-          preferBuiltins: false
-        }),
-        commonjs()
-      ]
+      plugins: [...prePlugins, ...resolverPlugins]
     }
   ];
 };
