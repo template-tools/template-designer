@@ -11,7 +11,8 @@ export const router = new Router(
     route("/about", About),
     route("/settings", Settings),
     route("/repository", Repositories),
-    route("/repository/:a/:b", Repository)
+    route("/repository/:a/:b", Repository),
+    route("/repository/:a", Repository)
   ],
   base
 );

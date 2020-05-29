@@ -622,15 +622,15 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.5.34:
-  version "3.5.34"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.5.34.tgz#ca235f0b3e01503062124b6c669a1aa7028b1e9c"
-  integrity sha512-whA15GMG/cRJFyaDTUr21gnj1Ct418X/o2v02uKp18AeyASnsj8P8GSNnBzVr1fnlzJBYD2yyDd9KriyONMOzQ==
+bitbucket-repository-provider@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.0.tgz#4631a19a6ab4bcc4a691aa59cc95dd08dcff3c7c"
+  integrity sha512-QBWJXBGTQJcKNN5QxlWx5QD7nDiNF26KfKANACeWu75+6I5hwW+VTW8eyPBCaessJnFaZFMf7Up0Pwx4831XzQ==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.1.1"
+    repository-provider "^19.2.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -3914,9 +3914,9 @@ npm-pick-manifest@^3.0.0, npm-pick-manifest@^3.0.2:
     semver "^5.4.1"
 
 npm-pkgbuild@^6.12.0:
-  version "6.12.0"
-  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.0.tgz#ee19e8c21cc0ea4bc928678801d62ea84c1b79d6"
-  integrity sha512-fgIDoEQdJqD9M4274x8fQQMJpvGe1XxHBbfecX4/vUFuNILvQrsOgUBJfbKPTBaa7KETHajuYZCQRYJtCTqbzA==
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/npm-pkgbuild/-/npm-pkgbuild-6.12.1.tgz#cc689199f04a95be51f4953959e6e7a68402a71d"
+  integrity sha512-weQzOe1A6rQRqMbhmFr09msJZWrgrMJSwGaQhtLgej1aJgxLnvCF/wQCkEnotR0SU4zJ7aDtv+rb53rFrtqfhw==
   dependencies:
     commander "^5.0.0"
     execa "^4.0.0"
@@ -5255,10 +5255,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^19.1.1:
-  version "19.1.1"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.1.1.tgz#ce5c6317489f339cfa6954f56ba45d7a454012bc"
-  integrity sha512-GCOKkZgIF1J6lYGH1oIvE+uLj6yiq+YMuzxA7dZ4lBXXKNHsLx8AEMx87Y08ouBkyRtlqC2Phdm0DQCwquy+lQ==
+repository-provider@^19.1.1, repository-provider@^19.2.0:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.2.0.tgz#2f04b167d8ca7387271d202f1ad6283111bcdfa5"
+  integrity sha512-Slnmx6E1cwed8CEzqz3shmCO2J0AlCHODHe2yIWBFNFUB5Ej/nm8AlWWk7pB1sAH1gisfqohZX+R6Fn4ZSj0kA==
   dependencies:
     loglevel-mixin "^5.0.3"
 
