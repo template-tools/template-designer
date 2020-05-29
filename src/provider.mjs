@@ -11,6 +11,19 @@ export const provider = AggregationProvider.initialize(
   localStorage
 );
 
+
+export const repositoryGroups = readable([], set => {
+  async function load() {
+    const rs = [];
+    for await (const r of provider.repositoryGroups()) {
+      rs.push(r);
+    }
+    set(rs);
+  }
+  load();
+  return () => {};
+});
+
 export const repositories = readable([], set => {
     async function load() {
       const rs = [];
@@ -23,10 +36,10 @@ export const repositories = readable([], set => {
     return () => {};
   });
   
-export const repository = derived(
-  undefined, //router.keys.repository,
-  ($repository, set) => {
-    provider.repository($repository).then(r => set(r));
+export const repository = readable(
+  undefined,
+  set => {
+    provider.repository('arlac77/template-rollup').then(r => set(r));
     return () => {};
   }
 );

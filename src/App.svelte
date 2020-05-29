@@ -12,6 +12,7 @@
   </a>
   <ul class="left">
     <li>
+      <a href="/group" use:link={router} use:active={router}>Groups</a>
       <a href="/repository" use:link={router} use:active={router}>
         Repositories
       </a>
