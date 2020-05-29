@@ -2181,15 +2181,15 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.33:
-  version "1.10.33"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.33.tgz#81022e3b853823441b5507a5a1167270bb0f8edc"
-  integrity sha512-/HeQuzhI88Fv/zG1kP2gB62dwHu3Lp/qnXgmTBqrm1td9R05jVKMZ/1SlZMgXG8x1fuecmJmVCxMSGSQNPNgNA==
+gitea-repository-provider@^1.10.34:
+  version "1.10.34"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.34.tgz#e019f36dd0bd10f7e0b6eaf502a69b5278fa9899"
+  integrity sha512-DtGzoEt2Wul8FSQClLvZZN1vGt/VtHfSHQ56o5yWs7e8YNo/BYWZCTTE4F8r2XM4mlIlMZ3pxIxJoee3Qcg5dQ==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.2.0"
+    repository-provider "^19.2.1"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5255,10 +5255,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^19.2.0:
-  version "19.2.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.2.0.tgz#2f04b167d8ca7387271d202f1ad6283111bcdfa5"
-  integrity sha512-Slnmx6E1cwed8CEzqz3shmCO2J0AlCHODHe2yIWBFNFUB5Ej/nm8AlWWk7pB1sAH1gisfqohZX+R6Fn4ZSj0kA==
+repository-provider@^19.2.0, repository-provider@^19.2.1:
+  version "19.2.1"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.2.1.tgz#c6fa44b4cfb0040239e315d5e4efe69513c62bdf"
+  integrity sha512-d6iaxn7Oudb0jHS8QUMM0WI/txiElaUi2zWo0tBoI58JkS0hn+SX2r5VUxPN6idZDfAJmxEDXg71l8JLo0mOyQ==
   dependencies:
     loglevel-mixin "^5.0.3"
 
