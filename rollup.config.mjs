@@ -29,7 +29,7 @@ export default () => {
         sourcemap: true,
         format: "esm",
         file: `${dist}/bundle.mjs`,
-        plugins: [production && terser()]
+        plugins: [production && terser({keep_classnames:true})]
       },
       plugins: [
         virtual({
