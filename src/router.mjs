@@ -1,4 +1,5 @@
-import { Router, route, NotFound } from "svelte-guard-history-router";
+import { Router, route } from "svelte-guard-history-router";
+import Home from "./pages/About.svelte";
 import About from "./pages/About.svelte";
 import Settings from "./pages/Settings.svelte";
 import Repositories from "./pages/Repositories.svelte";
@@ -11,7 +12,7 @@ import base from "consts:base";
 
 export const router = new Router(
   [
-    route("*", NotFound),
+    route("*", Home),
     route("/about", About),
     route("/settings", Settings),
     route("/repository", Repositories),
