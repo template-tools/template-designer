@@ -392,6 +392,11 @@ agentkeepalive@^3.4.1:
   dependencies:
     humanize-ms "^1.2.1"
 
+aggregate-async-iterator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/aggregate-async-iterator/-/aggregate-async-iterator-1.0.0.tgz#14194f1e05032b0390131689dcb7a7b2086897d3"
+  integrity sha512-AGoqFKc8cu4qa+GwoM5PrPSzpGxd7Lk3Io7M8SHXY/DwJg/r/4E5dSTN5qZPtK+xNb4gS66twS/EBlRDcWonGw==
+
 aggregate-error@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/aggregate-error/-/aggregate-error-3.0.1.tgz#db2fe7246e536f40d9b5442a39e117d7dd6a24e0"
@@ -400,12 +405,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.7.5:
-  version "2.7.5"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.5.tgz#506a1543f0ce585dd0e0175b03244fa660fc3138"
-  integrity sha512-Ef8dlGx8s4CuT6dyYJCFddKXwOwFXsjADUThz7rkOpWzHaZzJvK79/5BcbxUkOQyCa128VmJm6hY2uO/y7evsg==
+aggregation-repository-provider@^2.7.8:
+  version "2.7.8"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.8.tgz#a945cee934f978ed20425465c83ea5c2ec825498"
+  integrity sha512-q354YKttN1q45ThAAC0KjwnSvuDn2YdWs3gBGAXR5Meib28d17RB5gOraWkuseRR15G5EZwnsgTu1vzfmOE5Yw==
   dependencies:
-    repository-provider "^19.2.0"
+    aggregate-async-iterator "^1.0.0"
+    repository-provider "^19.4.0"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -622,15 +628,15 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.2:
-  version "3.6.2"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.2.tgz#709f64c03647f0273912a3b6a5fe34dffe71802e"
-  integrity sha512-9Y0CsUGMYD4ZTy2JN2jnWIP2o68ZVBBIj/80oSgXF4VUgLJjKeBelqh1ViMlKzXzk0qklgS+rqlSztyaQGcy/Q==
+bitbucket-repository-provider@^3.6.3:
+  version "3.6.3"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.3.tgz#ce7cfa72fdc90a14d23f79f97aa9756a32ff0176"
+  integrity sha512-u/uZAuDwTUftoIiKVpWOa3f3mgCZi9M1EFuIY3TNv2fG+icQXQlJnz4JFKvHg/GJ3bVWVuxP8LRcWdRBIrjcWg==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.3.0"
+    repository-provider "^19.4.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -2179,15 +2185,15 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.35:
-  version "1.10.35"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.35.tgz#a6fc21076ee43e41caa614a0f26c4a8e742934ec"
-  integrity sha512-5+Xn6Pu912AjBYELyo3Ax0XFUJy6bY762CpoKD/zw4ut7V4zepusUCMShXydUkeifvnMABkrS/5/7FcjPRa1JQ==
+gitea-repository-provider@^1.10.36:
+  version "1.10.36"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.36.tgz#32a14ac9ba53ffcf9c07d887dcfabda47ad9ce59"
+  integrity sha512-acVKqEEwkEJMoYhYEWKlDIT4Wj87/jWlXK8SdYp4aIHgxq+miQwFTFYF/KLbaHAICa8oFOi66HLXz3fQWj0B6g==
   dependencies:
     content-entry "^2.5.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.3.0"
+    repository-provider "^19.4.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5253,10 +5259,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^19.2.0, repository-provider@^19.3.0:
-  version "19.3.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.3.0.tgz#1df417d2383aca8d6599e478ee25e504de263054"
-  integrity sha512-92FIWmU7Ki4l2N1Gf10FNPWsDl84dTDmVqVWoNK8hrvm5zaJD7Ys4pGRaajyBsW3HDuKrCjtLOQIwLAxdHf5mw==
+repository-provider@^19.4.0:
+  version "19.4.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.4.0.tgz#53b88b23f18f3fdfcbc14fc3b6424e86cb8fbc89"
+  integrity sha512-uqX6/8U5P2q+5lrh6r8yjVhvnEQrQZn6yvXn77M5IMttaSG+W3ZsDjZJe8RTbGPa4wFR6N7YRG7ltju8Dq/fgw==
   dependencies:
     loglevel-mixin "^5.0.3"
 
