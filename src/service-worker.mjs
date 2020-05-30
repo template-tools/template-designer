@@ -1,4 +1,4 @@
-const PRECACHE = "precache-v1";
+const PRECACHE = "precache-v2";
 const RUNTIME = "runtime";
 
 const currentCaches = [PRECACHE, RUNTIME];
@@ -7,6 +7,7 @@ const PRECACHE_URLS = [
   "images/BitbucketProvider.svg",
   "images/GiteaProvider.svg",
   "images/GithubProvider.svg",
+  "images/git.svg",
   "index.html",
   "bundle.mjs",
   "bundle.css",
