@@ -1,18 +1,9 @@
-const PRECACHE = "precache-v2";
+import { PRECACHE_GENERATION, PRECACHE_URLS } from "./service-worker-cache-settings.mjs";
+
+const PRECACHE = `precache-${PRECACHE_GENERATION}`;
 const RUNTIME = "runtime";
 
 const currentCaches = [PRECACHE, RUNTIME];
-
-const PRECACHE_URLS = [
-  "images/BitbucketProvider.svg",
-  "images/GiteaProvider.svg",
-  "images/GithubProvider.svg",
-  "images/git.svg",
-  "index.html",
-  "bundle.mjs",
-  "bundle.css",
-  "bundle.svelte.css"
-];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener("install", event =>
