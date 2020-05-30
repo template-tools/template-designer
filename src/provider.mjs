@@ -1,45 +1,23 @@
-import { derived, readable } from "svelte/store";
+import { readable } from "svelte/store";
 import BitbucketProvider from "bitbucket-repository-provider";
 import GiteaProvider from "gitea-repository-provider";
 import AggregationProvider from "aggregation-repository-provider";
+import { iteratorStore } from "./iterator-store.mjs";
 
 //import { router } from './router.mjs';
 
 export const provider = AggregationProvider.initialize(
-  [BitbucketProvider , GiteaProvider],
+  [BitbucketProvider, GiteaProvider],
   { logLevel: "trace" },
   localStorage
 );
 
+export const repositoryGroups = iteratorStore(() =>
+  provider.repositoryGroups()
+);
+export const repositories = iteratorStore(() => provider.repositories());
 
-export const repositoryGroups = readable([], set => {
-  async function load() {
-    const rs = [];
-    for await (const r of provider.repositoryGroups()) {
-      rs.push(r);
-    }
-    set(rs);
-  }
-  load();
+export const repository = readable(undefined, set => {
+  provider.repository("arlac77/template-rollup").then(r => set(r));
   return () => {};
 });
-
-export const repositories = readable([], set => {
-    async function load() {
-      const rs = [];
-      for await (const r of provider.repositories()) {
-        rs.push(r);
-      }
-      set(rs);
-    }
-    load();
-    return () => {};
-  });
-  
-export const repository = readable(
-  undefined,
-  set => {
-    provider.repository('arlac77/template-rollup').then(r => set(r));
-    return () => {};
-  }
-);
