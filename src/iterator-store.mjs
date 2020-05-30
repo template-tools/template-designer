@@ -1,6 +1,6 @@
 import { readable } from "svelte/store";
 
-export function iteratorStore(iterator, initial=[]) {
+export function iteratorStore(iterator, initial = []) {
   return readable(initial, set => {
     async function load() {
       const rs = [];

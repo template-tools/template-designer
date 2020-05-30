@@ -1,4 +1,6 @@
-export const PRECACHE_GENERATION = 3;
+import version from "consts:version";
+
+export const PRECACHE_GENERATION = version;
 export const PRECACHE_URLS = [
     "images/BitbucketProvider.svg",
     "images/GiteaProvider.svg",
