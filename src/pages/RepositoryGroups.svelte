@@ -7,7 +7,7 @@
   <table class="bordered striped hoverable">
     <thead>
       <tr>
-        <th>Provider</th>
+        <th></th>
         <th aria-sort="none">Group</th>
         <th>Description</th>
       </tr>
