@@ -5,5 +5,10 @@
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "icons": []
+  "icons": [
+    {
+      "src": "images/git.svg",
+      "sizes": "192x192"
+    }
+  ]
 }
