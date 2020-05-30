@@ -1,5 +1,5 @@
 import { Router, route } from "svelte-guard-history-router";
-import Home from "./pages/About.svelte";
+import Home from "./pages/Home.svelte";
 import About from "./pages/About.svelte";
 import Settings from "./pages/Settings.svelte";
 import Repositories from "./pages/Repositories.svelte";
