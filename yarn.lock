@@ -103,11 +103,11 @@
   integrity sha512-ywoxP68aOT3zHCLgWZgwUJatiENeHE7xJzYjfz8WI0goynp96wETBF+d95b8g/uL4QmS6owPVlaxiz3wyMAzcw==
 
 "@octokit/plugin-rest-endpoint-methods@^3.12.2":
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-3.13.0.tgz#c514c7fe12a0325618a981b32c41f8e0446263a7"
-  integrity sha512-ArFHeq3L0Qo+zadptmslTJ2ug7bTinDUdx7Iul2vgwONvvgVEq4KSJWZ5Ab8AXEyO19x7yUjMVXZl1UgyGgeKw==
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/@octokit/plugin-rest-endpoint-methods/-/plugin-rest-endpoint-methods-3.13.1.tgz#ebab57ce1bb71afcda1921b4136595a0a0fdb850"
+  integrity sha512-DzzJJ1pp73WJSmh7DyvIqUfoO4CNVUAjcSO2WtyTbCgUwgRL2XRdk8RqyE66vdvSaacObLVbidjUjJLJXxMscw==
   dependencies:
-    "@octokit/types" "^4.1.1"
+    "@octokit/types" "^4.1.2"
     deprecation "^2.3.1"
 
 "@octokit/request-error@^2.0.0":
@@ -143,10 +143,10 @@
     "@octokit/plugin-request-log" "^1.0.0"
     "@octokit/plugin-rest-endpoint-methods" "^3.12.2"
 
-"@octokit/types@^4.0.1", "@octokit/types@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-4.1.1.tgz#e2dc79d49b04c7f0e84fe61b0da28187d9bbaa2c"
-  integrity sha512-gOuIVmMCfHzSv3QBwLZjGDEDtYC73A5+tYcccEoq+Jd/h9rG/Mfc+h0+GEU+mpGhx86n7eBw6J/0BZ0zAmLkKg==
+"@octokit/types@^4.0.1", "@octokit/types@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-4.1.2.tgz#3ffb15612be48974afae6a9edaea1677cb197e69"
+  integrity sha512-MoUW1bt6lQCcxbXZw/IkgwEknv67+5OUOnzJmmx+NXrV1hVI49m+aC8yKci010qiQE2pTVyFq5cM5VXqn3H/ow==
   dependencies:
     "@types/node" ">= 8"
 
@@ -405,13 +405,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.7.8:
-  version "2.7.8"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.8.tgz#a945cee934f978ed20425465c83ea5c2ec825498"
-  integrity sha512-q354YKttN1q45ThAAC0KjwnSvuDn2YdWs3gBGAXR5Meib28d17RB5gOraWkuseRR15G5EZwnsgTu1vzfmOE5Yw==
+aggregation-repository-provider@^2.7.9:
+  version "2.7.9"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.9.tgz#ae8f7105c1286924f3b4ace9c285a694db5bace5"
+  integrity sha512-Iq2FPErbryJu+itj0OR7setzm+YsxGkqU3TCNyJpQlFiP/SDp11jG8YOgSuKRcwXsxWzhd++Mxaz+slUu8dxHw==
   dependencies:
     aggregate-async-iterator "^1.0.0"
-    repository-provider "^19.4.0"
+    repository-provider "^20.1.0"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -628,15 +628,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.3.tgz#ce7cfa72fdc90a14d23f79f97aa9756a32ff0176"
-  integrity sha512-u/uZAuDwTUftoIiKVpWOa3f3mgCZi9M1EFuIY3TNv2fG+icQXQlJnz4JFKvHg/GJ3bVWVuxP8LRcWdRBIrjcWg==
+bitbucket-repository-provider@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.4.tgz#d0caaa2a52822bb4a9959bf41ea8c156fc704754"
+  integrity sha512-cSx1ibEZZAwaKTQbHhesxAwBZC5gjWJxzs8HzWieKn1VJtLxS5MCwfpXh4ZgowTlezb8r55WQzvSgk+TBo+aXA==
   dependencies:
     content-entry "^2.5.0"
+    matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.4.0"
+    repository-provider "^20.1.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -2185,15 +2186,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.36:
-  version "1.10.36"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.36.tgz#32a14ac9ba53ffcf9c07d887dcfabda47ad9ce59"
-  integrity sha512-acVKqEEwkEJMoYhYEWKlDIT4Wj87/jWlXK8SdYp4aIHgxq+miQwFTFYF/KLbaHAICa8oFOi66HLXz3fQWj0B6g==
+gitea-repository-provider@^1.10.37:
+  version "1.10.37"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.37.tgz#188c34dec456e2407e2439666c41c233ab8ed82c"
+  integrity sha512-67pDWDESIn61CpoMoIVQZPlqnX/d5m9v+J86hjjnYN+nb2PZ+qA3x7ZCDNO9FlF/QnONy5RgbOm43S2v1NmcnA==
   dependencies:
     content-entry "^2.5.0"
+    matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^19.4.0"
+    repository-provider "^20.0.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -3509,6 +3511,11 @@ marked@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.0.tgz#62504ad4d11550c942935ccc5e39d64e5a4c4e50"
   integrity sha512-EkE7RW6KcXfMHy2PA7Jg0YJE1l8UPEZE8k45tylzmZM30/r1M1MUXWQfJlrSbsTeh7m/XTwHbWUENvAJZpp1YA==
+
+matching-iterator@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.0.0.tgz#c195e54c3feaeaa43bec0ae2eacf03f9971e1cb3"
+  integrity sha512-H0n7UcWYsqJk2s58oHSLsYa7JdsA/FN7qSgJEBdUZ+PIDyWTMFmMy8gBREIkoUivfqLzwj+hRlbhVfboWSbgEA==
 
 mdn-data@2.0.4:
   version "2.0.4"
@@ -5259,12 +5266,13 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^19.4.0:
-  version "19.4.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-19.4.0.tgz#53b88b23f18f3fdfcbc14fc3b6424e86cb8fbc89"
-  integrity sha512-uqX6/8U5P2q+5lrh6r8yjVhvnEQrQZn6yvXn77M5IMttaSG+W3ZsDjZJe8RTbGPa4wFR6N7YRG7ltju8Dq/fgw==
+repository-provider@^20.0.0, repository-provider@^20.1.0:
+  version "20.1.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-20.1.0.tgz#3fb0ed2ff6d36ecf5a0f09a66a98dce9b4bc49d8"
+  integrity sha512-LYikZpIzhL/9GlC33ylpIWfKVy5CXg4GjTQsLA3lHS/ojnVd1Obspj4d4njic4cGjxD5zgfp7CdbPM6wW7RnPQ==
   dependencies:
     loglevel-mixin "^5.0.3"
+    matching-iterator "^1.0.0"
 
 request@^2.88.0:
   version "2.88.2"
@@ -5438,10 +5446,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.11.2:
-  version "2.11.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.11.2.tgz#b1273ad3e43953d09807672f6b72d08f9f9bc008"
-  integrity sha512-pJT6mfH+/gh1sOWyNMAWxjbYGL5x2AfsaR0SWLRwq2e7vxOKt/0mBjtYDTVYF8JXxVzmnuDzA+EpsPLWt/oyrg==
+rollup@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.12.0.tgz#12d49d1db23020f75184da725d064d3db5245678"
+  integrity sha512-vKwc/xFkZGM9DRai3Eztpr/4g0yYDgNKVq8tLXhq/aSLbR+/EVL6rTjEW9bgWgeYEIKoN66/5w2Bjv1gzyHR/w==
   optionalDependencies:
     fsevents "~2.1.2"
 
