@@ -33,6 +33,16 @@ self.addEventListener("activate", event =>
 );
 
 self.addEventListener("fetch", event => {
+  if (event.request.method !== 'GET') return;
+
+	const url = new URL(event.request.url);
+
+	// don't try to handle e.g. data: URIs
+	if (!url.protocol.startsWith('http')) return;
+
+	// ignore dev server requests
+	if (url.hostname === self.location.hostname && url.port !== self.location.port) return;
+
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
       if (cachedResponse) {
