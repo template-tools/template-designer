@@ -1,16 +1,16 @@
-import { PRECACHE_GENERATION, PRECACHE_URLS } from "./service-worker-cache-settings.mjs";
+import { ASSET_GENERATION, ASSETS } from "./service-worker-assets.mjs";
 
-const PRECACHE = `precache-${PRECACHE_GENERATION}`;
-const RUNTIME = "runtime";
+const CURRENT_ASSET_CACHE = `assets-${ASSET_GENERATION}`;
+const RUNTIME_CACHE = "runtime";
 
-const currentCaches = [PRECACHE, RUNTIME];
+const currentCaches = [CURRENT_ASSET_CACHE, RUNTIME];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener("install", event =>
   event.waitUntil(
     caches
-      .open(PRECACHE)
-      .then(cache => cache.addAll(PRECACHE_URLS))
+      .open(CURRENT_ASSET_CACHE)
+      .then(cache => cache.addAll(ASSETS))
       .then(self.skipWaiting())
   )
 );
@@ -40,7 +40,7 @@ self.addEventListener("fetch", event => {
       }
 
       return caches
-        .open(RUNTIME)
+        .open(RUNTIME_CACHE)
         .then(cache =>
           fetch(event.request).then(response =>
             cache.put(event.request, response.clone()).then(() => response)
