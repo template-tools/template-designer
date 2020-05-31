@@ -1,5 +1,10 @@
 <script>
+  import { iteratorStore } from "../iterator-store.mjs";
+
   export let repository;
+
+  let branches = iteratorStore(() => repository.branches());
+  let hooks = iteratorStore(() => repository.hooks());
 </script>
 
 <div class="card">
@@ -30,6 +35,18 @@
       <li>
         <a href={url}>{url}</a>
       </li>
+    {/each}
+  </ul>
+
+  <ul>
+    {#each $branches as branch}
+      <li>{branch.name}</li>
+    {/each}
+  </ul>
+
+  <ul>
+    {#each $hooks as hook}
+      <li>{hook.url}</li>
     {/each}
   </ul>
 </div>

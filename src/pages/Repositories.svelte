@@ -7,7 +7,6 @@
   <table class="bordered striped hoverable">
     <thead>
       <tr>
-        <th>Provider</th>
         <th aria-sort="none">Repository</th>
         <th>Description</th>
       </tr>
@@ -15,12 +14,6 @@
     <tbody>
       {#each $repositories as repository (repository.fullName)}
         <tr>
-          <td>
-            <img
-              src="images/{repository.provider.name}.svg"
-              width="16" height="16"
-              alt={repository.provider.name} />
-          </td>
           <td>
             <RepositoryLink {repository} />
           </td>

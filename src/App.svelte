@@ -7,11 +7,12 @@
 
 <nav>
   <a href="/" use:link={router} use:active={router}>
-    <img class="logo" src="logo.svg" alt="Template Designer" />
+    <img class="logo" src="images/git.svg" alt="Template Designer" />
     Template Designer
   </a>
   <ul class="left">
     <li>
+      <a href="/group" use:link={router} use:active={router}>Groups</a>
       <a href="/repository" use:link={router} use:active={router}>
         Repositories
       </a>
