@@ -1,5 +1,7 @@
 <script>
   import { iteratorStore } from "../iterator-store.mjs";
+  import HookCard from "./HookCard.svelte";
+  import Attributes from "./Attributes.svelte";
 
   export let repository;
 
@@ -30,6 +32,9 @@
       Template
     </label>
   </div>
+
+  <Attributes object={repository}/>
+
   <ul>
     {#each repository.urls as url}
       <li>
@@ -44,9 +49,7 @@
     {/each}
   </ul>
 
-  <ul>
-    {#each $hooks as hook}
-      <li>{hook.url}</li>
-    {/each}
-  </ul>
+  {#each $hooks as hook}
+    <HookCard hook={hook} />
+  {/each}
 </div>

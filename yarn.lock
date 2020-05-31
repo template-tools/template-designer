@@ -3513,9 +3513,9 @@ marked@^1.0.0:
   integrity sha512-EkE7RW6KcXfMHy2PA7Jg0YJE1l8UPEZE8k45tylzmZM30/r1M1MUXWQfJlrSbsTeh7m/XTwHbWUENvAJZpp1YA==
 
 matching-iterator@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.0.0.tgz#c195e54c3feaeaa43bec0ae2eacf03f9971e1cb3"
-  integrity sha512-H0n7UcWYsqJk2s58oHSLsYa7JdsA/FN7qSgJEBdUZ+PIDyWTMFmMy8gBREIkoUivfqLzwj+hRlbhVfboWSbgEA==
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.1.0.tgz#4733fb22cc0d17dfdece2896205ed3c31ef637ed"
+  integrity sha512-EAQAIQnBP4eNORnE6THJ1g9ek1eN7ICONEthIhQ+4SKKQk3DaUVeXVmHAPXNBaoAG+lX6BYAxvxztbz0Tm5UXQ==
 
 mdn-data@2.0.4:
   version "2.0.4"

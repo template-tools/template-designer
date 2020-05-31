@@ -15,6 +15,12 @@ export const provider = AggregationProvider.initialize(
 export const repositoryGroups = iteratorStore(() =>
   provider.repositoryGroups()
 );
+
+export const repositoryGroup = readable(undefined, set => {
+  provider.repositoryGroup("arlac77").then(r => set(r));
+  return () => {};
+});
+
 export const repositories = iteratorStore(() => provider.repositories());
 
 export const repository = readable(undefined, set => {
