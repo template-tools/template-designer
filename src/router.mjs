@@ -16,13 +16,12 @@ export const router = new Router(
     route("*", Home),
     route("/about", About),
     route("/settings", Settings),
-    route("/repository", Repositories),
-    route("/repository/:a/:b", Repository),
-    route("/repository/:a", Repository),
     route("/group", RepositoryGroups),
-    route("/group/:a", RepositoryGroup),
-    route("/repository/:a/:b/:c", Branch),
-    route("/repository/:a/:b/:c/:d", ContentEntry)
+    route("/repository", Repositories),
+    route("/repository/:group", RepositoryGroup),
+    route("/repository/:group/:repository", Repository),
+    route("/repository/:group/:repository/branch/:branch", Branch),
+    route("/repository/:group/:repository/branch/:branch/:entry", ContentEntry)
   ],
   base
 );

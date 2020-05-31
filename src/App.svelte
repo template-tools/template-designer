@@ -3,6 +3,14 @@
   import { Menue } from "svelte-common";
   import * as style from "./main.css";
   import { router } from "./router.mjs";
+
+  
+  let state;
+
+  $: {
+    state = $router.state;
+  }
+
 </script>
 
 <nav>
@@ -29,5 +37,6 @@
   </ul>
 </nav>
 <main>
+  {JSON.stringify(state.params)}
   <Outlet {router} />
 </main>

@@ -15,25 +15,8 @@
     <h6 class="card-subtitle">{repository.description}</h6>
     <p class="card-text">Id {repository.id}</p>
 
-    <label>
-      <input type="checkbox" bind:checked={repository.isArchived} />
-      Archived
-    </label>
-    <label>
-      <input type="checkbox" bind:checked={repository.isLocked} />
-      Locked
-    </label>
-    <label>
-      <input type="checkbox" bind:checked={repository.isDisabled} />
-      Disabled
-    </label>
-    <label>
-      <input type="checkbox" bind:checked={repository.isTemplate} />
-      Template
-    </label>
+    <Attributes object={repository}/>
   </div>
-
-  <Attributes object={repository}/>
 
   <ul>
     {#each $branches as branch}
