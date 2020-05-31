@@ -6,8 +6,9 @@ import { iteratorStore } from "./iterator-store.mjs";
 
 //import { router } from './router.mjs';
 
+export const providerFactories = [BitbucketProvider, GiteaProvider];
 export const provider = AggregationProvider.initialize(
-  [BitbucketProvider, GiteaProvider],
+  providerFactories,
   { logLevel: "trace" },
   localStorage
 );

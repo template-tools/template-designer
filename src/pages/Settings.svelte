@@ -1,4 +1,6 @@
 <script>
+  import { providerFactories } from "../provider.mjs";
+
   let message;
   let bitbucket_username = localStorage.BITBUCKET_USERNAME;
   let bitbucket_password = localStorage.BITBUCKET_PASSWORD;
@@ -14,7 +16,22 @@
   }
 </script>
 
+
 <form on:submit|preventDefault={submit}>
+
+<ul>
+  {#each providerFactories as factory}
+    <li>
+      <img
+        src="images/{factory.name}.svg"
+        width="16"
+        height="16"
+        alt={factory.name} />
+      {factory.name}
+    </li>
+  {/each}
+</ul>
+
   {#if message}
     <slot name="message">
       <div class="error" id="message">{message}</div>
@@ -89,7 +106,10 @@
   </slot>
 
   <slot name="submit">
-    <button id="submit" type="submit" disabled={!bitbucket_username || !bitbucket_password}>
+    <button
+      id="submit"
+      type="submit"
+      disabled={!bitbucket_username || !bitbucket_password}>
       Save
       {#if active}
         <div class="spinner" />
