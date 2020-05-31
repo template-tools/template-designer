@@ -3,7 +3,7 @@ import { ASSET_GENERATION, ASSETS } from "./service-worker-assets.mjs";
 const CURRENT_ASSET_CACHE = `assets-${ASSET_GENERATION}`;
 const RUNTIME_CACHE = "runtime";
 
-const currentCaches = [CURRENT_ASSET_CACHE, RUNTIME];
+const currentCaches = [CURRENT_ASSET_CACHE, RUNTIME_CACHE];
 
 // The install handler takes care of precaching the resources we always need.
 self.addEventListener("install", event =>
