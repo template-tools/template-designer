@@ -4,7 +4,6 @@
   import * as style from "./main.css";
   import { router } from "./router.mjs";
 
-  
   let state;
 
   $: {

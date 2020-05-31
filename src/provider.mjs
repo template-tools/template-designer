@@ -24,14 +24,6 @@ export const repositoryGroup = readable(undefined, set => {
 
 export const repositories = iteratorStore(() => provider.repositories());
 
-export const repository = readable(undefined, set => {
-  provider
-    .repository(
-      router.state.params.group + "/" + router.state.params.repository
-    )
-    .then(r => set(r));
-  return () => {};
-});
 
 export const branch = readable(undefined, set => {
   provider

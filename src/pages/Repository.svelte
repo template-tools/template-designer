@@ -1,6 +1,6 @@
 <script>
   import RepositoryCard from '../components/RepositoryCard.svelte';
-  import { repository } from "../provider.mjs";
+  import { repository } from "../repository.mjs";
 </script>
 
 {#if $repository}
