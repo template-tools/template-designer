@@ -405,13 +405,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.7.9:
-  version "2.7.9"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.9.tgz#ae8f7105c1286924f3b4ace9c285a694db5bace5"
-  integrity sha512-Iq2FPErbryJu+itj0OR7setzm+YsxGkqU3TCNyJpQlFiP/SDp11jG8YOgSuKRcwXsxWzhd++Mxaz+slUu8dxHw==
+aggregation-repository-provider@^2.7.10:
+  version "2.7.10"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.10.tgz#d87d6806505c37ac78062589c927c9d903e34de5"
+  integrity sha512-+uPcAJCr3NlkjDg9aavxFk8DKpMbVSzUsEibuE9C2DsOLekzzy3LWh9JWXqQL2bleni4yWqDdEhqwvFouBl5gw==
   dependencies:
     aggregate-async-iterator "^1.0.0"
-    repository-provider "^20.1.0"
+    repository-provider "^20.1.1"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -628,16 +628,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.4:
-  version "3.6.4"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.4.tgz#d0caaa2a52822bb4a9959bf41ea8c156fc704754"
-  integrity sha512-cSx1ibEZZAwaKTQbHhesxAwBZC5gjWJxzs8HzWieKn1VJtLxS5MCwfpXh4ZgowTlezb8r55WQzvSgk+TBo+aXA==
+bitbucket-repository-provider@^3.6.5:
+  version "3.6.5"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.5.tgz#4a56a650e6fc9490b699c69c6317c8b4e21075fa"
+  integrity sha512-Bqq/z2xQc/+ycjH1VJ04JVvrSaLHXrbmFxijxXjpdgSQjdBfKGFyAa2674TMcC4FiJCd5fcHG2tj5QgBeBnDCg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^20.1.0"
+    repository-provider "^20.1.1"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -2186,16 +2186,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.37:
-  version "1.10.37"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.37.tgz#188c34dec456e2407e2439666c41c233ab8ed82c"
-  integrity sha512-67pDWDESIn61CpoMoIVQZPlqnX/d5m9v+J86hjjnYN+nb2PZ+qA3x7ZCDNO9FlF/QnONy5RgbOm43S2v1NmcnA==
+gitea-repository-provider@^1.10.39:
+  version "1.10.39"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.39.tgz#8f6bd321a6af356a24084271c5efa813c16a5851"
+  integrity sha512-RtsNHivYlY48+AMeqMdoOtYK0sR+MTN3RU7d7z10WytRKMqtMaAqMijIA8v4K18BJMyKZYitX6QhcyjCMMlvzw==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^20.0.0"
+    repository-provider "^20.1.1"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5266,10 +5266,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^20.0.0, repository-provider@^20.1.0:
-  version "20.1.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-20.1.0.tgz#3fb0ed2ff6d36ecf5a0f09a66a98dce9b4bc49d8"
-  integrity sha512-LYikZpIzhL/9GlC33ylpIWfKVy5CXg4GjTQsLA3lHS/ojnVd1Obspj4d4njic4cGjxD5zgfp7CdbPM6wW7RnPQ==
+repository-provider@^20.1.1:
+  version "20.1.1"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-20.1.1.tgz#a229430dfd16578f4c5403533cafeede3778809c"
+  integrity sha512-Gky05mPP5y65bUlOlZHft3P0LVa1oirRzoV95kDtwgX4I506l/NJZpE8zNf3zNZV+/2BKrYIhEBp+x4dRGGyfA==
   dependencies:
     loglevel-mixin "^5.0.3"
     matching-iterator "^1.0.0"
