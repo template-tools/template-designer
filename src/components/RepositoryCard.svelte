@@ -36,14 +36,6 @@
   <Attributes object={repository}/>
 
   <ul>
-    {#each repository.urls as url}
-      <li>
-        <a href={url}>{url}</a>
-      </li>
-    {/each}
-  </ul>
-
-  <ul>
     {#each $branches as branch}
       <li>{branch.name}</li>
     {/each}
