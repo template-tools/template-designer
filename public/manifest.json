@@ -10,5 +10,6 @@
       "src": "images/git.svg",
       "sizes": "150x150"
     }
-  ]
+  ],
+  "background_color": "#ffffff"
 }
