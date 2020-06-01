@@ -1,18 +1,12 @@
-import ObjectRoute from "../object-route.mjs";
-import { provider } from "../provider.mjs";
+import IteratorRoute from "../iterator-route.mjs";
+import provider from "../provider.mjs";
 import Repositories from "../pages/Repositories.svelte";
 
-export const repositoriesRoute = new ObjectRoute(
+export const repositoriesRoute = new IteratorRoute(
   "/repository",
   Repositories,
   {
-    initial: [],
-    objectForProperties: async properties => {
-      const repositories = [];
-      for await (const r of provider.repositories()) {
-        repositories.push(r);
-      }
-      return repositories; }
+    iteratorForProperties: async properties => provider.repositories()
   }
 );
 

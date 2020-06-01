@@ -7,3 +7,4 @@ export const provider = AggregationProvider.initialize(
   localStorage
 );
 
+export default provider;

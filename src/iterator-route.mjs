@@ -1,6 +1,6 @@
 import { Route } from "svelte-guard-history-router";
 
-export class ObjectRoute extends Route {
+export class IteratorRoute extends Route {
   constructor(path, component, options = {}) {
     super(path, component);
 
@@ -8,8 +8,10 @@ export class ObjectRoute extends Route {
       subscriptions: { value: new Set() }
     };
 
-    if (options.objectForProperties) {
-      properties.objectForProperties = { value: options.objectForProperties };
+    if (options.iteratorForProperties) {
+      properties.iteratorForProperties = {
+        value: options.iteratorForProperties
+      };
     }
     if (options.propertiesForObject) {
       properties.propertiesForObject = { value: options.propertiesForObject };
@@ -19,14 +21,17 @@ export class ObjectRoute extends Route {
   }
 
   async enter(transition) {
-    if (this.initial) {
-      this.subscriptions.forEach(subscription => subscription(this.initial));
-    }
+    this.subscriptions.forEach(subscription => subscription([]));
 
     const properties = transition.router.state.params;
-    const object = await this.objectForProperties(properties);
-    console.log("OBJECT", object, properties);
-    this.subscriptions.forEach(subscription => subscription(object));
+
+    const entries = [];
+    for await (const e of await this.iteratorForProperties(properties)) {
+      entries.push(e);
+    }
+
+    console.log("ITERATOR", entries, properties);
+    this.subscriptions.forEach(subscription => subscription(entries));
   }
 
   propertiesForObject(object) {
@@ -35,15 +40,14 @@ export class ObjectRoute extends Route {
 
   pathFor(...objects) {
     const properties = this.propertiesForObject(...objects);
-   // console.log(...objects,properties);
     return this.path.replace(/:(\w+)/g, (m, name) => properties[name]);
   }
 
   subscribe(subscription) {
     this.subscriptions.add(subscription);
-    subscription(undefined);
+    subscription([]);
     return () => this.subscriptions.delete(subscription);
   }
 }
 
-export default ObjectRoute;
+export default IteratorRoute;
