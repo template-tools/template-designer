@@ -5,11 +5,11 @@ import About from "./pages/About.svelte";
 import Settings from "./pages/Settings.svelte";
 import Repositories from "./pages/Repositories.svelte";
 import RepositoryGroups from "./pages/RepositoryGroups.svelte";
-import RepositoryGroup from "./pages/RepositoryGroup.svelte";
 import Branch from "./pages/Branch.svelte";
 import ContentEntry from "./pages/ContentEntry.svelte";
 
-import { repositoryRoute } from "./repository.mjs";
+import repository from "./routes/repository.mjs";
+import repositoryGroup from "./routes/repository-group.mjs";
 
 export const router = new Router(
   [
@@ -18,8 +18,8 @@ export const router = new Router(
     route("/settings", Settings),
     route("/group", RepositoryGroups),
     route("/repository", Repositories),
-    route("/repository/:group", RepositoryGroup),
-    repositoryRoute,
+    repositoryGroup,
+    repository,
     route("/repository/:group/:repository/branch/:branch", Branch),
     route("/repository/:group/:repository/branch/:branch/:entry", ContentEntry)
   ],

@@ -15,11 +15,6 @@ export const repositoryGroups = iteratorStore(() =>
   provider.repositoryGroups()
 );
 
-export const repositoryGroup = readable(undefined, set => {
-  provider.repositoryGroup(router.state.params.group).then(r => set(r));
-  return () => {};
-});
-
 export const repositories = iteratorStore(() => provider.repositories());
 
 export const branch = readable(undefined, set => {

@@ -1,6 +1,6 @@
 <script>
   import { Link } from "svelte-guard-history-router";
-  import { repositoryRoute } from "../repository.mjs";
+  import repositoryRoute from "../routes/repository.mjs";
 
   export let repository;
 </script>
