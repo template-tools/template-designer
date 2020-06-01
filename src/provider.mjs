@@ -1,12 +1,10 @@
 import { readable } from "svelte/store";
-import BitbucketProvider from "bitbucket-repository-provider";
-import GiteaProvider from "gitea-repository-provider";
-import AggregationProvider from "aggregation-repository-provider";
 import { iteratorStore } from "./iterator-store.mjs";
+import { providerFactories } from "./provider-factories.mjs";
+import AggregationProvider from "aggregation-repository-provider";
 
 import { router } from "./router.mjs";
 
-export const providerFactories = [BitbucketProvider, GiteaProvider];
 export const provider = AggregationProvider.initialize(
   providerFactories,
   { logLevel: "trace" },
@@ -23,7 +21,6 @@ export const repositoryGroup = readable(undefined, set => {
 });
 
 export const repositories = iteratorStore(() => provider.repositories());
-
 
 export const branch = readable(undefined, set => {
   provider

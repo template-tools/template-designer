@@ -12,9 +12,6 @@
 <div class="card">
   <div class="card-content">
     <h5 class="card-title">{repository.name}</h5>
-    <h6 class="card-subtitle">{repository.description}</h6>
-    <p class="card-text">Id {repository.id}</p>
-
     <Attributes object={repository}/>
   </div>
 

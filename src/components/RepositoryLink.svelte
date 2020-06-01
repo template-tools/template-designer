@@ -1,11 +1,12 @@
 <script>
   import { Link } from "svelte-guard-history-router";
-  export let repository;
+  import { repositoryRoute } from "../repository.mjs";
 
+  export let repository;
 </script>
 
 {#if repository}
-  <Link href="/repository/{repository.owner.name}/{repository.name}">
+  <Link href="{repositoryRoute.pathFor(repository)}">
     <slot>
       <img
         src="images/{repository.provider.name}.svg"
