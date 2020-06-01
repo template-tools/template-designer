@@ -1,5 +1,4 @@
 import { readable } from "svelte/store";
-import { iteratorStore } from "./iterator-store.mjs";
 import { providerFactories } from "./provider-factories.mjs";
 import AggregationProvider from "aggregation-repository-provider";
 
@@ -10,8 +9,6 @@ export const provider = AggregationProvider.initialize(
   { logLevel: "trace" },
   localStorage
 );
-
-export const repositories = iteratorStore(() => provider.repositories());
 
 export const branch = readable(undefined, set => {
   provider

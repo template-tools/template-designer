@@ -1,6 +1,6 @@
 <script>
   import RepositoryLink from "../components/RepositoryLink.svelte";
-  import { repositories } from "../provider.mjs";
+  import repositoriesRoute from "../routes/repositories.mjs";
 </script>
 
 <div>
@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $repositories as repository (repository.fullName)}
+      {#each $repositoriesRoute as repository (repository.fullName)}
         <tr>
           <td>
             <RepositoryLink {repository} />
