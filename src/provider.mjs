@@ -11,10 +11,6 @@ export const provider = AggregationProvider.initialize(
   localStorage
 );
 
-export const repositoryGroups = iteratorStore(() =>
-  provider.repositoryGroups()
-);
-
 export const repositories = iteratorStore(() => provider.repositories());
 
 export const branch = readable(undefined, set => {

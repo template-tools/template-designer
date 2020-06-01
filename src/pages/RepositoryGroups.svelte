@@ -1,6 +1,6 @@
 <script>
   import RepositoryGroupLink from "../components/RepositoryGroupLink.svelte";
-  import { repositoryGroups } from "../provider.mjs";
+  import repositoryGroupsRoute from "../routes/repository-groups.mjs";
 </script>
 
 <div>
@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $repositoryGroups as repositoryGroup (repositoryGroup.name)}
+      {#each $repositoryGroupsRoute as repositoryGroup (repositoryGroup.name)}
         <tr>
           <td>
             <RepositoryGroupLink {repositoryGroup} />

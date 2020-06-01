@@ -8,6 +8,10 @@ export class ObjectRoute extends Route {
       subscriptions: { value: new Set() }
     };
 
+    if (options.initial) {
+      properties.initial = { value: options.initial };
+    }
+
     if (options.objectForProperties) {
       properties.objectForProperties = { value: options.objectForProperties };
     }
@@ -19,6 +23,10 @@ export class ObjectRoute extends Route {
   }
 
   async enter(transition) {
+    if(this.initial) {
+      this.subscriptions.forEach(subscription => subscription(this.initial));
+    }
+
     const properties = transition.router.state.params;
     const object = await this.objectForProperties(properties);
     console.log("OBJECT", object, properties);
@@ -38,9 +46,13 @@ export class ObjectRoute extends Route {
     return this.path.replace(/:(\w+)/g, (m, name) => properties[name]);
   }
 
+  get initial() {
+    return undefined;
+  }
+
   subscribe(subscription) {
     this.subscriptions.add(subscription);
-    subscription(undefined);
+    subscription(this.initial);
     return () => this.subscriptions.delete(subscription);
   }
 }
