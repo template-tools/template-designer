@@ -6,24 +6,13 @@
     .map(key => [key, object[key]]);
 </script>
 
-  <table class="striped hoverable">
-    <thead>
+<table class="striped hoverable">
+  <tbody>
+    {#each attributes as attribute (attribute[0])}
       <tr>
-        <th aria-sort="none">Name</th>
-        <th>Value</th>
+        <td>{attribute[0]}</td>
+        <td>{attribute[1]}</td>
       </tr>
-    </thead>
-    <tbody>
-      {#each attributes as attribute (attribute[0])}
-        <tr>
-          <td>
-            {attribute[0]}
-          </td>
-          <td>
-            {attribute[1]}
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
-
+    {/each}
+  </tbody>
+</table>
