@@ -22,10 +22,10 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^2.7.10",
-    "bitbucket-repository-provider": "^3.6.5",
+    "aggregation-repository-provider": "^2.7.11",
+    "bitbucket-repository-provider": "^3.6.6",
     "buffer": "^5.6.0",
-    "gitea-repository-provider": "^1.10.39",
+    "gitea-repository-provider": "^1.10.40",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "https://github.com/arlac77/svelte-guard-history-router.git#development",
@@ -75,7 +75,7 @@
     "installdir": "/services/${name}/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
-      "nginx-mainline": ">=1.17.10"
+      "nginx-mainline": ">=1.19.0"
     }
   },
   "release": {

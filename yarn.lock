@@ -405,13 +405,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.7.10:
-  version "2.7.10"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.10.tgz#d87d6806505c37ac78062589c927c9d903e34de5"
-  integrity sha512-+uPcAJCr3NlkjDg9aavxFk8DKpMbVSzUsEibuE9C2DsOLekzzy3LWh9JWXqQL2bleni4yWqDdEhqwvFouBl5gw==
+aggregation-repository-provider@^2.7.11:
+  version "2.7.11"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.7.11.tgz#9464e2981fe0d0c9ebbf1ec8792fc95066ca9b30"
+  integrity sha512-vfOEzyCwnd9zJoDPssFuIWdztn+S8x3+RXAZkJxnD395F2UdO1oHjz2I01ChfPLgQR1myWhDODKyyqqhNwCf8w==
   dependencies:
     aggregate-async-iterator "^1.0.0"
-    repository-provider "^20.1.1"
+    repository-provider "^20.1.2"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -628,16 +628,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.5.tgz#4a56a650e6fc9490b699c69c6317c8b4e21075fa"
-  integrity sha512-Bqq/z2xQc/+ycjH1VJ04JVvrSaLHXrbmFxijxXjpdgSQjdBfKGFyAa2674TMcC4FiJCd5fcHG2tj5QgBeBnDCg==
+bitbucket-repository-provider@^3.6.6:
+  version "3.6.6"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.6.tgz#a56432b5c9600a933b1988c4a8bbb93d70e66334"
+  integrity sha512-Cb8euRJ176J8xSwkyzVo+qRHA/aW76qICg7SuYVfkEjVH9HADnx4WcLwORR48ujzk4hf2JotartLgyKcj112mA==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^20.1.1"
+    repository-provider "^20.1.2"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -2186,16 +2186,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.39:
-  version "1.10.39"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.39.tgz#8f6bd321a6af356a24084271c5efa813c16a5851"
-  integrity sha512-RtsNHivYlY48+AMeqMdoOtYK0sR+MTN3RU7d7z10WytRKMqtMaAqMijIA8v4K18BJMyKZYitX6QhcyjCMMlvzw==
+gitea-repository-provider@^1.10.40:
+  version "1.10.40"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.40.tgz#9cf444114a9d23c4988b088247de21f47de4667e"
+  integrity sha512-yTlaW8Ww9ycCH/rTMp4ibrGTuFaCy4AC1xd5Da5Axj9uVP2+312XfXbzRP82qNC68Yr3DeoBbGq/HHu+mpUQBQ==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.0.0"
     node-fetch "^3.0.0-beta.6-exportfix"
     one-time-execution-method "^2.0.1"
-    repository-provider "^20.1.1"
+    repository-provider "^20.1.2"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5266,10 +5266,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^20.1.1:
-  version "20.1.1"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-20.1.1.tgz#a229430dfd16578f4c5403533cafeede3778809c"
-  integrity sha512-Gky05mPP5y65bUlOlZHft3P0LVa1oirRzoV95kDtwgX4I506l/NJZpE8zNf3zNZV+/2BKrYIhEBp+x4dRGGyfA==
+repository-provider@^20.1.2:
+  version "20.1.2"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-20.1.2.tgz#e31436d10c7d8e62bf8c30a9dfa5ac477e150c0a"
+  integrity sha512-0eEw8QC/x6+24srdsLpViuJxhg3YbIWtc1tSgW+YE+Zz7Qskz3u/Wv0OZohThuTyCT/tsSKSHVC9XRdtxfYGfw==
   dependencies:
     loglevel-mixin "^5.0.3"
     matching-iterator "^1.0.0"
@@ -6031,7 +6031,7 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  resolved "https://github.com/arlac77/svelte-guard-history-router.git#2777c2ff9238c5c71f1116db1139cb84df98ee14"
+  resolved "https://github.com/arlac77/svelte-guard-history-router.git#e1c6c8e27ae82454aadb34005f4b8d6390e7b262"
   dependencies:
     multi-path-matcher "^2.0.14"
 
