@@ -1,11 +1,13 @@
-import { Route } from "svelte-guard-history-router";
+import { StoreRoute } from "svelte-guard-history-router";
 
-export class ObjectRoute extends Route {
+export class ObjectStoreRoute extends StoreRoute {
   constructor(path, component, options = {}) {
     super(path, component);
 
+    let value;
+
     const properties = {
-      subscriptions: { value: new Set() }
+      value: { get: () => value, set: v => (value = v) }
     };
 
     if (options.objectForProperties) {
@@ -19,13 +21,11 @@ export class ObjectRoute extends Route {
   }
 
   async enter(transition) {
-    if (this.initial) {
-      this.subscriptions.forEach(subscription => subscription(this.initial));
-    }
-
     const properties = transition.router.state.params;
     const object = await this.objectForProperties(properties);
     console.log("OBJECT", object, properties);
+
+    this.value = object;
     this.subscriptions.forEach(subscription => subscription(object));
   }
 
@@ -35,15 +35,9 @@ export class ObjectRoute extends Route {
 
   pathFor(...objects) {
     const properties = this.propertiesForObject(...objects);
-   // console.log(...objects,properties);
+    // console.log(...objects,properties);
     return this.path.replace(/:(\w+)/g, (m, name) => properties[name]);
-  }
-
-  subscribe(subscription) {
-    this.subscriptions.add(subscription);
-    subscription(undefined);
-    return () => this.subscriptions.delete(subscription);
   }
 }
 
-export default ObjectRoute;
+export default ObjectStoreRoute;

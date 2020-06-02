@@ -7,23 +7,19 @@
   } from "svelte-guard-history-router";
   import { Menue } from "svelte-common";
   import About from "./pages/About.svelte";
+  import Home from "./pages/Home.svelte";
   import Settings from "./pages/Settings.svelte";
 
   import * as style from "./main.css";
   import router from "./router.mjs";
-
-  let state;
-
-  $: {
-    state = $router.state;
-  }
 </script>
 
 <nav>
-  <a href="/" use:link={router} use:active={router}>
+      <TargetRoute def={['/', Home]} {router}>
     <img class="logo" src="images/git.svg" alt="Template Designer" />
-    Template Designer
-  </a>
+    Template Designer      
+      </TargetRoute>
+
   <ul class="left">
     <li>
       <a href="/group" use:link={router} use:active={router}>Groups</a>
@@ -43,6 +39,5 @@
   </ul>
 </nav>
 <main>
-  {JSON.stringify(state.params)}
   <Outlet {router} />
 </main>

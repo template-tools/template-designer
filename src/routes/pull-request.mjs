@@ -1,8 +1,8 @@
-import ObjectRoute from "../object-route.mjs";
+import ObjectStoreRoute from "../object-store-route.mjs";
 import provider from "../provider.mjs";
 import PullRequest from "../pages/PullRequest.svelte";
 
-export const pullRequestRoute = new ObjectRoute(
+export const pullRequestRoute = new ObjectStoreRoute(
   "/repository/:group/:repository/pr/:pr",
   PullRequest,
   {

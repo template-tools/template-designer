@@ -1,8 +1,8 @@
-import ObjectRoute from "../object-route.mjs";
+import ObjectStoreRoute from "../object-store-route.mjs";
 import provider from "../provider.mjs";
 import Branch from "../pages/Branch.svelte";
 
-export const branchRoute = new ObjectRoute(
+export const branchRoute = new ObjectStoreRoute(
   "/repository/:group/:repository/branch/:branch",
   Branch,
   {
