@@ -7,12 +7,15 @@ export const contentEntryRoute = new ObjectRoute(
   ContentEntry,
   {
     objectForProperties: async properties => {
+
+      console.log("objectForProperties", properties);
+
       const branch = await provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );
 
+      console.log(branch);
       const entry = await branch.entry(properties.entry);
-
       console.log(entry);
 
       return entry;

@@ -1,4 +1,6 @@
 <script>
+  import { Link } from "svelte-guard-history-router";
+
   import iteratorStore from "../iterator-store.mjs";
   import Attributes from "./Attributes.svelte";
   import RepositoryLink from "./RepositoryLink.svelte";
@@ -20,7 +22,9 @@
   <ul>
     {#each $entries as entry (entry.name)}
       <li>
-        <a href={contentEntryRoute.pathFor(branch, entry)}>{entry.name}</a>
+        <Link href={contentEntryRoute.pathFor(branch, entry)}>
+          {entry.name}
+        </Link>
       </li>
     {/each}
   </ul>
