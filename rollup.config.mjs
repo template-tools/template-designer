@@ -14,6 +14,7 @@ import consts from "rollup-plugin-consts";
 
 const production = !process.env.ROLLUP_WATCH;
 const dist = "public";
+const bundlePrefix = `${dist}/bundle.`;
 const port = 5000;
 
 export default () => {
@@ -53,7 +54,7 @@ export default () => {
         interop: false,
         sourcemap: true,
         format: "esm",
-        file: `${dist}/bundle.mjs`,
+        file: `${bundlePrefix}main.mjs`,
         plugins: [production && terser({ keep_classnames: true })]
       },
       plugins: [
@@ -66,7 +67,7 @@ export default () => {
         }),
         svelte({
           dev: !production,
-          css: css => css.write(`${dist}/bundle.svelte.css`)
+          css: css => css.write(`${bundlePrefix}svelte.css`)
         }),
         ...resolverPlugins,
         !production &&
@@ -90,7 +91,7 @@ export default () => {
         interop: false,
         sourcemap: true,
         format: "esm",
-        file: `${dist}/bundle.service-worker.mjs`,
+        file: `${bundlePrefix}service-worker.mjs`,
         plugins: [production && terser()]
       },
       plugins: [...prePlugins, ...resolverPlugins]

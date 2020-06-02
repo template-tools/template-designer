@@ -8,7 +8,7 @@ export const ASSETS = [
     "images/git.svg",
     "favicon.ico",
     "index.html",
-    "bundle.mjs",
+    "bundle.main.mjs",
     "bundle.css",
     "bundle.svelte.css"
   ];
