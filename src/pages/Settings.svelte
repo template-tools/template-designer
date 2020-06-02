@@ -25,7 +25,7 @@
     const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
 
     try {
-      const response = fetch(url);
+      const response = await fetch(url);
       console.log(response);
     } catch (e) {
       console.log(e);
