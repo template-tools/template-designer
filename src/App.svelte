@@ -15,10 +15,10 @@
 </script>
 
 <nav>
-      <TargetRoute def={['/', Home]} {router}>
+  <TargetRoute def={['/', Home]} {router}>
     <img class="logo" src="images/git.svg" alt="Template Designer" />
-    Template Designer      
-      </TargetRoute>
+    Template Designer
+  </TargetRoute>
 
   <ul class="left">
     <li>

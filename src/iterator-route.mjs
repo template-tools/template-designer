@@ -1,11 +1,13 @@
-import { Route } from "svelte-guard-history-router";
+import { StoreRoute } from "svelte-guard-history-router";
 
-export class IteratorRoute extends Route {
+export class IteratorRoute extends StoreRoute {
   constructor(path, component, options = {}) {
     super(path, component);
 
+    let value = [];
+
     const properties = {
-      subscriptions: { value: new Set() }
+      value: { get: () => value, set: v => (value = v) }
     };
 
     if (options.iteratorForProperties) {
@@ -24,11 +26,13 @@ export class IteratorRoute extends Route {
     this.subscriptions.forEach(subscription => subscription([]));
 
     const properties = transition.router.state.params;
-
     const entries = [];
+
     for await (const e of await this.iteratorForProperties(properties)) {
       entries.push(e);
     }
+
+    this.value =entries;
 
     console.log("ITERATOR", entries, properties);
     this.subscriptions.forEach(subscription => subscription(entries));
@@ -41,12 +45,6 @@ export class IteratorRoute extends Route {
   pathFor(...objects) {
     const properties = this.propertiesForObject(...objects);
     return this.path.replace(/:(\w+)/g, (m, name) => properties[name]);
-  }
-
-  subscribe(subscription) {
-    this.subscriptions.add(subscription);
-    subscription([]);
-    return () => this.subscriptions.delete(subscription);
   }
 }
 
