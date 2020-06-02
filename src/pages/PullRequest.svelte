@@ -4,5 +4,5 @@
 </script>
 
 {#if $pullRequestRoute}
-  <BranchCard pullRequest={$pullRequestRoute}/>
+  <PullRequestCard pullRequest={$pullRequestRoute}/>
 {:else}No such pull request{/if}
