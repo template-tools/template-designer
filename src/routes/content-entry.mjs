@@ -12,6 +12,14 @@ export const contentEntryRoute = new ObjectRoute(
       );
 
       return branch.entry(properties.entry);
+    },
+    propertiesForObject: (branch, entry) => {
+      return {
+        repository: branch.repository.name,
+        group: branch.repository.owner.name,
+        branch: branch.name,
+        name: entry.name
+      };
     }
   }
 );
