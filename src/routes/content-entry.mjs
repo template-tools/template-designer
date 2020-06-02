@@ -1,5 +1,5 @@
 import ObjectRoute from "../object-route.mjs";
-import { provider } from "../provider.mjs";
+import provider from "../provider.mjs";
 import ContentEntry from "../pages/ContentEntry.svelte";
 
 export const contentEntryRoute = new ObjectRoute(
@@ -11,14 +11,18 @@ export const contentEntryRoute = new ObjectRoute(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );
 
-      return branch.entry(properties.entry);
+      const entry = await branch.entry(properties.entry);
+
+      console.log(entry);
+
+      return entry;
     },
     propertiesForObject: (branch, entry) => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
         branch: branch.name,
-        name: entry.name
+        entry: entry.name
       };
     }
   }

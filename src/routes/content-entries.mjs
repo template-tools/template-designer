@@ -12,12 +12,11 @@ export const contentEntriesRoute = new IteratorRoute(
       );
       return branch.entries();
     },
-    propertiesForObject: (branch, entry) => {
+    propertiesForObject: branch => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
-        branch: branch.name,
-        name: entry.name
+        branch: branch.name
       };
     }
   }

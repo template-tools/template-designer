@@ -1,5 +1,5 @@
 import ObjectRoute from "../object-route.mjs";
-import { provider } from "../provider.mjs";
+import provider from "../provider.mjs";
 import RepositoryGroup from "../pages/RepositoryGroup.svelte";
 
 export const repositoryGroupRoute = new ObjectRoute(
