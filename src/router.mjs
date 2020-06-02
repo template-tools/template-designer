@@ -7,6 +7,7 @@ import repositoryGroup from "./routes/repository-group.mjs";
 import repositories from "./routes/repositories.mjs";
 import repository from "./routes/repository.mjs";
 import branch from "./routes/branch.mjs";
+import pullRequest from "./routes/pull-request.mjs";
 import conentEntries from "./routes/content-entries.mjs";
 import conentEntry from "./routes/content-entry.mjs";
 
@@ -18,6 +19,7 @@ export const router = new Router(
     repositoryGroup,
     repository,
     branch,
+    pullRequest,
     conentEntries,
     conentEntry
   ],
