@@ -1,15 +1,22 @@
 <script>
-  import { Outlet, link, active } from "svelte-guard-history-router";
+  import {
+    TargetRoute,
+    Outlet,
+    link,
+    active
+  } from "svelte-guard-history-router";
   import { Menue } from "svelte-common";
+  import About from "./pages/About.svelte";
+  import Settings from "./pages/Settings.svelte";
+
   import * as style from "./main.css";
-  import { router } from "./router.mjs";
+  import router from "./router.mjs";
 
   let state;
 
   $: {
     state = $router.state;
   }
-
 </script>
 
 <nav>
@@ -25,10 +32,10 @@
       </a>
     </li>
     <li>
-      <a href="/about" use:link={router} use:active={router}>About</a>
+      <TargetRoute def={['/about', About]} {router}>About</TargetRoute>
     </li>
     <li>
-      <a href="/settings" use:link={router} use:active={router}>Settings</a>
+      <TargetRoute def={['/settings', Settings]} {router}>Settings</TargetRoute>
     </li>
   </ul>
   <ul>
