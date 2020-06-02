@@ -14,39 +14,41 @@
     localStorage.GITEA_TOKEN = gitea_token;
     localStorage.GITEA_API = gitea_api;
   }
-  
+
   async function oauth() {
     const api = "https://mfelten.dynv6.net/services/git";
     const client_id = "ed012bee-8b62-47ad-aa73-cc3cbd15cb68";
-    const redirect_uri = "https://mfelten.dynv6.net/services/component-template-designer/about";
+    const redirect_uri =
+      "https://mfelten.dynv6.net/services/component-template-designer/about";
     const state = "dalöfskksdfjfkl";
-  
-    const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
-    
-    const response = fetch(url);
-    
-    console.log(response);
-  }
-  
-  oauth();
-  
-</script>
 
+    const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
+
+    try {
+      const response = fetch(url);
+      console.log(response);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  oauth();
+</script>
 
 <form on:submit|preventDefault={submit}>
 
-<ul>
-  {#each providerFactories as factory}
-    <li>
-      <img
-        src="images/{factory.name}.svg"
-        width="16"
-        height="16"
-        alt={factory.name} />
-      {factory.name}
-    </li>
-  {/each}
-</ul>
+  <ul>
+    {#each providerFactories as factory}
+      <li>
+        <img
+          src="images/{factory.name}.svg"
+          width="16"
+          height="16"
+          alt={factory.name} />
+        {factory.name}
+      </li>
+    {/each}
+  </ul>
 
   {#if message}
     <slot name="message">
