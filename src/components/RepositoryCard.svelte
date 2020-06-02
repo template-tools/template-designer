@@ -1,5 +1,5 @@
 <script>
-  import { iteratorStore } from "../iterator-store.mjs";
+  import iteratorStore from "../iterator-store.mjs";
   import HookCard from "./HookCard.svelte";
   import BranchLink from "./BranchLink.svelte";
   import RepositoryGroupLink from "./RepositoryGroupLink.svelte";

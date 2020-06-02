@@ -1,5 +1,5 @@
 <script>
-  import { providerFactories } from "../provider-factories.mjs";
+  import providerFactories from "../provider-factories.mjs";
 
   let message;
   let bitbucket_username = localStorage.BITBUCKET_USERNAME;

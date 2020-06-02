@@ -1,5 +1,5 @@
 <script>
-  import { iteratorStore } from "../iterator-store.mjs";
+  import iteratorStore from "../iterator-store.mjs";
   import Attributes from "./Attributes.svelte";
   import RepositoryLink from "./RepositoryLink.svelte";
   import contentEntryRoute from "../routes/content-entry.mjs";

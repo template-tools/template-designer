@@ -13,3 +13,5 @@ export function iteratorStore(iterator, initial = []) {
     return () => {};
   });
 }
+
+export default iteratorStore;
