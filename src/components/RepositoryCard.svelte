@@ -9,6 +9,7 @@
 
   let branches = iteratorStore(() => repository.branches());
   let hooks = iteratorStore(() => repository.hooks());
+  let pullRequests = iteratorStore(() => repository.pullRequests());
 </script>
 
 <div class="card">
@@ -29,5 +30,9 @@
 
   {#each $hooks as hook}
     <HookCard {hook} />
+  {/each}
+
+  {#each $pullRequests as pullRequest}
+    <HookCard {pullRequest} />
   {/each}
 </div>
