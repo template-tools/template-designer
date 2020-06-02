@@ -1,13 +1,15 @@
 <script>
-    export let entry;
+  import contentEntrysRoute from "../routes/content-entry.mjs";
 </script>
 
-<h1>ContentEntry {entry.name}</h1>
+{#if $contentEntrysRoute}
+  <h1>ContentEntry {$contentEntrysRoute.name}</h1>
 
-{#await entry.getString()}
-	<p>...waiting</p>
-{:then string}
-	{string}
-{:catch error}
-	<p style="color: red">{error.message}</p>
-{/await}
+  {#await $contentEntrysRoute.getString()}
+    <p>...waiting</p>
+  {:then string}
+    {string}
+  {:catch error}
+    <p style="color: red">{error.message}</p>
+  {/await}
+{:else}No such entry{/if}
