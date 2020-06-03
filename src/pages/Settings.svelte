@@ -27,6 +27,17 @@
     try {
       const response = await fetch(url);
       console.log(response);
+      
+ /*     
+      {
+	"client_id": "YOUR_CLIENT_ID",
+	"client_secret": "YOUR_CLIENT_SECRET",
+	"code": "RETURNED_CODE",
+	"grant_type": "authorization_code",
+	"redirect_uri": "REDIRECT_URI"
+}
+*/
+
     } catch (e) {
       console.log(e);
     }
