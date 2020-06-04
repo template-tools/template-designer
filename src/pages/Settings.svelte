@@ -1,6 +1,9 @@
 <script>
   import providerFactories from "../provider-factories.mjs";
+  import provider from "../provider.mjs";
   import { api, client_id, redirect_uri, state } from "../auth.mjs";
+
+  const providers = provider.providers;
 
   let message;
   let bitbucket_username = localStorage.BITBUCKET_USERNAME;
@@ -25,7 +28,6 @@
       //console.log(response.redirected);
 
       window.location = response.url;
-
     } catch (e) {
       console.log(e);
     }
@@ -36,18 +38,45 @@
 
 <form on:submit|preventDefault={submit}>
 
-  <ul>
-    {#each providerFactories as factory}
-      <li>
-        <img
-          src="images/{factory.name}.svg"
-          width="16"
-          height="16"
-          alt={factory.name} />
-        {factory.name}
-      </li>
-    {/each}
-  </ul>
+  <table>
+    <thead>
+      <th>Factories</th>
+    </thead>
+    <tbody>
+      {#each providerFactories as factory}
+        <tr>
+          <td>
+            <img
+              src="images/{factory.name}.svg"
+              width="16"
+              height="16"
+              alt={factory.name} />
+            {factory.name}
+          </td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <th>Active</th>
+    </thead>
+    <tbody>
+      {#each providers as provider}
+        <tr>
+          <td>
+            <img
+              src="images/{provider.name}.svg"
+              width="16"
+              height="16"
+              alt={provider.name} />
+            {provider.name}
+          </td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
 
   {#if message}
     <slot name="message">
