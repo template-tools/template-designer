@@ -1,4 +1,4 @@
-import ObjectStoreRoute from "../object-store-route.mjs";
+import { ObjectStoreRoute } from "svelte-guard-history-router";
 import provider from "../provider.mjs";
 import Branch from "../pages/Branch.svelte";
 
