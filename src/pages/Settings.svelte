@@ -19,7 +19,7 @@
     localStorage.GITEA_API = gitea_api;
   }
 
-  async function oauth() {
+  async function addProvider() {
     try {
       const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
 
@@ -32,8 +32,6 @@
       console.log(e);
     }
   }
-
-  oauth();
 </script>
 
 <form on:submit|preventDefault={submit}>
@@ -43,7 +41,7 @@
       <th>Factories</th>
     </thead>
     <tbody>
-      {#each providerFactories as factory}
+      {#each providerFactories as factory (factory.name)}
         <tr>
           <td>
             <img
@@ -52,6 +50,9 @@
               height="16"
               alt={factory.name} />
             {factory.name}
+          </td>
+          <td>
+              <button id="add" on:click={addProvider}>Add</button>
           </td>
         </tr>
       {/each}
