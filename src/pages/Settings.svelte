@@ -1,5 +1,6 @@
 <script>
   import providerFactories from "../provider-factories.mjs";
+  import { api, client_id, redirect_uri, state } from "../auth.mjs";
 
   let message;
   let bitbucket_username = localStorage.BITBUCKET_USERNAME;
@@ -16,27 +17,14 @@
   }
 
   async function oauth() {
-    const api = "https://mfelten.dynv6.net/services/git";
-    const client_id = "ed012bee-8b62-47ad-aa73-cc3cbd15cb68";
-    const redirect_uri =
-      "https://mfelten.dynv6.net/services/component-template-designer/about";
-    const state = "dalöfskksdfjfkl";
-
-    const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
-
     try {
+      const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
+
       const response = await fetch(url);
       console.log(response);
-      
- /*     
-      {
-	"client_id": "YOUR_CLIENT_ID",
-	"client_secret": "YOUR_CLIENT_SECRET",
-	"code": "RETURNED_CODE",
-	"grant_type": "authorization_code",
-	"redirect_uri": "REDIRECT_URI"
-}
-*/
+      //console.log(response.redirected);
+
+      window.location = response.url;
 
     } catch (e) {
       console.log(e);
