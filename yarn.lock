@@ -144,9 +144,9 @@
     "@octokit/plugin-rest-endpoint-methods" "3.15.0"
 
 "@octokit/types@^4.0.1", "@octokit/types@^4.1.6":
-  version "4.1.7"
-  resolved "http://mfelten.dynv6.net/services/verdaccio/@octokit%2ftypes/-/types-4.1.7.tgz#efb1c26b6e6201b7d6e56b9a17e73d0541401567"
-  integrity sha512-2ydXNFLsoJbm5D3zvAkbK0y9JaS4eBZ4sk0DJcOLH1sY+p3H861ysARJLLQQtztN5y5vvxKS12JRUwoLkEO4Ag==
+  version "4.1.8"
+  resolved "http://mfelten.dynv6.net/services/verdaccio/@octokit%2ftypes/-/types-4.1.8.tgz#31c35013edc583b35a48b72694e4bc9967db91a6"
+  integrity sha512-TO+vh3IdEfkuYxQ3N3+3U5KtWZy7ay7vC6/9oQJ0R3E1xxaBpO/DU+F0wqtceQuSvcGmsPjNPRI0ctBGCev3lQ==
   dependencies:
     "@types/node" ">= 8"
 
@@ -173,9 +173,9 @@
     magic-string "^0.25.5"
 
 "@rollup/plugin-node-resolve@^8.0.0":
-  version "8.0.0"
-  resolved "http://mfelten.dynv6.net/services/verdaccio/@rollup%2fplugin-node-resolve/-/plugin-node-resolve-8.0.0.tgz#47cc0775e31b6a531c88a40270377fe899a271cb"
-  integrity sha512-5poJCChrkVggXXND/sQ7yNqwjUNT4fP31gpRWCnSNnlXuUXTCMHT33xZrTGxgjm5Rl18MHj7iEzlCT8rYWwQSA==
+  version "8.0.1"
+  resolved "http://mfelten.dynv6.net/services/verdaccio/@rollup%2fplugin-node-resolve/-/plugin-node-resolve-8.0.1.tgz#364b5938808ee6b5164dea5ef7291be3f7395199"
+  integrity sha512-KIeAmueDDaYMqMBnUngLVVZhURwxA12nq/YB6nGm5/JpVyOMwI1fCVU3oL/dAnnLBG7oiPXntO5LHOiMrfNXCA==
   dependencies:
     "@rollup/pluginutils" "^3.0.8"
     "@types/resolve" "0.0.8"
@@ -191,9 +191,9 @@
   integrity sha512-krmINkjJOwl3dgXKUcEsVIzLnGDn27Ir2chb+Gxts6Lw2RODI6Li4Z8Zmsthojux+AJqgJ0W0mH/42tvYQ2/gQ==
 
 "@rollup/pluginutils@^3.0.4", "@rollup/pluginutils@^3.0.8":
-  version "3.0.10"
-  resolved "http://mfelten.dynv6.net/services/verdaccio/@rollup%2fpluginutils/-/pluginutils-3.0.10.tgz#a659b9025920378494cd8f8c59fbf9b3a50d5f12"
-  integrity sha512-d44M7t+PjmMrASHbhgpSbVgtL6EFyX7J4mYxwQ/c5eoaE6N2VgCgEcWVzNnwycIloti+/MpwFr8qfw+nRw00sw==
+  version "3.1.0"
+  resolved "http://mfelten.dynv6.net/services/verdaccio/@rollup%2fpluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
+  integrity sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==
   dependencies:
     "@types/estree" "0.0.39"
     estree-walker "^1.0.1"
@@ -6031,7 +6031,7 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  resolved "https://github.com/arlac77/svelte-guard-history-router.git#fb373dbebb13916f9372ed043f72b02340dfc251"
+  resolved "https://github.com/arlac77/svelte-guard-history-router.git#aeafd790fc6bc94d9eae0f49092c2a40df06583e"
   dependencies:
     multi-path-matcher "^2.0.14"
 
