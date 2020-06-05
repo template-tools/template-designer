@@ -3,7 +3,7 @@
 </script>
 
 {#if $contentEntrysRoute}
-  <h1>ContentEntry {$contentEntrysRoute.name}</h1>
+  <h1>{$contentEntrysRoute.name}</h1>
 
   {#await $contentEntrysRoute.getString()}
     <p>...waiting</p>

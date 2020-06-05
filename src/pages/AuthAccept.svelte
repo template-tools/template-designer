@@ -1,8 +1,6 @@
 <script>
   import { api, client_id, redirect_uri, state } from "../auth.mjs";
 
-
-
         /*     
       {
 	client_id
