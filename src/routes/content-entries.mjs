@@ -1,8 +1,8 @@
-import IteratorRoute from "../iterator-route.mjs";
+import { IteratorStoreRoute } from "svelte-guard-history-router";
 import provider from "../provider.mjs";
 import ContentEntries from "../pages/ContentEntries.svelte";
 
-export const contentEntriesRoute = new IteratorRoute(
+export const contentEntriesRoute = new IteratorStoreRoute(
   "/repository/:group/:repository/branch/:branch",
   ContentEntries,
   {
