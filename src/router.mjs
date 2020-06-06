@@ -16,7 +16,7 @@ import conentEntry from "./routes/content-entry.mjs";
 export const router = new Router(
   [
     route("*", Home),
-    route("/auth/accept",AuthAccept),
+    route("/auth/accept", AuthAccept),
     repositoryGroups,
     repositories,
     repositoryGroup,
