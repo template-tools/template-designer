@@ -6,9 +6,9 @@
   },
   "description": "drag & drop your template",
   "keywords": [
-    "web",
+    "component-template",
     "svelte",
-    "component-template"
+    "web"
   ],
   "contributors": [
     {
@@ -48,7 +48,7 @@
     "rollup-plugin-svelte": "git+https://github.com/ctavan/rollup-plugin-svelte.git#handle-missing-exports-gracefully",
     "rollup-plugin-terser": "^6.1.0",
     "semantic-release": "^17.0.8",
-    "svelte": "^3.23.0"
+    "svelte": "^3.23.1"
   },
   "repository": {
     "type": "git",
