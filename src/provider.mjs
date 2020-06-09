@@ -3,7 +3,7 @@ import AggregationProvider from "aggregation-repository-provider";
 
 export const provider = AggregationProvider.initialize(
   providerFactories,
-  { logLevel: "trace" },
+  { },
   localStorage
 );
 
