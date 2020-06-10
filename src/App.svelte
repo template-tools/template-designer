@@ -5,7 +5,6 @@
     link,
     active
   } from "svelte-guard-history-router";
-  import { Menue } from "svelte-common";
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import Settings from "./pages/Settings.svelte";
