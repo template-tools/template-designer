@@ -1,11 +1,11 @@
 <script>
-  import { Link } from "svelte-guard-history-router";
+  import ObjectLink from "./ObjectLink.svelte";
   import repositoryGroupRoute from "../routes/repository-group.mjs";
 
   export let repositoryGroup;
 </script>
 
-<Link href={repositoryGroupRoute.pathFor(repositoryGroup)}>
+<ObjectLink route={repositoryGroupRoute} object={repositoryGroup}>
   <slot>
     <img
       src="images/{repositoryGroup.provider.name}.svg"
@@ -20,4 +20,4 @@
       {repositoryGroup.name}
     </div>
   </slot>
-</Link>
+</ObjectLink>
