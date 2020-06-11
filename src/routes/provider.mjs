@@ -6,7 +6,7 @@ export const providerRoute = new ObjectStoreRoute(
   "/provider/:provider",
   Provider,
   {
-    objectForProperties: async properties => provider.providers.filter(p => p.name === properties.provider),
+    objectForProperties: async properties => provider.providers.find(p => p.name === properties.provider),
     propertiesForObject: provider => {
       return {
         provider: provider.name
