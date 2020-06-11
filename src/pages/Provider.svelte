@@ -1,6 +1,6 @@
 <script>
   import providerRoute from "../routes/provider.mjs";
-  import Attributes from "./Attributes.svelte";
+  import Attributes from "../components/Attributes.svelte";
 </script>
 
 {#if $providerRoute}

@@ -4,6 +4,7 @@ import Home from "./pages/Home.svelte";
 
 import AuthAccept from "./pages/AuthAccept.svelte";
 
+import providers from "./routes/providers.mjs";
 import provider from "./routes/provider.mjs";
 import repositoryGroups from "./routes/repository-groups.mjs";
 import repositoryGroup from "./routes/repository-group.mjs";
@@ -18,6 +19,7 @@ export const router = new Router(
   [
     route("*", Home),
     route("/auth/accept", AuthAccept),
+    providers,
     provider,
     repositoryGroups,
     repositories,
