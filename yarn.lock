@@ -412,7 +412,7 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.0:
+aggregation-repository-provider@^2.8.1:
   version "2.8.1"
   resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.1.tgz#d56c88c7cf9021071f9f52d4b3d0c045755f5654"
   integrity sha512-xczptBoe+hmAeM2xrDwwGlypT4/jzfBfSlTTHsIrOi0FjhsAWNEQMf9rb7EMkF/76UA7XbhkjRZWR7AVqoRVug==
@@ -635,7 +635,7 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.8:
+bitbucket-repository-provider@^3.6.9:
   version "3.6.9"
   resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.9.tgz#fbf3f4c8c2c681352c0bafd39d77ec7ed1338d60"
   integrity sha512-klzFR7/orWe/aMLLHnfuC2I1m/Fkv8fIubCQh6JVjbqZGaDiRRNDyib68zuYDNB09rEhFUlPrD+cH3EcaEVBPg==
@@ -2193,7 +2193,7 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.43:
+gitea-repository-provider@^1.10.44:
   version "1.10.44"
   resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.44.tgz#723847d106e779af985677beb7c651016a576e18"
   integrity sha512-Fi0KbrwykUrzUe3iCYdz0D7J5IMvK2lU6iwNVHz2Kbwve7f+6b65zjBLkrDwtjQ91mRBmtQ3LXj3Uaz7UIo7Pg==
