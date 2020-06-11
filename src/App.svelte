@@ -14,7 +14,7 @@
 </script>
 
 <nav>
-  <TargetRoute def={['/', Home]} {router}>
+  <TargetRoute href='/' component={Home} {router}>
     <img class="logo" src="images/git.svg" alt="Template Designer" />
     Template Designer
   </TargetRoute>
@@ -27,10 +27,10 @@
       </a>
     </li>
     <li>
-      <TargetRoute def={['/about', About]} {router}>About</TargetRoute>
+      <TargetRoute href='/about' component={About} {router}>About</TargetRoute>
     </li>
     <li>
-      <TargetRoute def={['/settings', Settings]} {router}>Settings</TargetRoute>
+      <TargetRoute href='/settings' component={Settings} {router}>Settings</TargetRoute>
     </li>
   </ul>
   <ul>
