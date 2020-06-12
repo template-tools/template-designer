@@ -1700,9 +1700,9 @@ ee-first@1.1.1:
   integrity sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0=
 
 electron-to-chromium@^1.3.413:
-  version "1.3.467"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.467.tgz#84eeb332134d49f0e49b88588824e56b20af9e27"
-  integrity sha512-U+QgsL8TZDU/n+rDnYDa3hY5uy3C4iry9mrJS0PNBBGwnocuQ+aHSfgY44mdlaK9744X5YqrrGUvD9PxCLY1HA==
+  version "1.3.469"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.469.tgz#05a06ec9c915127ed6c9f5b657cd1d7e11a3f944"
+  integrity sha512-O9JM6ZsFhS0uy0S2Y3G8EoNfqio3srdxCuwuJh8tKgQKa6rf7je/xQ3TIoiEaEtpf2/qFFLAGt/xB4MjuUZqRw==
 
 emoji-regex@^8.0.0:
   version "8.0.0"
@@ -3719,10 +3719,10 @@ ms@^2.0.0, ms@^2.1.1, ms@^2.1.2:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-multi-path-matcher@^2.0.14:
-  version "2.0.14"
-  resolved "https://registry.yarnpkg.com/multi-path-matcher/-/multi-path-matcher-2.0.14.tgz#d325749a22a37eaa44ac9cd16df093c7d512383f"
-  integrity sha512-Dpr1eMimseRNqS1MU96vqMe2f+96e2MvtgBPwVX8rEaCx+3DN8TaTVhvJ/tEl4qDLFf1p+f2JOgHniCvnFXT7g==
+multi-path-matcher@^2.0.15:
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/multi-path-matcher/-/multi-path-matcher-2.0.15.tgz#d7a36fe57d2e1d618da98309c4acb44a9759e6ac"
+  integrity sha512-1udTRs/ZveQdLf/Rr8bhK9g8aF5HiKVC0iyMOQQi3DRHtnDv/j6OVV14kJJLFt2I6AUMzZX9DTaXlpiewgz7uA==
 
 mute-stream@~0.0.4:
   version "0.0.8"
@@ -5448,9 +5448,9 @@ rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.15.0:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.15.0.tgz#1324633188c7f82138bd3bdc99416009ee541f48"
-  integrity sha512-HAk4kyXiV5sdNDnbKWk5zBPnkX/DAgx09Kbp8rRIRDVsTUVN3vnSowR7ZHkV6/lAiE6c2TQ8HtYb72aCPGW4Jw==
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.16.0.tgz#f45ed04a2cafdb4d1b71a2a77b5673334d811a32"
+  integrity sha512-95NglykUQAhl+mTFZqVvGUWDoGHV4/XanOZBbR7LOwTKODde5yFNHfVDZEnERBMuQViDuYaxOlFW87i1GQMihA==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -6032,14 +6032,14 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  resolved "https://github.com/arlac77/svelte-guard-history-router.git#65e57cf65a320e20b9d6e31ef40a00ab2f304457"
+  resolved "https://github.com/arlac77/svelte-guard-history-router.git#b28e85536beef5a0477365a71058b0faaa8f70c9"
   dependencies:
-    multi-path-matcher "^2.0.14"
+    multi-path-matcher "^2.0.15"
 
 svelte-session-manager@^1.0.12:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.0.tgz#b08c1f121abbabf57b200db1c4cab82a3cce72de"
-  integrity sha512-yrSBCeybco/rELQKFy9Pr4hdcfk0qMjw3n5u8KHZfbmomknifZj53lf6P3xhqFnUWDznb5o/RxokWvDX/Sr7LA==
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.2.tgz#21bcf20616ee5dec2d24d72fdd5b577fbeff5be2"
+  integrity sha512-Cs4HerNY33Vtou/5IRRifdvY+5EPYqKEboTW5DsDr1z3rRiAwzVjdFD1DVX/8L8TEzPVMiDiC3FJZW9OehMr3Q==
 
 svelte@^3.23.2:
   version "3.23.2"

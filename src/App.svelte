@@ -1,5 +1,6 @@
 <script>
   import {
+    TheRouter,
     TargetRoute,
     Outlet,
     link,
@@ -13,30 +14,34 @@
   import router from "./router.mjs";
 </script>
 
-<nav>
-  <TargetRoute path='/' component={Home} {router}>
-    <img class="logo" src="images/git.svg" alt="Template Designer" />
-    Template Designer
-  </TargetRoute>
+<TheRouter base="" {router}>
+  <nav>
+    <TargetRoute path="/" component={Home}>
+      <img class="logo" src="images/git.svg" alt="Template Designer" />
+      Template Designer
+    </TargetRoute>
 
-  <ul class="left">
-    <li>
-      <a href="/group" use:link={router} use:active={router}>Groups</a>
-      <a href="/repository" use:link={router} use:active={router}>
-        Repositories
-      </a>
-    </li>
-    <li>
-      <TargetRoute path='/about' component={About} {router}>About</TargetRoute>
-    </li>
-    <li>
-      <TargetRoute path='/settings' component={Settings} {router}>Settings</TargetRoute>
-    </li>
-  </ul>
-  <ul>
-    <li />
-  </ul>
-</nav>
-<main>
-  <Outlet {router} />
-</main>
+    <ul class="left">
+      <li>
+        <a href="/group" use:link={router} use:active={router}>Groups</a>
+        <a href="/repository" use:link={router} use:active={router}>
+          Repositories
+        </a>
+      </li>
+      <li>
+        <TargetRoute path="/about" component={About}>About</TargetRoute>
+      </li>
+      <li>
+        <TargetRoute path="/settings" component={Settings}>
+          Settings
+        </TargetRoute>
+      </li>
+    </ul>
+    <ul>
+      <li />
+    </ul>
+  </nav>
+  <main>
+    <Outlet />
+  </main>
+</TheRouter>
