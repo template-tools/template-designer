@@ -1,4 +1,5 @@
 <script>
+  import ProviderLink from "../components/ProviderLink.svelte";
   import providerFactories from "../provider-factories.mjs";
   import provider from "../provider.mjs";
   import { api, client_id, redirect_uri, state } from "../auth.mjs";
@@ -67,12 +68,7 @@
       {#each providers as provider}
         <tr>
           <td>
-            <img
-              src="images/{provider.name}.svg"
-              width="16"
-              height="16"
-              alt={provider.name} />
-            {provider.name}
+            <ProviderLink {provider}/>
           </td>
         </tr>
       {/each}
