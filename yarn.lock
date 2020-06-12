@@ -2193,14 +2193,14 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.44:
-  version "1.10.44"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.44.tgz#723847d106e779af985677beb7c651016a576e18"
-  integrity sha512-Fi0KbrwykUrzUe3iCYdz0D7J5IMvK2lU6iwNVHz2Kbwve7f+6b65zjBLkrDwtjQ91mRBmtQ3LXj3Uaz7UIo7Pg==
+gitea-repository-provider@^1.10.45:
+  version "1.10.45"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.45.tgz#fefb8ff5bddda79a23cdebf008523a75d52c2fdf"
+  integrity sha512-4gZ0FfBbqHErgeUNBoy9VTON+UQW4iRTbmwv+ck1bSW3Qw2ZfWLbJCdsV4yxBH6XZU4HFVTcNecGit0Tarr+og==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
-    node-fetch "^3.0.0-beta.6-exportfix"
+    node-fetch "^3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
     repository-provider "^21.0.1"
 
@@ -3779,7 +3779,7 @@ node-fetch@^2.3.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
-node-fetch@^3.0.0-beta.6-exportfix:
+node-fetch@^3.0.0-beta.6-exportfix, node-fetch@^3.0.0-beta.7:
   version "3.0.0-beta.6-exportfix"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.0.0-beta.6-exportfix.tgz#fc39091dd71487c48a4d02ebcd3474b5c578fdea"
   integrity sha512-jhW2arLPAddi7q04JxlQtApqMQF8GxlGZV+wj5/WuDz3hpDTnAU9haJ5Fi2a0N3b4e728O4EIVACNq9nDCzLYw==
