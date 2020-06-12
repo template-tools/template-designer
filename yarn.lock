@@ -635,14 +635,14 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.9:
-  version "3.6.9"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.9.tgz#fbf3f4c8c2c681352c0bafd39d77ec7ed1338d60"
-  integrity sha512-klzFR7/orWe/aMLLHnfuC2I1m/Fkv8fIubCQh6JVjbqZGaDiRRNDyib68zuYDNB09rEhFUlPrD+cH3EcaEVBPg==
+bitbucket-repository-provider@^3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.10.tgz#d447524550128192d7f07702ffdfce469eb46fd8"
+  integrity sha512-wk5lHjZgAqVpwGGIr/kF5bB2BYE6RHnkD1G6enQjsitsIcAXKGd2k4f8Khi9BgqIvL4mW+1fci6eeW2ebWu83Q==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
-    node-fetch "^3.0.0-beta.6-exportfix"
+    node-fetch "^3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
     repository-provider "^21.0.1"
 
@@ -3779,7 +3779,7 @@ node-fetch@^2.3.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
-node-fetch@^3.0.0-beta.6-exportfix, node-fetch@^3.0.0-beta.7:
+node-fetch@^3.0.0-beta.7:
   version "3.0.0-beta.6-exportfix"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-3.0.0-beta.6-exportfix.tgz#fc39091dd71487c48a4d02ebcd3474b5c578fdea"
   integrity sha512-jhW2arLPAddi7q04JxlQtApqMQF8GxlGZV+wj5/WuDz3hpDTnAU9haJ5Fi2a0N3b4e728O4EIVACNq9nDCzLYw==
