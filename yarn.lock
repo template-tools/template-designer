@@ -412,13 +412,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.2:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.2.tgz#a724692c7a34ffcdf1c01580c520c1e784719077"
-  integrity sha512-L6pEbPmgTeXKJZFA8KGwafbZRth5Jm2invbb1XBqWiNnR03CvzeDOBmUmHHtRWBtC6CcfE3g5pN+SP2I0QiX1A==
+aggregation-repository-provider@^2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.4.tgz#a0f45d0e0d459b1d0c48591295b80c071c80d886"
+  integrity sha512-SV8zHFWhnD1dQJds7vnHrELHcJdyqbDYwHXep+iIL7efbmM6aesJ8BVnrIFfL75i83usHUSmO0VNl0GdS3nCng==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^21.0.4"
+    repository-provider "^22.0.0"
 
 ajv@^6.5.5:
   version "6.12.2"
