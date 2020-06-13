@@ -2193,16 +2193,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.47:
-  version "1.10.47"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.47.tgz#64e8521caa1b3bca696e534f4f7bc10b5b18f3ce"
-  integrity sha512-jQFCKN8WJOdNba3dxHuE0am+WGEphtm26xWXycfcNEz5m0CvHlPzX6frwjq9PmewltMRP5iasg1P+C9VcKPaFg==
+gitea-repository-provider@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.0.tgz#20a17bd2bd0590e21a31911cef126933a6f7c399"
+  integrity sha512-KO39xVDEYlbLV/IALdwbzo1oxNgbJV3Z4DJkgm0Zw+bWGiYNsdT/Ra/evcFqtzEs3WiehgWCqq1r0OSSa0XhTg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^21.0.4"
+    repository-provider "^22.0.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5240,6 +5240,13 @@ repository-provider@^21.0.4:
   version "21.0.4"
   resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-21.0.4.tgz#9883f467e1041b2fb40346f191a4a4c433654a16"
   integrity sha512-F8y6tv1RU4l5gWu7DXp2m9vHt5YmIQMZ33ps7XAeFpzBCQ9/3wgnYXpXRl50OmQPgSABE6mP1LXIMzszaDWpkA==
+  dependencies:
+    matching-iterator "^1.0.0"
+
+repository-provider@^22.0.0:
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-22.0.0.tgz#dddb3a96ddf08993a9fd95b52eee01d06b6115cc"
+  integrity sha512-o07dnP95Lekv5qTIQUrVGHZr8DP3YKZmgt5i9DiWsE+dao0jVqGMBU/65SPFa2WDZ5btQg4/6ahfTYkm2BbNuA==
   dependencies:
     matching-iterator "^1.0.0"
 
