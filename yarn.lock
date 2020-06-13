@@ -412,13 +412,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.2:
-  version "2.8.2"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.2.tgz#a724692c7a34ffcdf1c01580c520c1e784719077"
-  integrity sha512-L6pEbPmgTeXKJZFA8KGwafbZRth5Jm2invbb1XBqWiNnR03CvzeDOBmUmHHtRWBtC6CcfE3g5pN+SP2I0QiX1A==
+aggregation-repository-provider@^2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.4.tgz#a0f45d0e0d459b1d0c48591295b80c071c80d886"
+  integrity sha512-SV8zHFWhnD1dQJds7vnHrELHcJdyqbDYwHXep+iIL7efbmM6aesJ8BVnrIFfL75i83usHUSmO0VNl0GdS3nCng==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^21.0.4"
+    repository-provider "^22.0.0"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -2193,16 +2193,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.47:
-  version "1.10.47"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.47.tgz#64e8521caa1b3bca696e534f4f7bc10b5b18f3ce"
-  integrity sha512-jQFCKN8WJOdNba3dxHuE0am+WGEphtm26xWXycfcNEz5m0CvHlPzX6frwjq9PmewltMRP5iasg1P+C9VcKPaFg==
+gitea-repository-provider@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.0.tgz#20a17bd2bd0590e21a31911cef126933a6f7c399"
+  integrity sha512-KO39xVDEYlbLV/IALdwbzo1oxNgbJV3Z4DJkgm0Zw+bWGiYNsdT/Ra/evcFqtzEs3WiehgWCqq1r0OSSa0XhTg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^21.0.4"
+    repository-provider "^22.0.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
