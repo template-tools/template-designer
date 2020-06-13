@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^2.8.4",
-    "bitbucket-repository-provider": "^3.7.1",
+    "bitbucket-repository-provider": "^3.7.2",
     "buffer": "^5.6.0",
     "gitea-repository-provider": "^1.11.2",
     "mf-styling": "arlac77/mf-styling",
