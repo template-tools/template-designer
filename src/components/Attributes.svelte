@@ -1,7 +1,14 @@
 <script>
   export let object;
 
-  const attributes = Object.keys(object.constructor.defaultOptions)
+  const ads = Object.fromEntries(
+    Object.entries(object.constructor.attributes).map(([k, v]) => [
+      k,
+      v === undefined ? {} : typeof v === "object" ? v : { default: v }
+    ])
+  );
+
+  const attributes = Object.keys(ads)
     .filter(k => object[k] !== undefined)
     .map(key => [key, object[key]]);
 </script>
@@ -11,7 +18,7 @@
     {#each attributes as attribute (attribute[0])}
       <tr>
         <td>{attribute[0]}</td>
-        <td>{attribute[1]}</td>
+        <td>{ads[attribute[0]].private ? '***' : attribute[1]}</td>
       </tr>
     {/each}
   </tbody>
