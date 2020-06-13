@@ -22,7 +22,7 @@
     "start": "rollup -c -w"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^2.8.2",
+    "aggregation-repository-provider": "^2.8.4",
     "bitbucket-repository-provider": "^3.6.12",
     "buffer": "^5.6.0",
     "gitea-repository-provider": "^1.10.47",
