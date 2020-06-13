@@ -25,7 +25,7 @@
     "aggregation-repository-provider": "^2.8.4",
     "bitbucket-repository-provider": "^3.7.2",
     "buffer": "^5.6.0",
-    "gitea-repository-provider": "^1.11.2",
+    "gitea-repository-provider": "^1.11.3",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
     "svelte-guard-history-router": "https://github.com/arlac77/svelte-guard-history-router.git#development",
