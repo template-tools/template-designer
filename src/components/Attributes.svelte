@@ -1,12 +1,7 @@
 <script>
   export let object;
 
-  const ads = Object.fromEntries(
-    Object.entries(object.constructor.attributes).map(([k, v]) => [
-      k,
-      v === undefined ? {} : typeof v === "object" ? v : { default: v }
-    ])
-  );
+  const ads = object.constructor.attributes;
 
   const attributes = Object.keys(ads)
     .filter(k => object[k] !== undefined)

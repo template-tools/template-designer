@@ -1,9 +1,8 @@
 <script>
   import providerRoute from "../routes/provider.mjs";
-  import Attributes from "../components/Attributes.svelte";
+  import ProviderCard from '../components/ProviderCard.svelte';
 </script>
 
 {#if $providerRoute}
-  <h3>Provider {$providerRoute.name}</h3>
-  <Attributes object={$providerRoute} />
+  <ProviderCard provider={$providerRoute}/>
 {:else}No such provider{/if}
