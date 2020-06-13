@@ -1,6 +1,9 @@
 <script>
   import Attributes from "./Attributes.svelte";
+  import AttributeField from "./AttributeField.svelte";
+  import SecureAttributeField from "./SecureAttributeField.svelte";
   import contentEntryRoute from "../routes/content-entry.mjs";
+  import { provider as aggregatedProvider } from "../provider.mjs";
 
   export let provider;
 
@@ -8,18 +11,29 @@
 
   const ads = provider.constructor.attributes;
 
-  const attributes = Object.entries(ads).filter(([name,attribute]) => attribute.env).map(([name, attribute]) => {
-    return { name, ...attribute, value: provider[name] };
-  });
+  const attributes = Object.entries(ads)
+    .filter(([name, attribute]) => attribute.env)
+    .map(([name, attribute]) => {
+      return { name, ...attribute, value: provider[name] };
+    });
 
+  async function submit() {
+    attributes.forEach(attribute => {
+      const env = Array.isArray(attribute.env)
+        ? attribute.env[0]
+        : attribute.env;
+      localStorage[env] = attribute.value;
+    });
 
-    async function submit() {
-   // localStorage.BITBUCKET_USERNAME = bitbucket_username;
-   // localStorage.BITBUCKET_PASSWORD = bitbucket_password;
-  //  localStorage.GITEA_TOKEN = gitea_token;
-  //  localStorage.GITEA_API = gitea_api;
+    aggregatedProvider.providers.forEach((p, i) => {
+      if (p === provider) {
+        console.log("replace " + i);
+        const np = new p.constructor(undefined, localStorage);
+        console.log(np);
+        aggregatedProvider.provider[i] = np;
+      }
+    });
   }
-
 </script>
 
 <div class="card">
@@ -31,28 +45,14 @@
 
   <form on:submit|preventDefault={submit}>
     {#each attributes as attribute (attribute.name)}
-      <label for="{attribute.name}">
-        {attribute.name} ({attribute.env})
-        <input
-          aria-label="{attribute.name}"
-          aria-required="true"
-          maxlength="75"
-          autocorrect="off"
-          autocapitalize="off"
-          id="{attribute.name}"
-          type="text"
-          placeholder="{attribute.name}"
-          name="{attribute.name}"
-          required
-          disabled={active}
-          bind:value={attribute.value} />
-      </label>
+      {#if attribute.private}
+        <SecureAttributeField {attribute} />
+      {:else}
+        <AttributeField {attribute} />
+      {/if}
     {/each}
 
-    <button
-      id="submit"
-      type="submit"
-      disabled={false}>
+    <button id="submit" type="submit" disabled={false}>
       Save
       {#if active}
         <div class="spinner" />
