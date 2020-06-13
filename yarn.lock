@@ -399,7 +399,7 @@ agentkeepalive@^3.4.1:
   dependencies:
     humanize-ms "^1.2.1"
 
-aggregate-async-iterator@^1.1.0:
+aggregate-async-iterator@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/aggregate-async-iterator/-/aggregate-async-iterator-1.1.1.tgz#d7e07f8611371cd90bb2715e0ef1a058f790bb7c"
   integrity sha512-Mymid40Qhz1+tdkh8ispsTUzAnSbrRovTrCWwDDDrcfN6LwiFsCSEO4PcLg2bEg5RMF0hHyMFRsMrPgCPdcI5w==
@@ -412,13 +412,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.1:
-  version "2.8.1"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.1.tgz#d56c88c7cf9021071f9f52d4b3d0c045755f5654"
-  integrity sha512-xczptBoe+hmAeM2xrDwwGlypT4/jzfBfSlTTHsIrOi0FjhsAWNEQMf9rb7EMkF/76UA7XbhkjRZWR7AVqoRVug==
+aggregation-repository-provider@^2.8.2:
+  version "2.8.2"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.2.tgz#a724692c7a34ffcdf1c01580c520c1e784719077"
+  integrity sha512-L6pEbPmgTeXKJZFA8KGwafbZRth5Jm2invbb1XBqWiNnR03CvzeDOBmUmHHtRWBtC6CcfE3g5pN+SP2I0QiX1A==
   dependencies:
-    aggregate-async-iterator "^1.1.0"
-    repository-provider "^21.0.1"
+    aggregate-async-iterator "^1.1.1"
+    repository-provider "^21.0.4"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -635,16 +635,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.6.11:
-  version "3.6.11"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.11.tgz#b11fd897a93c6d2a429ce51f91eb1a9160b27942"
-  integrity sha512-fjUq+ykkyN2wONim0ND9lg3GgExsqk7deYJ3/VGHGUIWFAod9SDY8JqlbCW3IrrtlUil1sds+EuR57AxHgsWNw==
+bitbucket-repository-provider@^3.6.12:
+  version "3.6.12"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.6.12.tgz#0a015b375cccf6cb827df8af70b344582996ea1e"
+  integrity sha512-LFO3K9tUbvASEVjilBccRmzCexz79EwhxLiai7jxGmX0EY4jGBM8WtEmf3Ens/ie7ndPTraqdF2+2F6p7Hf58w==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^21.0.1"
+    repository-provider "^21.0.4"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -1495,7 +1495,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debuglog@*, debuglog@^1.0.1:
+debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -2193,16 +2193,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.10.46:
-  version "1.10.46"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.46.tgz#a6fb1d0b6a2f7039103be21e60fd5b8a9ecdb137"
-  integrity sha512-mU+93SRzlI+SoFpT6DluP5E2SGwW3W4ZmZVxmVbFUiNqi4R2FLcXxkXxqMITCfvnXBD1EpxeHw2cJxYXJKD4KA==
+gitea-repository-provider@^1.10.47:
+  version "1.10.47"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.10.47.tgz#64e8521caa1b3bca696e534f4f7bc10b5b18f3ce"
+  integrity sha512-jQFCKN8WJOdNba3dxHuE0am+WGEphtm26xWXycfcNEz5m0CvHlPzX6frwjq9PmewltMRP5iasg1P+C9VcKPaFg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^21.0.1"
+    repository-provider "^21.0.4"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -2546,7 +2546,7 @@ import-lazy@^2.1.0:
   resolved "https://registry.yarnpkg.com/import-lazy/-/import-lazy-2.1.0.tgz#05698e3d45c88e8d7e9d92cb0584e77f096f3e43"
   integrity sha1-BWmOPUXIjo1+nZLLBYTnfwlvPkM=
 
-imurmurhash@*, imurmurhash@^0.1.4:
+imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -3304,11 +3304,6 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
-lodash._baseindexof@*:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
-  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
-
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -3317,32 +3312,10 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
-lodash._bindcallback@*:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
-  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
-
-lodash._cacheindexof@*:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
-  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
-
-lodash._createcache@*:
-  version "3.1.2"
-  resolved "https://registry.yarnpkg.com/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
-  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
-  dependencies:
-    lodash._getnative "^3.0.0"
-
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
-
-lodash._getnative@*, lodash._getnative@^3.0.0:
-  version "3.9.1"
-  resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
-  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._root@~3.0.0:
   version "3.0.1"
@@ -3388,11 +3361,6 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
-
-lodash.restparam@*:
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
-  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.toarray@^4.4.0:
   version "4.4.0"
@@ -5268,10 +5236,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^21.0.1:
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-21.0.1.tgz#6f7c54fb6ef1a18c67366f8d51ab0ae74961fe0d"
-  integrity sha512-zBZ6HcjiK81MTMfYailsQejSpfwOBcnvOIOg8/EY4vSbGPTRflOMyFj85fmjd/D9zzgGJsXyNVE81gFXwOLv8w==
+repository-provider@^21.0.4:
+  version "21.0.4"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-21.0.4.tgz#9883f467e1041b2fb40346f191a4a4c433654a16"
+  integrity sha512-F8y6tv1RU4l5gWu7DXp2m9vHt5YmIQMZ33ps7XAeFpzBCQ9/3wgnYXpXRl50OmQPgSABE6mP1LXIMzszaDWpkA==
   dependencies:
     matching-iterator "^1.0.0"
 
@@ -5447,7 +5415,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.15.0:
+rollup@^2.16.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.16.0.tgz#f45ed04a2cafdb4d1b71a2a77b5673334d811a32"
   integrity sha512-95NglykUQAhl+mTFZqVvGUWDoGHV4/XanOZBbR7LOwTKODde5yFNHfVDZEnERBMuQViDuYaxOlFW87i1GQMihA==
