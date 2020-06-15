@@ -1,5 +1,5 @@
 <script>
-  import contentEntriesRoute from "../routes/content-entries.mjs";
+  import { contentEntriesRoute } from "../routes/repositories.mjs";
 </script>
 
 <div>

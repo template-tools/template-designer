@@ -1,6 +1,6 @@
 <script>
   import PullRequestCard from '../components/PullRequestCard.svelte';
-  import pullRequestRoute from "../routes/pull-request.mjs";
+  import { pullRequestRoute } from "../routes/repositories.mjs";
 </script>
 
 {#if $pullRequestRoute}

@@ -1,6 +1,6 @@
 <script>
   import ObjectLink from "./ObjectLink.svelte";
-  import providerRoute from "../routes/provider.mjs";
+  import { providerRoute } from "../routes/repositories.mjs";
 
   export let provider;
 </script>

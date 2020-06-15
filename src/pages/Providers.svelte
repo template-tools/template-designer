@@ -1,6 +1,6 @@
 <script>
   import ProviderLink from "../components/ProviderLink.svelte";
-  import providersRoute from "../routes/providers.mjs";
+  import { providersRoute } from "../routes/repositories.mjs";
 </script>
 
 <div>

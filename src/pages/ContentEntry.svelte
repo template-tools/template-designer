@@ -1,11 +1,11 @@
 <script>
-  import contentEntrysRoute from "../routes/content-entry.mjs";
+  import { contentEntryRoute } from "../routes/repositories.mjs";
 </script>
 
-{#if $contentEntrysRoute}
-  <h1>{$contentEntrysRoute.name}</h1>
+{#if $contentEntryRoute}
+  <h1>{$contentEntryRoute.name}</h1>
 
-  {#await $contentEntrysRoute.getString()}
+  {#await $contentEntryRoute.getString()}
     <p>...waiting</p>
   {:then string}
     {string}

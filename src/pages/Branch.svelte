@@ -1,7 +1,12 @@
 <script>
   import BranchCard from '../components/BranchCard.svelte';
-  import branchRoute from "../routes/branch.mjs";
-</script>
+  import {
+  repositoryGroupsRoute,
+  repositoryGroupRoute,
+  repositoriesRoute,
+  repositoryRoute,
+  branchRoute
+  } from "../routes/repositories.mjs";</script>
 
 {#if $branchRoute}
   <BranchCard branch={$branchRoute}/>

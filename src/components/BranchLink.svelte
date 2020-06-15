@@ -1,7 +1,12 @@
 <script>
   import ObjectLink from "./ObjectLink.svelte";
-  import branchRoute from "../routes/branch.mjs";
-
+  import {
+  repositoryGroupsRoute,
+  repositoryGroupRoute,
+  repositoriesRoute,
+  repositoryRoute,
+  branchRoute
+  } from "../routes/repositories.mjs";
   export let branch;
 </script>
 

@@ -1,7 +1,12 @@
 <script>
   import RepositoryGroupLink from "../components/RepositoryGroupLink.svelte";
-  import repositoryGroupsRoute from "../routes/repository-groups.mjs";
-</script>
+  import {
+  repositoryGroupsRoute,
+  repositoryGroupRoute,
+  repositoriesRoute,
+  repositoryRoute,
+  branchRoute
+  } from "../routes/repositories.mjs";</script>
 
 <div>
   <table class="bordered striped hoverable">

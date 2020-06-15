@@ -1,6 +1,12 @@
 <script>
   import RepositoryLink from "../components/RepositoryLink.svelte";
-  import repositoriesRoute from "../routes/repositories.mjs";
+  import {
+    repositoryGroupsRoute,
+    repositoryGroupRoute,
+    repositoriesRoute,
+    repositoryRoute,
+    branchRoute
+  } from "../routes/repositories.mjs";
 </script>
 
 <div>

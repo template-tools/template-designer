@@ -1,7 +1,12 @@
 <script>
   import RepositoryCard from '../components/RepositoryCard.svelte';
-  import repositoryRoute from "../routes/repository.mjs";
-</script>
+  import {
+  repositoryGroupsRoute,
+  repositoryGroupRoute,
+  repositoriesRoute,
+  repositoryRoute,
+  branchRoute
+  } from "../routes/repositories.mjs";</script>
 
 {#if $repositoryRoute}
   <RepositoryCard repository={$repositoryRoute}/>
