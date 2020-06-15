@@ -1,10 +1,10 @@
 <script>
+  import { getAttribute} from "repository-provider";
   import Attributes from "./Attributes.svelte";
   import AttributeField from "./AttributeField.svelte";
   import SecureAttributeField from "./SecureAttributeField.svelte";
   import contentEntryRoute from "../routes/content-entry.mjs";
   import { provider as aggregatedProvider } from "../provider.mjs";
-
   export let provider;
 
   let active = false;
@@ -14,7 +14,7 @@
   const attributes = Object.entries(ads)
     .filter(([name, attribute]) => attribute.env)
     .map(([name, attribute]) => {
-      return { name, ...attribute, value: provider[name] };
+      return { name, ...attribute, value: getAttribute(provider, name) };
     });
 
   async function submit() {
@@ -39,7 +39,6 @@
 <div class="card">
   <div class="card-content">
     <h5 class="card-title">{provider.name}</h5>
-
     <Attributes object={provider} />
   </div>
 

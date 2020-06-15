@@ -151,9 +151,9 @@
     "@types/node" ">= 8"
 
 "@octokit/types@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-5.0.0.tgz#cbdf3c060f6c0436c004ec402c5082c32de72511"
-  integrity sha512-3LVS+MbeqwSd5G4KS8123cZz+hWomsiGeMnQ/QJIBFDwL/YHX8kkr0FZXrgWEMO7Fgi2/VOrhbiFnk9sZ+s4qA==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-5.0.1.tgz#5459e9a5e9df8565dcc62c17a34491904d71971e"
+  integrity sha512-GorvORVwp244fGKEt3cgt/P+M0MGy4xEDbckw+K5ojEezxyMDgCaYPKVct+/eWQfZXOT7uq0xRpmrl/+hliabA==
   dependencies:
     "@types/node" ">= 8"
 
@@ -412,13 +412,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.4:
-  version "2.8.4"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.4.tgz#a0f45d0e0d459b1d0c48591295b80c071c80d886"
-  integrity sha512-SV8zHFWhnD1dQJds7vnHrELHcJdyqbDYwHXep+iIL7efbmM6aesJ8BVnrIFfL75i83usHUSmO0VNl0GdS3nCng==
+aggregation-repository-provider@^2.8.5:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.5.tgz#51d0425f8feffe145e0df86956fa0c6bbef4f1e4"
+  integrity sha512-Q4rvtv+ntP4KKdRDkeDUoGFaOsoPvJz/nUMWaEuq4WGiz5opB5KObfuMI0nNr9QB1SinPjA2B0kHgHqDjAICZQ==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^22.0.0"
+    repository-provider "^23.1.0"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -635,16 +635,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.7.2:
-  version "3.7.2"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.2.tgz#97ca4de8ce32bd704f068430478148dfac675c60"
-  integrity sha512-ppDrjxCBcnzR6VFPst5eOY3x5Fv/stGr3Nz04I4n+Z+XtVv7QLOEwTzLmBBxQZ0LUnxoWGNWk0JBj+xLzfwzDA==
+bitbucket-repository-provider@^3.7.4:
+  version "3.7.4"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.4.tgz#d74bf53e57958832202219a8796d23dca423fe11"
+  integrity sha512-XRuWEk6+t2cZAOClGtfw09V2wdWW/31HCTgQGKQoexgot+quseir3VM6TCtAc9qrA7qAlkNK2xjABT5JaP+aig==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^22.1.0"
+    repository-provider "^23.1.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -1771,21 +1771,21 @@ error-ex@^1.2.0, error-ex@^1.3.1:
     is-arrayish "^0.2.1"
 
 es-abstract@^1.17.0-next.1, es-abstract@^1.17.2, es-abstract@^1.17.5:
-  version "1.17.5"
-  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.17.5.tgz#d8c9d1d66c8981fb9200e2251d799eee92774ae9"
-  integrity sha512-BR9auzDbySxOcfog0tLECW8l28eRGpDpU3Dm3Hp4q/N+VtLTmyj4EUN088XZWQDW/hzj6sYRDXeOFsaAODKvpg==
+  version "1.17.6"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.17.6.tgz#9142071707857b2cacc7b89ecb670316c3e2d52a"
+  integrity sha512-Fr89bON3WFyUi5EvAeI48QTWX0AyekGgLA8H+c+7fbfCkJwRWRMLd8CQedNEyJuoYYhmtEqY92pgte1FAhBlhw==
   dependencies:
     es-to-primitive "^1.2.1"
     function-bind "^1.1.1"
     has "^1.0.3"
     has-symbols "^1.0.1"
-    is-callable "^1.1.5"
-    is-regex "^1.0.5"
+    is-callable "^1.2.0"
+    is-regex "^1.1.0"
     object-inspect "^1.7.0"
     object-keys "^1.1.1"
     object.assign "^4.1.0"
-    string.prototype.trimleft "^2.1.1"
-    string.prototype.trimright "^2.1.1"
+    string.prototype.trimend "^1.0.1"
+    string.prototype.trimstart "^1.0.1"
 
 es-to-primitive@^1.2.1:
   version "1.2.1"
@@ -2193,16 +2193,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.11.3:
-  version "1.11.3"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.3.tgz#798b1caf6eaee0dc688aec2bdf852780621ecc57"
-  integrity sha512-LcacJrKbt0s2Ll+uJmByTiPuEMANZOgMD6UvMloz35yMvUP4Y4MtDKqKnZBzAOMK5nVjZXwFdgxONkFkv0at3A==
+gitea-repository-provider@^1.11.6:
+  version "1.11.6"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.6.tgz#ed9be6360b1f32838b929bf5566ad23d472a66f6"
+  integrity sha512-56klOTs+5NkNwrz9J18OUi0SJsU2kuSONkZjAtnFChtTg8UKiL3l1B/p8mqo1n8rnTaZywGC7yRFqRK8cbD+ow==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^22.1.0"
+    repository-provider "^23.1.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -2646,7 +2646,7 @@ is-arrayish@^0.3.1:
   resolved "https://registry.yarnpkg.com/is-arrayish/-/is-arrayish-0.3.2.tgz#4574a2ae56f7ab206896fb431eaeed066fdf8f03"
   integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
 
-is-callable@^1.1.4, is-callable@^1.1.5:
+is-callable@^1.1.4, is-callable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.2.0.tgz#83336560b54a38e35e3a2df7afd0454d691468bb"
   integrity sha512-pyVD9AaGLxtg6srb2Ng6ynWJqkHU9bEM087AKck0w8QwDarTfNcpIYoU8x8Hv2Icm8u6kFJM18Dag8lyqGkviw==
@@ -2785,7 +2785,7 @@ is-reference@^1.1.2:
   dependencies:
     "@types/estree" "0.0.44"
 
-is-regex@^1.0.5:
+is-regex@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.1.0.tgz#ece38e389e490df0dc21caea2bd596f987f767ff"
   integrity sha512-iI97M8KTWID2la5uYXlkbSDQIg4F6o1sYboZKKTDpnDQMLtUL86zxhgDet3Q2SriaYsyGqZ6Mn2SjbRKeLHdqw==
@@ -5268,10 +5268,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^22.0.0, repository-provider@^22.1.0:
-  version "22.1.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-22.1.0.tgz#a98dd74f54e11413b6ddc4b7049251854e6038eb"
-  integrity sha512-KAKuNIp/fh8jB7yFaCpt7LlNnrJ1/fBldSo4Wu96GzsCq/9hVG7fZUlKlMAZQu1zVHbFmbaDO10kpW8wwy0txg==
+repository-provider@^23.1.0:
+  version "23.1.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.1.0.tgz#ee996de18538c5b6a578183becc0cb25956633ba"
+  integrity sha512-ukW+6KRItoP6+WaWXqDtXo8lexhqktZhN1G0eh21b67u25RiJmN9hbUPTZe7JVzuAUsPT84q4WQA2GlsN8maaw==
   dependencies:
     matching-iterator "^1.0.0"
 
@@ -5864,7 +5864,7 @@ string-width@^4.1.0, string-width@^4.2.0:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
 
-string.prototype.trimend@^1.0.0:
+string.prototype.trimend@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/string.prototype.trimend/-/string.prototype.trimend-1.0.1.tgz#85812a6b847ac002270f5808146064c995fb6913"
   integrity sha512-LRPxFUaTtpqYsTeNKaFOw3R4bxIzWOnbQ837QfBylo8jIxtcbK/A/sMV7Q+OAV/vWo+7s25pOE10KYSjaSO06g==
@@ -5872,25 +5872,7 @@ string.prototype.trimend@^1.0.0:
     define-properties "^1.1.3"
     es-abstract "^1.17.5"
 
-string.prototype.trimleft@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/string.prototype.trimleft/-/string.prototype.trimleft-2.1.2.tgz#4408aa2e5d6ddd0c9a80739b087fbc067c03b3cc"
-  integrity sha512-gCA0tza1JBvqr3bfAIFJGqfdRTyPae82+KTnm3coDXkZN9wnuW3HjGgN386D7hfv5CHQYCI022/rJPVlqXyHSw==
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.17.5"
-    string.prototype.trimstart "^1.0.0"
-
-string.prototype.trimright@^2.1.1:
-  version "2.1.2"
-  resolved "https://registry.yarnpkg.com/string.prototype.trimright/-/string.prototype.trimright-2.1.2.tgz#c76f1cef30f21bbad8afeb8db1511496cfb0f2a3"
-  integrity sha512-ZNRQ7sY3KroTaYjRS6EbNiiHrOkjihL9aQE/8gfQ4DtAC/aEBRHFJa44OmoWxGGqXuJlfKkZW4WcXErGr+9ZFg==
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.17.5"
-    string.prototype.trimend "^1.0.0"
-
-string.prototype.trimstart@^1.0.0:
+string.prototype.trimstart@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/string.prototype.trimstart/-/string.prototype.trimstart-1.0.1.tgz#14af6d9f34b053f7cfc89b72f8f2ee14b9039a54"
   integrity sha512-XxZn+QpvrBI1FOcg6dIpxUPgWCPuNXvMD72aaRaUQv1eD4e/Qy8i/hFTe0BUmD60p/QA6bh1avmuPTfNjqVWRw==
