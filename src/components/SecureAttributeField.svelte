@@ -8,6 +8,7 @@
     aria-label={attribute.name}
     aria-required={attribute.mandatory ? "true" : "false"}
     maxlength="128"
+    size="60"
     autocorrect="off"
     autocapitalize="off"
     id={attribute.name}
