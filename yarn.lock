@@ -412,13 +412,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.5:
-  version "2.8.5"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.5.tgz#51d0425f8feffe145e0df86956fa0c6bbef4f1e4"
-  integrity sha512-Q4rvtv+ntP4KKdRDkeDUoGFaOsoPvJz/nUMWaEuq4WGiz5opB5KObfuMI0nNr9QB1SinPjA2B0kHgHqDjAICZQ==
+aggregation-repository-provider@^2.8.6:
+  version "2.8.6"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.6.tgz#272d03e6e79826850fc801f12ed17c9a16646af7"
+  integrity sha512-MyUXLDf2T8T6cDG8HZwYDs5NGUSgNnFM1uxQR+CBhZkORvvfMSu0DPp95uGqRTi8NujCWlnWmc8ZPWVkN7GOjA==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^23.1.0"
+    repository-provider "^23.1.2"
 
 ajv@^6.5.5:
   version "6.12.2"
@@ -635,16 +635,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.7.4:
-  version "3.7.4"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.4.tgz#d74bf53e57958832202219a8796d23dca423fe11"
-  integrity sha512-XRuWEk6+t2cZAOClGtfw09V2wdWW/31HCTgQGKQoexgot+quseir3VM6TCtAc9qrA7qAlkNK2xjABT5JaP+aig==
+bitbucket-repository-provider@^3.7.5:
+  version "3.7.5"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.5.tgz#f361409fc843805bff2ec9093ae0a52b777ba72b"
+  integrity sha512-FA34Zgnob84h30su8KUJ73hVHLlHok7QjXVBT/tQgGqcHn00hFJhis7fmVMnTCYOHKDsd+KQgvH/cvrJ298bEw==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.1.0"
+    repository-provider "^23.1.2"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -1495,7 +1495,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debuglog@^1.0.1:
+debuglog@*, debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/debuglog/-/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -2193,16 +2193,16 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.11.6:
-  version "1.11.6"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.6.tgz#ed9be6360b1f32838b929bf5566ad23d472a66f6"
-  integrity sha512-56klOTs+5NkNwrz9J18OUi0SJsU2kuSONkZjAtnFChtTg8UKiL3l1B/p8mqo1n8rnTaZywGC7yRFqRK8cbD+ow==
+gitea-repository-provider@^1.11.8:
+  version "1.11.8"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.8.tgz#106aed9037910b59a0f2926aa375772be71d28cb"
+  integrity sha512-fNNshqm95TUB404SAy5JHmTqs2xAVshyJ7Arcw88PZVd629XonVBA3juGryRgoDbzXPrPmj4SI2uaf8LqgLvKQ==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.1.0"
+    repository-provider "^23.1.2"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -2546,7 +2546,7 @@ import-lazy@^2.1.0:
   resolved "https://registry.yarnpkg.com/import-lazy/-/import-lazy-2.1.0.tgz#05698e3d45c88e8d7e9d92cb0584e77f096f3e43"
   integrity sha1-BWmOPUXIjo1+nZLLBYTnfwlvPkM=
 
-imurmurhash@^0.1.4:
+imurmurhash@*, imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -3304,6 +3304,11 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
+lodash._baseindexof@*:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/lodash._baseindexof/-/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
+  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
+
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash._baseuniq/-/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -3312,10 +3317,32 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
+lodash._bindcallback@*:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
+  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
+
+lodash._cacheindexof@*:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/lodash._cacheindexof/-/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
+  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
+
+lodash._createcache@*:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/lodash._createcache/-/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
+  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
+  dependencies:
+    lodash._getnative "^3.0.0"
+
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/lodash._createset/-/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
+
+lodash._getnative@*, lodash._getnative@^3.0.0:
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/lodash._getnative/-/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
+  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._root@~3.0.0:
   version "3.0.1"
@@ -3361,6 +3388,11 @@ lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
   integrity sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4=
+
+lodash.restparam@*:
+  version "3.6.1"
+  resolved "https://registry.yarnpkg.com/lodash.restparam/-/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
+  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.toarray@^4.4.0:
   version "4.4.0"
@@ -5236,10 +5268,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^23.1.0:
-  version "23.1.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.1.0.tgz#ee996de18538c5b6a578183becc0cb25956633ba"
-  integrity sha512-ukW+6KRItoP6+WaWXqDtXo8lexhqktZhN1G0eh21b67u25RiJmN9hbUPTZe7JVzuAUsPT84q4WQA2GlsN8maaw==
+repository-provider@^23.1.2:
+  version "23.1.2"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.1.2.tgz#af4b095c73d1c717dc9d107db27158a457df0045"
+  integrity sha512-k/knaXJw3rJ/Pn3f3LMKgf7/XzdPvanORa6oie8Uqf7AuTHY4+yF6JSH72XMOTAoTf6hQ/MHRZj6CBoyxLLdnQ==
   dependencies:
     matching-iterator "^1.0.0"
 
