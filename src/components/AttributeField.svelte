@@ -6,7 +6,7 @@
   {attribute.name} ({attribute.env})
   <input
     aria-label={attribute.name}
-    aria-required="true"
+    aria-required={attribute.required ? "true" : "false"}
     maxlength="75"
     autocorrect="off"
     autocapitalize="off"
