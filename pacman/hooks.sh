@@ -1,5 +1,6 @@
 
 post_install() {
+	gzip -9 {{installdir}}/*.html {{installdir}}/*.css {{installdir}}/*.mjs {{installdir}}/*.json
 	systemctl reload nginx
 }
 
