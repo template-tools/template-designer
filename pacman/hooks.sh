@@ -1,11 +1,20 @@
 
 post_install() {
-	gzip -9 {{installdir}}/*.html {{installdir}}/*.css {{installdir}}/*.mjs {{installdir}}/*.json
+	(cd {{installdir}}; gzip -k -9 *.html *.css *.mjs *.json)
 	systemctl reload nginx
 }
 
+pre_upgrade() {
+	(cd {{installdir}}; rm *.gz)
+}
+
 post_upgrade() {
+	(cd {{installdir}}; gzip -k -9 *.html *.css *.mjs *.json)
 	systemctl reload nginx
+}
+
+pre_remove() {
+	(cd {{installdir}}; rm *.gz)
 }
 
 post_remove() {
