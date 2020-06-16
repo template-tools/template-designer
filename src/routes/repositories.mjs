@@ -16,24 +16,29 @@ import PullRequest from "../pages/PullRequest.svelte";
 import ContentEntry from "../pages/ContentEntry.svelte";
 import ContentEntries from "../pages/ContentEntries.svelte";
 
-export const repositoriesRoute = new IteratorStoreRoute(
-  "/repository",
-  Repositories,
-  {
-    iteratorForProperties: async properties => provider.repositories()
+class RepositoriesRoute extends IteratorStoreRoute {
+  iteratorForProperties(properties) {
+    return provider.repositories();
   }
+}
+
+export const repositoriesRoute = new RepositoriesRoute(
+  "/repository",
+  Repositories
 );
 
-export const repositoryGroupRoute = new ObjectStoreRoute(
-  repositoriesRoute.path + "/:group",
-  RepositoryGroup,
-  {
-    objectForProperties: async properties =>
-      provider.repositoryGroup(properties.group),
-    propertiesForObject: group => {
-      return { group: group.name };
-    }
+class RepositoryRoute extends ObjectStoreRoute {
+  objectForProperties(properties) {
+    return provider.repositoryGroup(properties.group);
   }
+  propertiesForObject(group) {
+    return { group: group.name };
+  }
+}
+
+export const repositoryGroupRoute = new RepositoryRoute(
+  repositoriesRoute.path + "/:group",
+  RepositoryGroup
 );
 
 export const repositoryRoute = new ObjectStoreRoute(
@@ -137,8 +142,6 @@ export const contentEntryRoute = new ObjectStoreRoute(
   ContentEntry,
   {
     objectForProperties: async properties => {
-      console.log("objectForProperties", properties);
-
       const branch = await provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );
@@ -159,4 +162,3 @@ export const contentEntryRoute = new ObjectStoreRoute(
     }
   }
 );
-
