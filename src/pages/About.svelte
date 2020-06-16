@@ -4,7 +4,7 @@
   import description from "consts:description";
   import base from "consts:base";
 
-  import { serviceWorkerState } from "../main.mjs";
+  import { serviceWorker } from "../main.mjs";
 </script>
 
 <div>
@@ -22,7 +22,7 @@
       </tr>
       <tr>
         <td>Service Worker</td>
-        <td>{serviceWorkerState.state}</td>
+        <td>{$serviceWorker.state}</td>
       </tr>
     </tbody>
   </table>
