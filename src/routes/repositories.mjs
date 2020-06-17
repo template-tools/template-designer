@@ -17,7 +17,7 @@ import ContentEntry from "../pages/ContentEntry.svelte";
 import ContentEntries from "../pages/ContentEntries.svelte";
 
 class RepositoriesRoute extends IteratorStoreRoute {
-  iteratorForProperties(properties) {
+  iteratorFor(properties) {
     return provider.repositories();
   }
 }
@@ -28,10 +28,10 @@ export const repositoriesRoute = new RepositoriesRoute(
 );
 
 class RepositoryRoute extends ObjectStoreRoute {
-  objectForProperties(properties) {
+  objectFor(properties) {
     return provider.repositoryGroup(properties.group);
   }
-  propertiesForObject(group) {
+  propertiesFor(group) {
     return { group: group.name };
   }
 }
@@ -45,9 +45,9 @@ export const repositoryRoute = new ObjectStoreRoute(
   repositoryGroupRoute.path + "/:group/:repository",
   Repository,
   {
-    objectForProperties: async properties =>
+    objectFor: async properties =>
       provider.repository(properties.group + "/" + properties.repository),
-    propertiesForObject: repository => {
+    propertiesFor: repository => {
       return { repository: repository.name, group: repository.owner.name };
     }
   }
@@ -57,7 +57,7 @@ export const repositoryGroupsRoute = new IteratorStoreRoute(
   "/group",
   RepositoryGroups,
   {
-    iteratorForProperties: async properties => provider.repositoryGroups()
+    iteratorFor: async properties => provider.repositoryGroups()
   }
 );
 
@@ -65,11 +65,11 @@ export const branchRoute = new ObjectStoreRoute(
   repositoryRoute.path + "/branch/:branch",
   Branch,
   {
-    objectForProperties: async properties =>
+    objectFor: async properties =>
       provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       ),
-    propertiesForObject: branch => {
+    propertiesFor: branch => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
@@ -83,13 +83,13 @@ export const pullRequestRoute = new ObjectStoreRoute(
   repositoryRoute.path + "/:repository/pr/:pr",
   PullRequest,
   {
-    objectForProperties: async properties => {
+    objectFor: async properties => {
       const r = await provider.repository(
         `${properties.group}/${properties.repository}`
       );
       return r.pullRequest(properties.pr);
     },
-    propertiesForObject: branch => {
+    propertiesFor: branch => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
@@ -100,16 +100,16 @@ export const pullRequestRoute = new ObjectStoreRoute(
 );
 
 export const providersRoute = new IteratorStoreRoute("/providers", Providers, {
-  iteratorForProperties: async properties => provider.providers
+  iteratorFor: async properties => provider.providers
 });
 
 export const providerRoute = new ObjectStoreRoute(
   "/provider/:provider",
   Provider,
   {
-    objectForProperties: async properties =>
+    objectFor: async properties =>
       provider.providers.find(p => p.name === properties.provider),
-    propertiesForObject: provider => {
+    propertiesFor: provider => {
       return {
         provider: provider.name
       };
@@ -121,13 +121,13 @@ export const contentEntriesRoute = new IteratorStoreRoute(
   branchRoute.path + "/entry",
   ContentEntries,
   {
-    iteratorForProperties: async properties => {
+    iteratorFor: async properties => {
       const branch = await provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );
       return branch.entries();
     },
-    propertiesForObject: branch => {
+    propertiesFor: branch => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
@@ -141,18 +141,16 @@ export const contentEntryRoute = new ObjectStoreRoute(
   contentEntriesRoute.path + "/:entry",
   ContentEntry,
   {
-    objectForProperties: async properties => {
+    objectFor: async properties => {
       const branch = await provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );
 
-      console.log(branch);
       const entry = await branch.entry(properties.entry);
-      console.log(entry);
-
+      
       return entry;
     },
-    propertiesForObject: (branch, entry) => {
+    propertiesFor: (branch, entry) => {
       return {
         repository: branch.repository.name,
         group: branch.repository.owner.name,
