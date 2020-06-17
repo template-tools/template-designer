@@ -19,8 +19,6 @@ async function init() {
   serviceWorkerRegistration = await navigator.serviceWorker.register(
     "bundle.service-worker.mjs"
   );
-
-  console.log(serviceWorkerRegistration.scope);
 }
 
 init();
