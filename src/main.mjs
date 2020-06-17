@@ -19,6 +19,9 @@ async function init() {
   serviceWorkerRegistration = await navigator.serviceWorker.register(
     "bundle.service-worker.mjs"
   );
+  
+  const notifications = await serviceWorkerRegistration.getNotifications();
+  console.log(notifications);
 }
 
 init();
