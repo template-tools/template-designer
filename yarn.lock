@@ -2194,12 +2194,23 @@ git-log-parser@^1.2.0:
     traverse "~0.6.6"
 
 gitea-repository-provider@^1.11.11:
-  version "1.11.11"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.11.tgz#376a014405c6bbe007017e798d1782093fef20de"
-  integrity sha512-juh8VuiRVpKOoqQmyBVIQP/v0piz0gLNc4RPv0SNMH8+9ePw5xoMp2v38wIMqhxFYPbyPEvUVTctOikO25c9SA==
+  version "1.11.12"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.12.tgz#fbcfb060e83826e8dfd3bc925d9044cd555070f9"
+  integrity sha512-VDeCNqO+2LgRlv0MtxxqErzH2T2mrvvTKS7EHngYO3EJ1DbW42KEzezpOetK5GquQ117huIC31CqXwWjMWh9Yg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
+    node-fetch "3.0.0-beta.7"
+    one-time-execution-method "^2.0.1"
+    repository-provider "^23.2.0"
+
+github-repository-provider@^7.12.0:
+  version "7.12.0"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.12.0.tgz#654531d0f871aa97ca47912312c593012c9f277a"
+  integrity sha512-Imb+AIYYn6jTZOH+XxWWzAA53KwexgHxqDqoKQa2CKO3LZTTFCnFrGWaNRMx2sP6noHRVYeqdjEzVuSBGnLBFw==
+  dependencies:
+    content-entry "^2.5.0"
+    matching-iterator "1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
     repository-provider "^23.2.0"
@@ -3514,7 +3525,7 @@ marked@^1.0.0:
   resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.0.tgz#62504ad4d11550c942935ccc5e39d64e5a4c4e50"
   integrity sha512-EkE7RW6KcXfMHy2PA7Jg0YJE1l8UPEZE8k45tylzmZM30/r1M1MUXWQfJlrSbsTeh7m/XTwHbWUENvAJZpp1YA==
 
-matching-iterator@^1.0.0, matching-iterator@^1.1.0:
+matching-iterator@1.1.0, matching-iterator@^1.0.0, matching-iterator@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.1.0.tgz#4733fb22cc0d17dfdece2896205ed3c31ef637ed"
   integrity sha512-EAQAIQnBP4eNORnE6THJ1g9ek1eN7ICONEthIhQ+4SKKQk3DaUVeXVmHAPXNBaoAG+lX6BYAxvxztbz0Tm5UXQ==
@@ -5448,9 +5459,9 @@ rollup-pluginutils@^2.8.2:
     estree-walker "^0.6.1"
 
 rollup@^2.16.1:
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.16.1.tgz#97805e88071e2c6727bd0b64904976d14495c873"
-  integrity sha512-UYupMcbFtoWLB6ZtL4hPZNUTlkXjJfGT33Mmhz3hYLNmRj/cOvX2B26ZxDQuEpwtLdcyyyraBGQ7EfzmMJnXXg==
+  version "2.17.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.17.0.tgz#3db289792c567242b600d88cf3718dd206c7f3f2"
+  integrity sha512-4Um68vKyyTLzT+EWClgc+nyxSlunlmx8wgCO16RDicwxvccnyBHguoNqxPaJL/YPAdvuAJkqaFPf/BfDojzEZA==
   optionalDependencies:
     fsevents "~2.1.2"
 
@@ -6109,9 +6120,9 @@ thenify-all@^1.0.0:
     thenify ">= 3.1.0 < 4"
 
 "thenify@>= 3.1.0 < 4":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.0.tgz#e69e38a1babe969b0108207978b9f62b88604839"
-  integrity sha1-5p44obq+lpsBCCB5eLn2K4hgSDk=
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/thenify/-/thenify-3.3.1.tgz#8932e686a4066038a016dd9e2ca46add9838a95f"
+  integrity sha512-RVZSIV5IG10Hk3enotrhvz0T9em6cyHBLkH/YAZuKqd8hRkKhSfCGIcP2KUY0EPxndzANBmNllzWPwak+bheSw==
   dependencies:
     any-promise "^1.0.0"
 

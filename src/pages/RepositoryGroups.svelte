@@ -17,7 +17,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $repositoryGroupsRoute as repositoryGroup (repositoryGroup.name)}
+      {#each $repositoryGroupsRoute as repositoryGroup}
         <tr>
           <td>
             <RepositoryGroupLink {repositoryGroup} />

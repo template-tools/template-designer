@@ -18,7 +18,7 @@
       </tr>
     </thead>
     <tbody>
-      {#each $repositoriesRoute as repository (repository.fullName)}
+      {#each $repositoriesRoute as repository}
         <tr>
           <td>
             <RepositoryLink {repository} />
