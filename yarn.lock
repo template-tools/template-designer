@@ -2204,16 +2204,16 @@ gitea-repository-provider@^1.11.13:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.3.0"
 
-github-repository-provider@^7.12.0:
-  version "7.12.0"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.12.0.tgz#654531d0f871aa97ca47912312c593012c9f277a"
-  integrity sha512-Imb+AIYYn6jTZOH+XxWWzAA53KwexgHxqDqoKQa2CKO3LZTTFCnFrGWaNRMx2sP6noHRVYeqdjEzVuSBGnLBFw==
+github-repository-provider@^7.13.0:
+  version "7.13.0"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.13.0.tgz#82b56159fa2adcb95484ab2b818dd8d0f9b9ba4f"
+  integrity sha512-b942KZooBAizPslIhQ5MQSbFwJV0UKbk96mdhj0TI12iO3ypLSIoqmybSDvhbCKffbaH3vnPmYyUpXU4/hydKA==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.2.0"
+    repository-provider "^23.3.0"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5993,7 +5993,6 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  uid "2f5dbfa2d1571e4c42d60c595fef019882ff117b"
   resolved "https://github.com/arlac77/svelte-guard-history-router.git#2f5dbfa2d1571e4c42d60c595fef019882ff117b"
   dependencies:
     multi-path-matcher "^2.0.15"
