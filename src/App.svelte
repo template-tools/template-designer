@@ -1,6 +1,6 @@
 <script>
   import {
-    TheRouter,
+    Router,
     Route,
     Outlet,
     link,
@@ -14,7 +14,7 @@
   import router from "./router.mjs";
 </script>
 
-<TheRouter {router}>
+<Router {router}>
   <nav>
     <Route path="/" component={Home}>
       <img class="logo" src="images/git.svg" alt="Template Designer" />
@@ -44,4 +44,4 @@
   <main>
     <Outlet />
   </main>
-</TheRouter>
+</Router>
