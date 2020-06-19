@@ -6032,7 +6032,7 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  resolved "https://github.com/arlac77/svelte-guard-history-router.git#4cd8a129c24a06cd40995aed3dae140288333658"
+  resolved "https://github.com/arlac77/svelte-guard-history-router.git#51a0f3b5efed7f5785f5be158341c5462bf18a91"
   dependencies:
     multi-path-matcher "^2.0.15"
 
