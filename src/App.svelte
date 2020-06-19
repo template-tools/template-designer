@@ -1,7 +1,7 @@
 <script>
   import {
     TheRouter,
-    TargetRoute,
+    Route,
     Outlet,
     link,
     active
@@ -16,10 +16,10 @@
 
 <TheRouter {router}>
   <nav>
-    <TargetRoute path="/" component={Home}>
+    <Route path="/" component={Home}>
       <img class="logo" src="images/git.svg" alt="Template Designer" />
       Template Designer
-    </TargetRoute>
+    </Route>
 
     <ul class="left">
       <li>
@@ -29,12 +29,12 @@
         </a>
       </li>
       <li>
-        <TargetRoute path="/about" component={About}>About</TargetRoute>
+        <Route path="/about" component={About}>About</Route>
       </li>
       <li>
-        <TargetRoute path="/settings" component={Settings}>
+        <Route path="/settings" component={Settings}>
           Settings
-        </TargetRoute>
+        </Route>
       </li>
     </ul>
     <ul>
