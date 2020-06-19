@@ -1,11 +1,12 @@
 import {
   IteratorStoreRoute,
-  ObjectStoreRoute
+  ObjectStoreRoute,
+  route
 } from "svelte-guard-history-router";
 
 import provider from "../provider.mjs";
 
-import Providers from "../pages/Providers.svelte";
+//import Providers from "../pages/Providers.svelte";
 import Provider from "../pages/Provider.svelte";
 import RepositoryGroups from "../pages/RepositoryGroups.svelte";
 import RepositoryGroup from "../pages/RepositoryGroup.svelte";
@@ -16,18 +17,31 @@ import PullRequest from "../pages/PullRequest.svelte";
 import ContentEntry from "../pages/ContentEntry.svelte";
 import ContentEntries from "../pages/ContentEntries.svelte";
 
-class RepositoriesRoute extends IteratorStoreRoute {
+export class ProvidersRoute extends IteratorStoreRoute {
   iteratorFor(properties) {
-    return provider.repositories();
+    return provider.providers;
   }
 }
 
-export const repositoriesRoute = new RepositoriesRoute(
-  "/repository",
-  Repositories
-);
+class ProviderRoute extends ObjectStoreRoute {
+  objectFor(properties) {
+    return provider.providers.find(p => p.name === properties.provider);
+  }
 
-class RepositoryRoute extends ObjectStoreRoute {
+  propertiesFor(provider) {
+    return {
+      provider: provider.name
+    };
+  }
+}
+
+class RepositoryGroupsRoute extends IteratorStoreRoute {
+  iteratorFor(properties) {
+    return provider.repositoryGroups();
+  }
+}
+
+class RepositoryGroupRoute extends ObjectStoreRoute {
   objectFor(properties) {
     return provider.repositoryGroup(properties.group);
   }
@@ -36,127 +50,144 @@ class RepositoryRoute extends ObjectStoreRoute {
   }
 }
 
-export const repositoryGroupRoute = new RepositoryRoute(
-  repositoriesRoute.path + "/:group",
+class RepositoriesRoute extends IteratorStoreRoute {
+  iteratorFor(properties) {
+    return provider.repositories();
+  }
+}
+
+class RepositoryRoute extends ObjectStoreRoute {
+  objectFor(properties) {
+    return provider.repository(properties.group + "/" + properties.repository);
+  }
+
+  propertiesFor(repository) {
+    return { repository: repository.name, group: repository.owner.name };
+  }
+}
+
+class BranchRoute extends ObjectStoreRoute {
+  objectFor(properties) {
+    return provider.branch(
+      `${properties.group}/${properties.repository}#${properties.branch}`
+    );
+  }
+  propertiesFor(branch) {
+    return {
+      repository: branch.repository.name,
+      group: branch.repository.owner.name,
+      branch: branch.name
+    };
+  }
+}
+
+class PullRequestRoute extends ObjectStoreRoute {
+  async objectFor(properties) {
+    const r = await provider.repository(
+      `${properties.group}/${properties.repository}`
+    );
+    return r.pullRequest(properties.pr);
+  }
+
+  propertiesFor(branch) {
+    return {
+      repository: branch.repository.name,
+      group: branch.repository.owner.name,
+      pr: pr.name
+    };
+  }
+}
+
+class ContentEntriesRoute extends IteratorStoreRoute {
+  async iteratorFor(properties) {
+    const branch = await provider.branch(
+      `${properties.group}/${properties.repository}#${properties.branch}`
+    );
+    return branch.entries();
+  }
+
+  propertiesFor(branch) {
+    return {
+      repository: branch.repository.name,
+      group: branch.repository.owner.name,
+      branch: branch.name
+    };
+  }
+}
+
+class ContentEntryRoute extends ObjectStoreRoute {
+  async objectFor(properties) {
+    const branch = await provider.branch(
+      `${properties.group}/${properties.repository}#${properties.branch}`
+    );
+
+    return await branch.entry(properties.entry);
+  }
+
+  propertiesFor(branch, entry) {
+    return {
+      repository: branch.repository.name,
+      group: branch.repository.owner.name,
+      branch: branch.name,
+      entry: entry.name
+    };
+  }
+}
+
+//export const providersRoute = route("/provider", ProvidersRoute, Providers);
+
+
+
+export const providerRoute = route(
+  "/provider/:provider",
+  ProviderRoute,
+  Provider
+);
+
+export const repositoryGroupsRoute = route(
+  "/group",
+  RepositoryGroupsRoute,
+  RepositoryGroups
+);
+
+export const repositoryGroupRoute = route(
+  repositoryGroupsRoute.path + "/:group",
+  RepositoryGroupRoute,
   RepositoryGroup
 );
 
-export const repositoryRoute = new ObjectStoreRoute(
+export const repositoriesRoute = route(
+  "/repository",
+  RepositoriesRoute,
+  Repositories
+);
+
+export const repositoryRoute = route(
   repositoryGroupRoute.path + "/:group/:repository",
-  Repository,
-  {
-    objectFor: async properties =>
-      provider.repository(properties.group + "/" + properties.repository),
-    propertiesFor: repository => {
-      return { repository: repository.name, group: repository.owner.name };
-    }
-  }
+  RepositoryRoute,
+  Repository
 );
 
-export const repositoryGroupsRoute = new IteratorStoreRoute(
-  "/group",
-  RepositoryGroups,
-  {
-    iteratorFor: async properties => provider.repositoryGroups()
-  }
-);
-
-export const branchRoute = new ObjectStoreRoute(
+export const branchRoute = route(
   repositoryRoute.path + "/branch/:branch",
-  Branch,
-  {
-    objectFor: async properties =>
-      provider.branch(
-        `${properties.group}/${properties.repository}#${properties.branch}`
-      ),
-    propertiesFor: branch => {
-      return {
-        repository: branch.repository.name,
-        group: branch.repository.owner.name,
-        branch: branch.name
-      };
-    }
-  }
+  BranchRoute,
+  Branch
 );
 
-export const pullRequestRoute = new ObjectStoreRoute(
-  repositoryRoute.path + "/:repository/pr/:pr",
-  PullRequest,
-  {
-    objectFor: async properties => {
-      const r = await provider.repository(
-        `${properties.group}/${properties.repository}`
-      );
-      return r.pullRequest(properties.pr);
-    },
-    propertiesFor: branch => {
-      return {
-        repository: branch.repository.name,
-        group: branch.repository.owner.name,
-        pr: pr.name
-      };
-    }
-  }
-);
-
-export const providersRoute = new IteratorStoreRoute("/providers", Providers, {
-  iteratorFor: async properties => provider.providers
-});
-
-export const providerRoute = new ObjectStoreRoute(
-  "/provider/:provider",
-  Provider,
-  {
-    objectFor: async properties =>
-      provider.providers.find(p => p.name === properties.provider),
-    propertiesFor: provider => {
-      return {
-        provider: provider.name
-      };
-    }
-  }
-);
-
-export const contentEntriesRoute = new IteratorStoreRoute(
+export const contentEntriesRoute = route(
   branchRoute.path + "/entry",
-  ContentEntries,
-  {
-    iteratorFor: async properties => {
-      const branch = await provider.branch(
-        `${properties.group}/${properties.repository}#${properties.branch}`
-      );
-      return branch.entries();
-    },
-    propertiesFor: branch => {
-      return {
-        repository: branch.repository.name,
-        group: branch.repository.owner.name,
-        branch: branch.name
-      };
-    }
-  }
+  ContentEntriesRoute,
+  ContentEntries
 );
 
-export const contentEntryRoute = new ObjectStoreRoute(
-  contentEntriesRoute.path + "/:entry",
-  ContentEntry,
-  {
-    objectFor: async properties => {
-      const branch = await provider.branch(
-        `${properties.group}/${properties.repository}#${properties.branch}`
-      );
+export const pullRequestRoute = route(
+  repositoryRoute.path + "/:repository/pr/:pr",
+  PullRequestRoute,
+  PullRequest
+);
 
-      const entry = await branch.entry(properties.entry);
-      
-      return entry;
-    },
-    propertiesFor: (branch, entry) => {
-      return {
-        repository: branch.repository.name,
-        group: branch.repository.owner.name,
-        branch: branch.name,
-        entry: entry.name
-      };
-    }
-  }
+export const contentEntryRoute = route(
+  contentEntriesRoute.path + "/:entry",
+  ContentEntryRoute,
+  ContentEntry
 );

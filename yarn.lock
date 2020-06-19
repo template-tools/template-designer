@@ -5465,7 +5465,7 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.17.0:
+rollup@^2.17.1:
   version "2.17.1"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.17.1.tgz#d01a27c1b76e42efe2cd786609589f6332e81aa6"
   integrity sha512-lVrtCXJ+08Eapa0SfApLmRNWNWm2FsYFnLPIJZJvZz2uI2Gv+dfPyu1zgF7KKF/HYFJDvjxbdCbI8lUVMnG7Sg==
@@ -6032,7 +6032,7 @@ svelte-common@^2.0.3:
 
 "svelte-guard-history-router@https://github.com/arlac77/svelte-guard-history-router.git#development":
   version "0.0.0-semantic-release"
-  resolved "https://github.com/arlac77/svelte-guard-history-router.git#97ebaf9807bc2b42eabd8b5954df4a68900bff4d"
+  resolved "https://github.com/arlac77/svelte-guard-history-router.git#c88d753b11f91184f8de487af573a174a1b2a51a"
   dependencies:
     multi-path-matcher "^2.0.15"
 
