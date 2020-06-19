@@ -14,7 +14,7 @@
   import router from "./router.mjs";
 </script>
 
-<TheRouter base="" {router}>
+<TheRouter {router}>
   <nav>
     <TargetRoute path="/" component={Home}>
       <img class="logo" src="images/git.svg" alt="Template Designer" />
