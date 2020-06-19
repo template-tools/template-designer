@@ -1,15 +1,8 @@
 <script>
-  import {
-    Router,
-    Route,
-    Outlet,
-    link,
-    active
-  } from "svelte-guard-history-router";
+  import { Router, Route, Outlet } from "svelte-guard-history-router";
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import Settings from "./pages/Settings.svelte";
-
   import * as style from "./main.css";
   import router from "./router.mjs";
 </script>
@@ -23,22 +16,15 @@
 
     <ul class="left">
       <li>
-        <a href="/group" use:link={router} use:active={router}>Groups</a>
-        <a href="/repository" use:link={router} use:active={router}>
-          Repositories
-        </a>
+        <Route path="/group">Groups</Route>
+        <Route path="/repository">Repositories</Route>
+      </li>
+      <li>
+        <Route path="/settings" component={Settings}>Settings</Route>
       </li>
       <li>
         <Route path="/about" component={About}>About</Route>
       </li>
-      <li>
-        <Route path="/settings" component={Settings}>
-          Settings
-        </Route>
-      </li>
-    </ul>
-    <ul>
-      <li />
     </ul>
   </nav>
   <main>
