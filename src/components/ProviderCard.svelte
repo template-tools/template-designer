@@ -28,9 +28,7 @@
 
     aggregatedProvider.providers.forEach((p, i) => {
       if (p === provider) {
-        console.log("replace " + i);
         const np = new p.constructor(undefined, localStorage);
-        console.log(np);
         aggregatedProvider.provider[i] = np;
       }
     });
