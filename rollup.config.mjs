@@ -39,7 +39,7 @@ export default () => {
   ];
   
   const resolverPlugins = [
-    resolve.nodeResolve({
+    resolve({
       browser: true,
       preferBuiltins: false,
       dedupe: importee => importee === "svelte" || importee.startsWith("svelte/")
