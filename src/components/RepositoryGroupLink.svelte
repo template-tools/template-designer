@@ -1,16 +1,9 @@
 <script>
-  import ObjectLink from "./ObjectLink.svelte";
-  import {
-  repositoryGroupsRoute,
-  repositoryGroupRoute,
-  repositoriesRoute,
-  repositoryRoute,
-  branchRoute
-  } from "../routes/repositories.mjs";
+  import { ObjectLink } from "svelte-guard-history-router";
   export let repositoryGroup;
 </script>
 
-<ObjectLink route={repositoryGroupRoute} object={repositoryGroup}>
+<ObjectLink object={repositoryGroup}>
   <slot>
     <img
       src="images/{repositoryGroup.provider.name}.svg"

@@ -1,11 +1,9 @@
 <script>
-  import ObjectLink from "./ObjectLink.svelte";
-  import { providerRoute } from "../routes/repositories.mjs";
-
+  import { ObjectLink } from "svelte-guard-history-router";
   export let provider;
 </script>
 
-<ObjectLink route={providerRoute} object={provider}>
+<ObjectLink object={provider}>
   <slot>
     <img
       src="images/{provider.name}.svg"

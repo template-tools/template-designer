@@ -62,7 +62,9 @@ class RepositoryRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(repository) {
-    return { repository: repository.name, group: repository.owner.name };
+    return repository === undefined
+      ? undefined
+      : { repository: repository.name, group: repository.owner.name };
   }
 }
 
@@ -73,11 +75,13 @@ class BranchRoute extends ObjectStoreRoute {
     );
   }
   propertiesFor(branch) {
-    return {
-      repository: branch.repository.name,
-      group: branch.repository.owner.name,
-      branch: branch.name
-    };
+    return branch === undefined || branch.repository === undefined
+      ? undefined
+      : {
+          repository: branch.repository.name,
+          group: branch.repository.owner.name,
+          branch: branch.name
+        };
   }
 }
 
@@ -90,11 +94,13 @@ class PullRequestRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(branch) {
-    return {
-      repository: branch.repository.name,
-      group: branch.repository.owner.name,
-      pr: pr.name
-    };
+    return branch === undefined || branch.repository === undefined
+      ? undefined
+      : {
+          repository: branch.repository.name,
+          group: branch.repository.owner.name,
+          pr: pr.name
+        };
   }
 }
 
@@ -107,11 +113,13 @@ class ContentEntriesRoute extends IteratorStoreRoute {
   }
 
   propertiesFor(branch) {
-    return {
-      repository: branch.repository.name,
-      group: branch.repository.owner.name,
-      branch: branch.name
-    };
+    return branch === undefined || branch.repository === undefined
+      ? undefined
+      : {
+          repository: branch.repository.name,
+          group: branch.repository.owner.name,
+          branch: branch.name
+        };
   }
 }
 
@@ -125,18 +133,18 @@ class ContentEntryRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(branch, entry) {
-    return {
-      repository: branch.repository.name,
-      group: branch.repository.owner.name,
-      branch: branch.name,
-      entry: entry.name
-    };
+    return branch === undefined || branch.repository === undefined || branch.repository.owner === undefined
+      ? undefined
+      : {
+          repository: branch.repository.name,
+          group: branch.repository.owner.name,
+          branch: branch.name,
+          entry: entry.name
+        };
   }
 }
 
 //export const providersRoute = route("/provider", ProvidersRoute, Providers);
-
-
 
 export const providerRoute = route(
   "/provider/:provider",
