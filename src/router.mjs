@@ -1,5 +1,5 @@
 import base from "consts:base";
-import { BaseRouter, SkeletonRoute, route } from "svelte-guard-history-router";
+import { BaseRouter, route } from "svelte-guard-history-router";
 import Home from "./pages/Home.svelte";
 
 import AuthAccept from "./pages/AuthAccept.svelte";
@@ -19,8 +19,8 @@ import {
 
 export const router = new BaseRouter(
   [
-    route("*", SkeletonRoute, Home),
-    route("/auth/accept", SkeletonRoute, AuthAccept),
+    route("*", Home),
+    route("/auth/accept", AuthAccept),
  //   providersRoute,
     providerRoute,
     repositoryGroupRoute,
