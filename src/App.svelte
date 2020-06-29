@@ -3,7 +3,7 @@
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import Providers from "./pages/Providers.svelte";
-  import { ProvidersRoute} from "./routes/repositories.mjs";
+  import { ProvidersRoute, RepositoriesRoute } from "./routes/repositories.mjs";
   import * as style from "./main.css";
   import router from "./router.mjs";
 </script>
@@ -18,8 +18,13 @@
     <ul class="left">
       <li>
         <Route path="/group">Groups</Route>
-        <Route path="/repository">Repositories</Route>
-        <Route path="/providers" factory={ProvidersRoute} component={Providers}>Providers</Route>
+        <Route
+          path="/repository">
+          Repositories
+        </Route>
+        <Route path="/providers" factory={ProvidersRoute} component={Providers}>
+          Providers
+        </Route>
       </li>
       <li>
         <Route path="/about" component={About}>About</Route>
