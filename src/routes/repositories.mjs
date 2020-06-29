@@ -3,6 +3,7 @@ import {
   ObjectStoreRoute,
   route
 } from "svelte-guard-history-router";
+import { BaseProvider } from "repository-provider";
 
 import provider from "../provider.mjs";
 
@@ -29,9 +30,11 @@ class ProviderRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(provider) {
-    return {
-      provider: provider.name
-    };
+    return provider instanceof BaseProvider
+      ? {
+          provider: provider.name
+        }
+      : undefined;
   }
 }
 
@@ -75,7 +78,9 @@ class BranchRoute extends ObjectStoreRoute {
     );
   }
   propertiesFor(branch) {
-    return branch === undefined || branch.repository === undefined
+    return branch === undefined ||
+      branch.repository === undefined ||
+      branch.repository.owner === undefined
       ? undefined
       : {
           repository: branch.repository.name,
@@ -94,7 +99,9 @@ class PullRequestRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(branch) {
-    return branch === undefined || branch.repository === undefined
+    return branch === undefined ||
+      branch.repository === undefined ||
+      branch.repository.owner === undefined
       ? undefined
       : {
           repository: branch.repository.name,
@@ -113,7 +120,9 @@ class ContentEntriesRoute extends IteratorStoreRoute {
   }
 
   propertiesFor(branch) {
-    return branch === undefined || branch.repository === undefined
+    return branch === undefined ||
+      branch.repository === undefined ||
+      branch.repository.owner === undefined
       ? undefined
       : {
           repository: branch.repository.name,
@@ -133,7 +142,9 @@ class ContentEntryRoute extends ObjectStoreRoute {
   }
 
   propertiesFor(branch, entry) {
-    return branch === undefined || branch.repository === undefined || branch.repository.owner === undefined
+    return branch === undefined ||
+      branch.repository === undefined ||
+      branch.repository.owner === undefined
       ? undefined
       : {
           repository: branch.repository.name,
