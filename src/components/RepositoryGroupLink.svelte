@@ -1,5 +1,5 @@
 <script>
-  import { ObjectLink } from "svelte-guard-history-router";
+  import { ObjectLink } from "svelte-guard-history-router";
   export let repositoryGroup;
 </script>
 
@@ -7,15 +7,9 @@
   <slot>
     <img
       src="images/{repositoryGroup.provider.name}.svg"
-      width="16"
-      height="16"
+      width="18"
+      height="18"
       alt={repositoryGroup.provider.name} />
-
-    <div
-      aria-label={repositoryGroup.description}
-      data-microtip-position="up"
-      role="tooltip">
-      {repositoryGroup.name}
-    </div>
+    {repositoryGroup.name}
   </slot>
 </ObjectLink>

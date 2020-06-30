@@ -1,5 +1,5 @@
 <script>
-  import { ObjectLink } from "svelte-guard-history-router";
+  import { ObjectLink } from "svelte-guard-history-router";
   export let branch;
 </script>
 
@@ -7,15 +7,9 @@
   <slot>
     <img
       src="images/{branch.provider.name}.svg"
-      width="16"
-      height="16"
+      width="18"
+      height="18"
       alt={branch.provider.name} />
-
-    <div
-      aria-label={branch.description}
-      data-microtip-position="up"
-      role="tooltip">
-      {branch.fullName}
-    </div>
+    {branch.fullName}
   </slot>
 </ObjectLink>
