@@ -70,12 +70,13 @@ export class BranchRoute extends ObjectStoreRoute {
       `${properties.group}/${properties.repository}#${properties.branch}`
     );
   }
-  propertiesFor(branch) {
-    return branch instanceof Branch
+  propertiesFor(object) {
+    return object instanceof Branch
       ? {
-          repository: branch.repository.name,
-          group: branch.repository.owner.name,
-          branch: branch.name
+          provider: object.provider.name,
+          repository: object.repository.name,
+          group: object.repository.owner.name,
+          branch: object.name
         }
       : undefined;
   }
@@ -108,12 +109,13 @@ export class ContentEntriesRoute extends IteratorStoreRoute {
     return branch.entries();
   }
 
-  propertiesFor(branch) {
-    return branch instanceof Branch
+  propertiesFor(object, entry) {
+    return object instanceof Branch && entry
       ? {
-          repository: branch.repository.name,
-          group: branch.repository.owner.name,
-          branch: branch.name
+          provider: object.provider.name,
+          repository: object.repository.name,
+          group: object.repository.owner.name,
+          branch: object.name
         }
       : undefined;
   }
@@ -128,12 +130,13 @@ export class ContentEntryRoute extends ObjectStoreRoute {
     return await branch.entry(properties.entry);
   }
 
-  propertiesFor(branch, entry) {
-    return branch instanceof Branch
+  propertiesFor(object, entry) {
+    return object instanceof Branch && entry
       ? {
-          repository: branch.repository.name,
-          group: branch.repository.owner.name,
-          branch: branch.name,
+          provider: object.provider.name,
+          repository: object.repository.name,
+          group: object.repository.owner.name,
+          branch: object.name,
           entry: entry.name
         }
       : undefined;

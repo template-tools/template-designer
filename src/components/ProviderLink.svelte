@@ -1,15 +1,6 @@
 <script>
-  import { ObjectLink } from "svelte-guard-history-router";
-  export let provider;
+  export let object;
 </script>
 
-<ObjectLink object={provider}>
-  <slot>
-    <img
-      src="images/{provider.name}.svg"
-      width="18"
-      height="18"
-      alt={provider.name} />
-    {provider.name}
-  </slot>
-</ObjectLink>
+<img src="images/{object.name}.svg" width="18" height="18" alt={object.name} />
+{object.name}

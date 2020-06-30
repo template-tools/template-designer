@@ -1,15 +1,10 @@
 <script>
-  import { ObjectLink } from "svelte-guard-history-router";
-  export let branch;
+  export let object;
 </script>
 
-<ObjectLink object={branch}>
-  <slot>
-    <img
-      src="images/{branch.provider.name}.svg"
-      width="18"
-      height="18"
-      alt={branch.provider.name} />
-    {branch.fullName}
-  </slot>
-</ObjectLink>
+<img
+  src="images/{object.provider.name}.svg"
+  width="18"
+  height="18"
+  alt={object.provider.name} />
+{object.fullName}

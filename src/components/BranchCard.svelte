@@ -1,9 +1,7 @@
 <script>
-  import { Link } from "svelte-guard-history-router";
-
+  import { ObjectLink, Link } from "svelte-guard-history-router";
   import iteratorStore from "../iterator-store.mjs";
   import Attributes from "./Attributes.svelte";
-  import RepositoryLink from "./RepositoryLink.svelte";
   import { contentEntryRoute } from "../routes/repositories.mjs";
 
   export let branch;
@@ -14,8 +12,7 @@
 <div class="card">
   <div class="card-content">
     <h5 class="card-title">{branch.name}</h5>
-    <RepositoryLink repository={branch.repository} />
-
+    <ObjectLink object={branch.repository} />
     <Attributes object={branch} />
   </div>
 

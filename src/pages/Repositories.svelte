@@ -1,12 +1,6 @@
 <script>
-  import RepositoryLink from "../components/RepositoryLink.svelte";
-  import {
-    repositoryGroupsRoute,
-    repositoryGroupRoute,
-    repositoriesRoute,
-    repositoryRoute,
-    branchRoute
-  } from "../routes/repositories.mjs";
+  import { ObjectLink } from "svelte-guard-history-router";
+  import { repositoriesRoute } from "../routes/repositories.mjs";
 </script>
 
 <div>
@@ -21,7 +15,7 @@
       {#each $repositoriesRoute as repository}
         <tr>
           <td>
-            <RepositoryLink {repository} />
+            <ObjectLink object={repository} />
           </td>
           <td>
             {#if repository.description}{repository.description}{/if}

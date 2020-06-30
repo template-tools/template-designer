@@ -12,6 +12,11 @@ import {
   PullRequestRoute
 } from "./repository-routes.mjs";
 
+import ProviderLink from "../components/ProviderLink.svelte";
+import RepositoryGroupLink from "../components/RepositoryGroupLink.svelte";
+import RepositoryLink from "../components/RepositoryLink.svelte";
+import BranchLink from "../components/BranchLink.svelte";
+
 export { ProvidersRoute, RepositoriesRoute };
 
 //import Providers from "../pages/Providers.svelte";
@@ -32,6 +37,8 @@ export const providerRoute = route(
   ProviderRoute,
   Provider
 );
+providerRoute.linkComponent = ProviderLink;
+
 
 export const repositoryGroupsRoute = route(
   "/group",
@@ -44,6 +51,7 @@ export const repositoryGroupRoute = route(
   RepositoryGroupRoute,
   RepositoryGroup
 );
+repositoryGroupRoute.linkComponent = RepositoryGroupLink;
 
 export const repositoriesRoute = route(
   "/repository",
@@ -56,12 +64,14 @@ export const repositoryRoute = route(
   RepositoryRoute,
   Repository
 );
+repositoryRoute.linkComponent = RepositoryLink;
 
 export const branchRoute = route(
   repositoryRoute.path + "/branch/:branch",
   BranchRoute,
   Branch
 );
+branchRoute.linkComponent = BranchLink;
 
 export const contentEntriesRoute = route(
   branchRoute.path + "/entry",

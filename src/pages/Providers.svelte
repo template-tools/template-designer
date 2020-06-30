@@ -1,5 +1,5 @@
 <script>
-  import ProviderLink from "../components/ProviderLink.svelte";
+  import { ObjectLink } from "svelte-guard-history-router";
   import providerFactories from "../provider-factories.mjs";
   import provider from "../provider.mjs";
   //import { ProvidersRoute } from "../routes/repositories.mjs";
@@ -8,9 +8,9 @@
   async function addProvider(ev) {
     const i = Number.parseInt(ev.srcElement.id.substring(3));
     provider.providers.push(new providerFactories[i]());
-   // providersRoute.enter(); // HACK
+    // providersRoute.enter(); // HACK
 
-  /*
+    /*
     try {
       const url = `${api}/login/oauth/authorize?client_id=${client_id}&redirect_uri=${redirect_uri}& response_type=code&state=${state}`;
 
@@ -58,7 +58,7 @@
     {#each providers as provider}
       <tr>
         <td>
-          <ProviderLink {provider} />
+          <ObjectLink object={provider} />
         </td>
       </tr>
     {/each}
