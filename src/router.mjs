@@ -1,6 +1,5 @@
 import base from "consts:base";
 import { BaseRouter, route } from "svelte-guard-history-router";
-import Home from "./pages/Home.svelte";
 
 import AuthAccept from "./pages/AuthAccept.svelte";
 
@@ -19,7 +18,6 @@ import {
 
 export const router = new BaseRouter(
   [
-    route("*", Home),
     route("/auth/accept", AuthAccept),
  //   providersRoute,
     providerRoute,

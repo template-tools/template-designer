@@ -10,7 +10,7 @@
 
 <Router {router}>
   <nav>
-    <Route path="/" component={Home}>
+    <Route href="/" path="*" component={Home}>
       <img class="logo" src="images/git.svg" alt="Template Designer" />
       Template Designer
     </Route>
@@ -18,10 +18,7 @@
     <ul class="left">
       <li>
         <Route path="/group">Groups</Route>
-        <Route
-          path="/repository">
-          Repositories
-        </Route>
+        <Route path="/repository">Repositories</Route>
         <Route path="/providers" factory={ProvidersRoute} component={Providers}>
           Providers
         </Route>
