@@ -19,9 +19,9 @@
   <ul>
     {#each $entries as entry (entry.name)}
       <li>
-        <Link href={contentEntryRoute.pathFor(branch, entry)}>
+        <ObjectLink object={[entry, branch]}>
           {entry.name}
-        </Link>
+        </ObjectLink>
       </li>
     {/each}
   </ul>

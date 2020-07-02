@@ -3,6 +3,7 @@
 
   import iteratorStore from "../iterator-store.mjs";
   import HookCard from "./HookCard.svelte";
+  import PullRequestCard from "./PullRequestCard.svelte";
   import Attributes from "./Attributes.svelte";
 
   export let repository;
@@ -32,6 +33,6 @@
   {/each}
 
   {#each $pullRequests as pullRequest}
-    <HookCard {pullRequest} />
+    <PullRequestCard {pullRequest} />
   {/each}
 </div>

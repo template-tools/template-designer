@@ -130,8 +130,8 @@ export class ContentEntryRoute extends ObjectStoreRoute {
     return await branch.entry(properties.entry);
   }
 
-  propertiesFor(object, entry) {
-    return object instanceof Branch && entry
+  propertiesFor(entry, object) {
+    return entry && object instanceof Branch
       ? {
           provider: object.provider.name,
           repository: object.repository.name,

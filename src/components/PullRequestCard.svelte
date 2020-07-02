@@ -1,29 +1,18 @@
 <script>
-  import { ObjectLink, Link } from "svelte-guard-history-router";
+  import { ObjectLink } from "svelte-guard-history-router";
   import iteratorStore from "../iterator-store.mjs";
   import Attributes from "./Attributes.svelte";
   import { contentEntryRoute } from "../routes/repositories.mjs";
 
-  export let branch;
-
-  let entries = iteratorStore(() => branch.entries());
+  export let pullRequest;
 </script>
 
 <div class="card">
   <div class="card-content">
-    <h5 class="card-title">{branch.name}</h5>
-    <ObjectLink object={branch.repository} />
+    <h5 class="card-title">{pullRequest.displayName}</h5>
+    <ObjectLink object={pullRequest.source} />
+    <ObjectLink object={pullRequest.destination} />
 
-    <Attributes object={branch} />
+    <Attributes object={pullRequest} />
   </div>
-
-  <ul>
-    {#each $entries as entry (entry.name)}
-      <li>
-        <Link href={contentEntryRoute.pathFor(branch, entry)}>
-          {entry.name}
-        </Link>
-      </li>
-    {/each}
-  </ul>
 </div>

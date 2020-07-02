@@ -4,7 +4,6 @@ import { BaseRouter, route } from "svelte-guard-history-router";
 import AuthAccept from "./pages/AuthAccept.svelte";
 
 import {
-//  providersRoute,
   providerRoute,
   repositoryGroupsRoute,
   repositoryGroupRoute,
@@ -19,7 +18,6 @@ import {
 export const router = new BaseRouter(
   [
     route("/auth/accept", AuthAccept),
- //   providersRoute,
     providerRoute,
     repositoryGroupRoute,
     repositoriesRoute,

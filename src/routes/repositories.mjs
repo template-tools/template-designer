@@ -16,6 +16,8 @@ import ProviderLink from "../components/ProviderLink.svelte";
 import RepositoryGroupLink from "../components/RepositoryGroupLink.svelte";
 import RepositoryLink from "../components/RepositoryLink.svelte";
 import BranchLink from "../components/BranchLink.svelte";
+import HookLink from "../components/HookLink.svelte";
+import PullRequestLink from "../components/PullRequestLink.svelte";
 
 export { ProvidersRoute, RepositoriesRoute };
 
@@ -84,6 +86,7 @@ export const pullRequestRoute = route(
   PullRequestRoute,
   PullRequest
 );
+pullRequestRoute.linkComponent = PullRequestLink;
 
 export const contentEntryRoute = route(
   contentEntriesRoute.path + "/:entry",
