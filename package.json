@@ -29,7 +29,7 @@
     "github-repository-provider": "^7.15.1",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.3",
-    "svelte-guard-history-router": "^2.3.2",
+    "svelte-guard-history-router": "^2.4.0",
     "svelte-session-manager": "^1.1.4"
   },
   "devDependencies": {

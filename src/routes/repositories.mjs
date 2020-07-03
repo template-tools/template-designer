@@ -49,10 +49,11 @@ export const repositoryGroupsRoute = route(
 );
 
 export const repositoryGroupRoute = route(
-  repositoryGroupsRoute.path + "/:group",
+  "/:group",
   RepositoryGroupRoute,
   RepositoryGroup
 );
+repositoryGroupRoute.parent = repositoryGroupsRoute;
 repositoryGroupRoute.linkComponent = RepositoryGroupLink;
 
 export const repositoriesRoute = route(
@@ -62,34 +63,39 @@ export const repositoriesRoute = route(
 );
 
 export const repositoryRoute = route(
-  repositoryGroupRoute.path + "/:group/:repository",
+  "/:group/:repository",
   RepositoryRoute,
   Repository
 );
+repositoryRoute.parent = repositoryGroupRoute;
 repositoryRoute.linkComponent = RepositoryLink;
 
 export const branchRoute = route(
-  repositoryRoute.path + "/branch/:branch",
+  "/branch/:branch",
   BranchRoute,
   Branch
 );
+branchRoute.parent = repositoryRoute;
 branchRoute.linkComponent = BranchLink;
 
 export const contentEntriesRoute = route(
-  branchRoute.path + "/entry",
+  "/entry",
   ContentEntriesRoute,
   ContentEntries
 );
-
-export const pullRequestRoute = route(
-  repositoryRoute.path + "/:repository/pr/:pr",
-  PullRequestRoute,
-  PullRequest
-);
-pullRequestRoute.linkComponent = PullRequestLink;
+contentEntriesRoute.parent = branchRoute;
 
 export const contentEntryRoute = route(
-  contentEntriesRoute.path + "/:entry",
+  "/:entry",
   ContentEntryRoute,
   ContentEntry
 );
+contentEntryRoute.parent = contentEntriesRoute;
+
+export const pullRequestRoute = route(
+  "/pr/:pr",
+  PullRequestRoute,
+  PullRequest
+);
+pullRequestRoute.parent = repositoryRoute;
+pullRequestRoute.linkComponent = PullRequestLink;
