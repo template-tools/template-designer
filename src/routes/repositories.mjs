@@ -9,7 +9,9 @@ import {
   BranchRoute,
   ContentEntriesRoute,
   ContentEntryRoute,
-  PullRequestRoute
+  PullRequestRoute,
+  HooksRoute,
+  HookRoute
 } from "./repository-routes.mjs";
 
 import ProviderLink from "../components/ProviderLink.svelte";
@@ -29,8 +31,10 @@ import Repositories from "../pages/Repositories.svelte";
 import Repository from "../pages/Repository.svelte";
 import Branch from "../pages/Branch.svelte";
 import PullRequest from "../pages/PullRequest.svelte";
-import ContentEntry from "../pages/ContentEntry.svelte";
+import Hooks from "../pages/Hooks.svelte";
+import Hook from "../pages/Hook.svelte";
 import ContentEntries from "../pages/ContentEntries.svelte";
+import ContentEntry from "../pages/ContentEntry.svelte";
 
 //export const providersRoute = route("/provider", ProvidersRoute, Providers);
 
@@ -49,11 +53,11 @@ export const repositoryGroupsRoute = route(
 );
 
 export const repositoryGroupRoute = route(
+  repositoryGroupsRoute,
   "/:group",
   RepositoryGroupRoute,
   RepositoryGroup
 );
-repositoryGroupRoute.parent = repositoryGroupsRoute;
 repositoryGroupRoute.linkComponent = RepositoryGroupLink;
 
 export const repositoriesRoute = route(
@@ -63,19 +67,19 @@ export const repositoriesRoute = route(
 );
 
 export const repositoryRoute = route(
+  repositoryGroupRoute,
   "/:group/:repository",
   RepositoryRoute,
   Repository
 );
-repositoryRoute.parent = repositoryGroupRoute;
 repositoryRoute.linkComponent = RepositoryLink;
 
 export const branchRoute = route(
+  repositoryRoute,
   "/branch/:branch",
   BranchRoute,
   Branch
 );
-branchRoute.parent = repositoryRoute;
 branchRoute.linkComponent = BranchLink;
 
 export const contentEntriesRoute = route(
@@ -86,16 +90,32 @@ export const contentEntriesRoute = route(
 contentEntriesRoute.parent = branchRoute;
 
 export const contentEntryRoute = route(
+  contentEntriesRoute,
   "/:entry",
   ContentEntryRoute,
   ContentEntry
 );
-contentEntryRoute.parent = contentEntriesRoute;
 
 export const pullRequestRoute = route(
+  repositoryRoute,
   "/pr/:pr",
   PullRequestRoute,
   PullRequest
 );
-pullRequestRoute.parent = repositoryRoute;
 pullRequestRoute.linkComponent = PullRequestLink;
+
+
+export const hooksRoute = route(
+  repositoryRoute,
+  "/hook",
+  HooksRoute,
+  Hooks
+);
+
+export const hookRoute = route(
+  hooksRoute,
+  "/:hook",
+  HookRoute,
+  Hook
+);
+hookRoute.linkComponent = HookLink;

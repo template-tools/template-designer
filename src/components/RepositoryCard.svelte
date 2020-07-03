@@ -2,7 +2,6 @@
   import { ObjectLink } from "svelte-guard-history-router";
 
   import iteratorStore from "../iterator-store.mjs";
-  import HookCard from "./HookCard.svelte";
   import PullRequestCard from "./PullRequestCard.svelte";
   import Attributes from "./Attributes.svelte";
 
@@ -23,14 +22,19 @@
   <ul>
     {#each $branches as branch (branch.name)}
       <li>
-        <ObjectLink object={branch}/>
+        <ObjectLink object={branch} />
       </li>
     {/each}
   </ul>
 
-  {#each $hooks as hook}
-    <HookCard {hook} />
-  {/each}
+  <h5>Hooks</h5>
+  <ul>
+    {#each $hooks as hook}
+      <li>
+        <ObjectLink object={hook} />
+      </li>
+    {/each}
+  </ul>
 
   {#each $pullRequests as pullRequest}
     <PullRequestCard {pullRequest} />

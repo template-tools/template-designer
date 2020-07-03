@@ -2,4 +2,4 @@
   export let object;
 </script>
 
-{object.displayName}
+Hook {object.url} {object.displayName}

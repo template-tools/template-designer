@@ -2,7 +2,9 @@ import {
   BaseProvider,
   RepositoryGroup,
   Repository,
-  Branch
+  Branch,
+  Hook,
+  PullRequest
 } from "repository-provider";
 import {
   IteratorStoreRoute,
@@ -64,6 +66,26 @@ export class RepositoryRoute extends ObjectStoreRoute {
   }
 }
 
+export class HooksRoute extends IteratorStoreRoute {
+  async iteratorFor(properties) {
+    const repo = await provider.repository(properties.group + "/" + properties.repository);
+    return repo.hooks();
+  }
+}
+
+export class HookRoute extends ObjectStoreRoute {
+  async objectFor(properties) {
+    const repo = await provider.repository(properties.group + "/" + properties.repository);
+    return repo.hook(properties.hook);
+  }
+
+  propertiesFor(object) {
+    return object instanceof Hook
+      ? { hook: object.name }
+      : undefined;
+  }
+}
+
 export class BranchRoute extends ObjectStoreRoute {
   objectFor(properties) {
     return provider.branch(
@@ -90,12 +112,10 @@ export class PullRequestRoute extends ObjectStoreRoute {
     return r.pullRequest(properties.pr);
   }
 
-  propertiesFor(branch) {
-    return branch instanceof Branch
+  propertiesFor(object) {
+    return object instanceof PullRequest
       ? {
-          repository: branch.repository.name,
-          group: branch.repository.owner.name,
-          pr: pr.name
+          pr: object.name
         }
       : undefined;
   }
