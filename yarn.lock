@@ -2223,10 +2223,10 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.11.18:
-  version "1.11.18"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.11.18.tgz#180991345c38746af816e8faa7f809005abf5526"
-  integrity sha512-ARS1LJ4vU8xUh9aAZLM6WHuIbh53IjnilQEPjtVx3ONE0eBUTxz28NYc4sl1M6Y+Veb+0nnU4OiYTTrSjVQcjg==
+gitea-repository-provider@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.12.0.tgz#676437388fb5cd868cd0d1c90e251c51f62d2d56"
+  integrity sha512-xdaPeMO2qh/7vD9Pd0ORbYDGAK7UgvcElG2NKkRX9lw0NNWJGxvQJbmj+L/yA3LQWYvEXe4WDwLf05qgoIRfyQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
