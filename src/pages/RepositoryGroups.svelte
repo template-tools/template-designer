@@ -3,25 +3,23 @@
   import { repositoryGroupsRoute } from "../routes/repositories.mjs";
 </script>
 
-<div>
-  <table class="bordered striped hoverable">
-    <thead>
+<table class="bordered striped hoverable">
+  <thead>
+    <tr>
+      <th aria-sort="none">Group</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each $repositoryGroupsRoute as repositoryGroup}
       <tr>
-        <th aria-sort="none">Group</th>
-        <th>Description</th>
+        <td>
+          <ObjectLink object={repositoryGroup} />
+        </td>
+        <td>
+          {#if repositoryGroup.description}{repositoryGroup.description}{/if}
+        </td>
       </tr>
-    </thead>
-    <tbody>
-      {#each $repositoryGroupsRoute as repositoryGroup}
-        <tr>
-          <td>
-            <ObjectLink object={repositoryGroup} />
-          </td>
-          <td>
-            {#if repositoryGroup.description}{repositoryGroup.description}{/if}
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
-</div>
+    {/each}
+  </tbody>
+</table>

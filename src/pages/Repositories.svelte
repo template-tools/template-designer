@@ -3,25 +3,23 @@
   import { repositoriesRoute } from "../routes/repositories.mjs";
 </script>
 
-<div>
-  <table class="bordered striped hoverable">
-    <thead>
+<table class="bordered striped hoverable">
+  <thead>
+    <tr>
+      <th aria-sort="none">Repository</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each $repositoriesRoute as repository}
       <tr>
-        <th aria-sort="none">Repository</th>
-        <th>Description</th>
+        <td>
+          <ObjectLink object={repository} />
+        </td>
+        <td>
+          {#if repository.description}{repository.description}{/if}
+        </td>
       </tr>
-    </thead>
-    <tbody>
-      {#each $repositoriesRoute as repository}
-        <tr>
-          <td>
-            <ObjectLink object={repository} />
-          </td>
-          <td>
-            {#if repository.description}{repository.description}{/if}
-          </td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
-</div>
+    {/each}
+  </tbody>
+</table>

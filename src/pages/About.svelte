@@ -7,23 +7,21 @@
   import { serviceWorker } from "../main.mjs";
 </script>
 
-<div>
-  <h2>{name}</h2>
-  <p>{description}</p>
-  <table class="bordered striped hoverable">
-    <tbody>
-      <tr>
-        <td>Version</td>
-        <td>{version}</td>
-      </tr>
-      <tr>
-        <td>Mounted</td>
-        <td>{base}</td>
-      </tr>
-      <tr>
-        <td>Service Worker</td>
-        <td>{$serviceWorker.state}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<h2>{name}</h2>
+<p>{description}</p>
+<table class="bordered striped hoverable">
+  <tbody>
+    <tr>
+      <td>Version</td>
+      <td>{version}</td>
+    </tr>
+    <tr>
+      <td>Mounted</td>
+      <td>{base}</td>
+    </tr>
+    <tr>
+      <td>Service Worker</td>
+      <td>{$serviceWorker.state}</td>
+    </tr>
+  </tbody>
+</table>

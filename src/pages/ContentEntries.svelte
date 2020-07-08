@@ -2,19 +2,17 @@
   import { contentEntriesRoute } from "../routes/repositories.mjs";
 </script>
 
-<div>
-  <table class="bordered striped hoverable">
-    <thead>
+<table class="bordered striped hoverable">
+  <thead>
+    <tr>
+      <th aria-sort="none">Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    {#each $contentEntriesRoute as entry (entry.name)}
       <tr>
-        <th aria-sort="none">Name</th>
+        <td>{entry.name}</td>
       </tr>
-    </thead>
-    <tbody>
-      {#each $contentEntriesRoute as entry (entry.name)}
-        <tr>
-          <td>{entry.name}</td>
-        </tr>
-      {/each}
-    </tbody>
-  </table>
-</div>
+    {/each}
+  </tbody>
+</table>
