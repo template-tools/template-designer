@@ -1,8 +1,10 @@
 <script>
   import PullRequestCard from '../components/PullRequestCard.svelte';
-  import { pullRequestRoute } from "../routes/repositories.mjs";
+  export let router;
+
+  const cr = router.route;
 </script>
 
-{#if $pullRequestRoute}
-  <PullRequestCard pullRequest={$pullRequestRoute}/>
+{#if $cr}
+  <PullRequestCard pullRequest={$cr}/>
 {:else}No such pull request{/if}

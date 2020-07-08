@@ -1,6 +1,8 @@
 <script>
   import { ObjectLink } from "svelte-guard-history-router";
-  import { hooksRoute } from "../routes/repositories.mjs";
+  export let router;
+
+  const cr = router.route;
 </script>
 
 <table class="bordered striped hoverable">
@@ -10,7 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    {#each $hooksRoute as hook}
+    {#each $cr as hook}
       <tr>
         <td>
           <ObjectLink object={hook} />

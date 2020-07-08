@@ -1,8 +1,11 @@
 <script>
-  import { providerRoute } from "../routes/repositories.mjs";
   import ProviderCard from "../components/ProviderCard.svelte";
+
+  export let router;
+
+  const cr = router.route;
 </script>
 
-{#if $providerRoute}
-  <ProviderCard provider={$providerRoute} />
+{#if $cr}
+  <ProviderCard provider={$cr} />
 {:else}No such provider{/if}

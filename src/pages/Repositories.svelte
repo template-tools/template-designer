@@ -1,6 +1,9 @@
 <script>
   import { ObjectLink } from "svelte-guard-history-router";
-  import { repositoriesRoute } from "../routes/repositories.mjs";
+
+  export let router;
+
+  const cr = router.route;
 </script>
 
 <table class="bordered striped hoverable">
@@ -11,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    {#each $repositoriesRoute as repository}
+    {#each $cr as repository}
       <tr>
         <td>
           <ObjectLink object={repository} />

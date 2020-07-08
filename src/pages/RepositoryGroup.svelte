@@ -1,14 +1,10 @@
 <script>
   import RepositoryGroupCard from "../components/RepositoryGroupCard.svelte";
-  import {
-  repositoryGroupsRoute,
-  repositoryGroupRoute,
-  repositoriesRoute,
-  repositoryRoute,
-  branchRoute
-  } from "../routes/repositories.mjs";
-  </script>
+  export let router;
 
-{#if $repositoryGroupRoute}
-  <RepositoryGroupCard repositoryGroup={$repositoryGroupRoute} />
+  const cr = router.route;
+</script>
+
+{#if $cr}
+  <RepositoryGroupCard repositoryGroup={$cr} />
 {:else}No such group{/if}

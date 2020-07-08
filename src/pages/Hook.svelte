@@ -1,8 +1,10 @@
 <script>
   import HookCard from "../components/HookCard.svelte";
-  import { hookRoute } from "../routes/repositories.mjs";
+  export let router;
+
+  const cr = router.route;
 </script>
 
-{#if $hookRoute}
-  <HookCard hook={$hookRoute} />
+{#if $cr}
+  <HookCard hook={$cr} />
 {:else}No such hook{/if}
