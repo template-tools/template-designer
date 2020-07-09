@@ -85,7 +85,7 @@ export class HookRoute extends ObjectStoreRoute {
 
   propertiesFor(object) {
     return object instanceof Hook
-      ? { hook: object.name }
+      ? { hook: object.id }
       : undefined;
   }
 }
