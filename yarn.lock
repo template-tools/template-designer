@@ -643,16 +643,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.7.9:
-  version "3.7.9"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.9.tgz#ae2c11780b0831492ad780a8f1d4ef41f69b55f6"
-  integrity sha512-Hndzhpz0nuIRg4tlFxScLokRN/refiAu6fg1XjkTeCVqycZRFZDrvYy3eptt9w1TuKJT2BZbbwIJsVqnWMRzxA==
+bitbucket-repository-provider@^3.7.10:
+  version "3.7.10"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.10.tgz#8d42d73bfd9d73396ab929b2bd174d9aef4cad5d"
+  integrity sha512-oU4cIvC3wdeZDPc7kfldEgOxF+WXM49rs47fUmAKL5sWxvI6cGmjtOt9qyoIDgMN8Tf9fx5wnvQ95q8ezXW1cQ==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.3.0"
+    repository-provider "^23.4.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
