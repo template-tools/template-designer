@@ -5,7 +5,15 @@
   import AuthAccept from "./pages/AuthAccept.svelte";
 
   import Providers from "./pages/Providers.svelte";
-  import { ProvidersRoute, RepositoriesRoute } from "./routes/repositories.mjs";
+  import Provider from "./pages/Provider.svelte";
+  import ProviderLink from "./components/ProviderLink.svelte";
+
+  import {
+    ProvidersRoute,
+    ProviderRoute,
+    RepositoriesRoute
+  } from "./routes/repository-routes.mjs";
+
   import * as style from "./main.css";
   import router from "./router.mjs";
 </script>
@@ -19,18 +27,24 @@
 
     <ul class="left">
       <li>
+        <Route path="/provider" factory={ProvidersRoute} component={Providers}>
+          Providers
+          <Route
+            path="/:provider"
+            factory={ProviderRoute}
+            linkComponent={ProviderLink}
+            component={Provider} />
+        </Route>
+
         <Route path="/group">Groups</Route>
         <Route path="/repository">Repositories</Route>
-        <Route path="/providers" factory={ProvidersRoute} component={Providers}>
-          Providers
-        </Route>
       </li>
       <li>
         <Route path="/about" component={About}>About</Route>
       </li>
     </ul>
   </nav>
-  <Route path="/auth/accept" component={AuthAccept}/>
+  <Route path="/auth/accept" component={AuthAccept} />
 
   <main>
     <Outlet />

@@ -2,7 +2,6 @@ import base from "consts:base";
 import { BaseRouter } from "svelte-guard-history-router";
 
 import {
-  providerRoute,
   repositoryGroupsRoute,
   repositoryGroupRoute,
   repositoriesRoute,
@@ -15,7 +14,6 @@ import {
 
 export const router = new BaseRouter(
   [
-    providerRoute,
     repositoryGroupRoute,
     repositoriesRoute,
     repositoryGroupsRoute,

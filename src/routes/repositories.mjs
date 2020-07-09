@@ -1,7 +1,5 @@
 import { route, WaitingGuard } from "svelte-guard-history-router";
 import {
-  ProvidersRoute,
-  ProviderRoute,
   RepositoryGroupsRoute,
   RepositoryGroupRoute,
   RepositoriesRoute,
@@ -14,17 +12,12 @@ import {
   HookRoute
 } from "./repository-routes.mjs";
 
-import ProviderLink from "../components/ProviderLink.svelte";
 import RepositoryGroupLink from "../components/RepositoryGroupLink.svelte";
 import RepositoryLink from "../components/RepositoryLink.svelte";
 import BranchLink from "../components/BranchLink.svelte";
 import HookLink from "../components/HookLink.svelte";
 import PullRequestLink from "../components/PullRequestLink.svelte";
 
-export { ProvidersRoute, RepositoriesRoute };
-
-//import Providers from "../pages/Providers.svelte";
-import Provider from "../pages/Provider.svelte";
 import RepositoryGroups from "../pages/RepositoryGroups.svelte";
 import RepositoryGroup from "../pages/RepositoryGroup.svelte";
 import Repositories from "../pages/Repositories.svelte";
@@ -39,16 +32,6 @@ import Waiting from "../pages/Waiting.svelte";
 
 
 export const waitingGuard = new WaitingGuard(Waiting);
-
-//export const providersRoute = route("/provider", ProvidersRoute, Providers);
-
-export const providerRoute = route(
-  "/provider/:provider",
-  ProviderRoute,
-  Provider
-);
-providerRoute.linkComponent = ProviderLink;
-
 
 export const repositoryGroupsRoute = route(
   "/group",
