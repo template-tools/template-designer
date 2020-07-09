@@ -643,16 +643,16 @@ bin-links@^1.1.2, bin-links@^1.1.7:
     npm-normalize-package-bin "^1.0.0"
     write-file-atomic "^2.3.0"
 
-bitbucket-repository-provider@^3.7.10:
-  version "3.7.10"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.10.tgz#8d42d73bfd9d73396ab929b2bd174d9aef4cad5d"
-  integrity sha512-oU4cIvC3wdeZDPc7kfldEgOxF+WXM49rs47fUmAKL5sWxvI6cGmjtOt9qyoIDgMN8Tf9fx5wnvQ95q8ezXW1cQ==
+bitbucket-repository-provider@^3.7.11:
+  version "3.7.11"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.11.tgz#01110ccbe830906f7088a2916c281aab51109ae0"
+  integrity sha512-Pgi8Y9/u/bJgOJ3932KND+BzGO2i294XSNhdi37zK2H2AVd4Md7oTa87JfcU9BgnpnAja6dtMyH8RPzEg4m5sg==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.4.0"
+    repository-provider "^23.5.0"
 
 bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -5281,7 +5281,7 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^23.3.0, repository-provider@^23.4.0, repository-provider@^23.5.0:
+repository-provider@^23.2.0, repository-provider@^23.3.0, repository-provider@^23.4.0, repository-provider@^23.5.0:
   version "23.5.0"
   resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.5.0.tgz#0406beef5ffee2c758a9b7d692c366e0d2a351c6"
   integrity sha512-VG+b+LV8yigEAFQKj1KMGwpJhulT7gmsjoWCMXdFjp1H2H1sWch6Ru/5aWWdkeP6dDyzfRzhSYizxWpKetEIdA==
