@@ -1,8 +1,10 @@
 <script>
+  import { Route } from "svelte-guard-history-router";
+
   import {
     BranchRoute,
     ContentEntriesRoute,
-    ContentEntryRoute,
+    ContentEntryRoute
   } from "./routes.mjs";
 
   import Branch from "./pages/Branch.svelte";

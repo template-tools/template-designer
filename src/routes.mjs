@@ -14,14 +14,18 @@ import {
 import provider from "./provider.mjs";
 
 export class ProvidersRoute extends IteratorStoreRoute {
-  iteratorFor(properties) {
+  iteratorFor() {
     return provider.providers;
   }
 }
 
 export class ProviderRoute extends ObjectStoreRoute {
-  objectFor(properties) {
-    return provider.providers.find(p => p.name === properties.provider);
+  async objectFor(properties) {
+    for await (const provider of this.parent.iteratorFor()) {
+      if(provider.name === properties.provider) {
+        return provider;
+      }
+    }
   }
 
   propertiesFor(provider) {
@@ -49,7 +53,7 @@ export class RepositoryGroupRoute extends ObjectStoreRoute {
 }
 
 export class RepositoriesRoute extends IteratorStoreRoute {
-  iteratorFor(properties) {
+  iteratorFor() {
     return provider.repositories();
   }
 }
