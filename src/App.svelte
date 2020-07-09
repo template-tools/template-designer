@@ -2,6 +2,8 @@
   import { Router, Route, Outlet } from "svelte-guard-history-router";
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
+  import AuthAccept from "./pages/AuthAccept.svelte";
+
   import Providers from "./pages/Providers.svelte";
   import { ProvidersRoute, RepositoriesRoute } from "./routes/repositories.mjs";
   import * as style from "./main.css";
@@ -28,6 +30,8 @@
       </li>
     </ul>
   </nav>
+  <Route path="/auth/accept" component={AuthAccept}/>
+
   <main>
     <Outlet />
   </main>
