@@ -31,7 +31,6 @@
   <ul>
     {#each $hooks as hook}
       <li>
-        DN: {hook.url} {hook.id} {hook.name}
         <ObjectLink object={hook} />
       </li>
     {/each}

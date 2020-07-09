@@ -75,6 +75,8 @@ export class HooksRoute extends IteratorStoreRoute {
     const repo = await provider.repository(properties.group + "/" + properties.repository);
     return repo.hooks();
   }
+
+  propertiesFor() {}
 }
 
 export class HookRoute extends ObjectStoreRoute {

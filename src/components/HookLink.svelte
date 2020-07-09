@@ -2,4 +2,4 @@
   export let object;
 </script>
 
-{object.url} {object.displayName}
+{object.url} {object.id} {object.displayName}
