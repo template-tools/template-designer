@@ -15,15 +15,6 @@
   import Repositories from "./pages/Repositories.svelte";
   import Repository from "./pages/Repository.svelte";
   import RepositoryLink from "./components/RepositoryLink.svelte";
-  import Branch from "./pages/Branch.svelte";
-  import BranchLink from "./components/BranchLink.svelte";
-  import ContentEntries from "./pages/ContentEntries.svelte";
-  import ContentEntry from "./pages/ContentEntry.svelte";
-  import Hooks from "./pages/Hooks.svelte";
-  import Hook from "./pages/Hook.svelte";
-  import HookLink from "./components/HookLink.svelte";
-  import PullRequest from "./pages/PullRequest.svelte";
-  import PullRequestLink from "./components/PullRequestLink.svelte";
 
   import {
     ProvidersRoute,
@@ -31,14 +22,13 @@
     RepositoryGroupsRoute,
     RepositoryGroupRoute,
     RepositoriesRoute,
-    RepositoryRoute,
-    BranchRoute,
-    ContentEntriesRoute,
-    ContentEntryRoute,
-    HooksRoute,
-    HookRoute,
-    PullRequestRoute
+    RepositoryRoute
   } from "./routes.mjs";
+
+  import HookRoutes from "./HookRoutes.svelte";
+  import PullRequestRoutes from "./PullRequestRoutes.svelte";
+  import BranchRoutes from "./BranchRoutes.svelte";
+
   import { waitingGuard } from "./main.mjs";
 
   import * as style from "./main.css";
@@ -85,33 +75,9 @@
             factory={RepositoryRoute}
             linkComponent={RepositoryLink}
             component={Repository}>
-            <Route
-              path="/branch/:branch"
-              factory={BranchRoute}
-              linkComponent={BranchLink}
-              component={Branch}>
-              <Route
-                path="/entry"
-                factory={ContentEntriesRoute}
-                component={ContentEntries}>
-                <Route
-                  path="/:entry"
-                  factory={ContentEntryRoute}
-                  component={ContentEntry} />
-              </Route>
-            </Route>
-            <Route
-              path="/pr/:pr"
-              factory={PullRequestRoute}
-              linkComponent={PullRequestLink}
-              component={PullRequest} />
-            <Route path="/hook" factory={HooksRoute} component={Hooks}>
-              <Route
-                path="/:hook"
-                factory={HookRoute}
-                linkComponent={HookLink}
-                component={Hook} />
-            </Route>
+            <BranchRoutes />
+            <PullRequestRoutes />
+            <HookRoutes />
           </Route>
         </Route>
       </li>
