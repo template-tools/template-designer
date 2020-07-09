@@ -1,13 +1,11 @@
 <script>
-  import BranchCard from '../components/BranchCard.svelte';
-  import {
-  repositoryGroupsRoute,
-  repositoryGroupRoute,
-  repositoriesRoute,
-  repositoryRoute,
-  branchRoute
-  } from "../routes/repositories.mjs";</script>
+  import BranchCard from "../components/BranchCard.svelte";
 
-{#if $branchRoute}
-  <BranchCard branch={$branchRoute}/>
+  export let router;
+
+  const route = router.route;
+</script>
+
+{#if $route}
+  <BranchCard branch={$route} />
 {:else}No such branch{/if}

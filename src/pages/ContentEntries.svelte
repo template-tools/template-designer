@@ -1,5 +1,7 @@
 <script>
-  import { contentEntriesRoute } from "../routes/repositories.mjs";
+  export let router;
+
+  const route = router.route;
 </script>
 
 <table class="bordered striped hoverable">
@@ -9,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    {#each $contentEntriesRoute as entry (entry.name)}
+    {#each $route as entry (entry.name)}
       <tr>
         <td>{entry.name}</td>
       </tr>

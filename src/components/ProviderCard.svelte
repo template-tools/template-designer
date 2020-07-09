@@ -3,7 +3,6 @@
   import Attributes from "./Attributes.svelte";
   import AttributeField from "./AttributeField.svelte";
   import SecureAttributeField from "./SecureAttributeField.svelte";
-  import { contentEntryRoute } from "../routes/repositories.mjs";
 
   import { provider as aggregatedProvider } from "../provider.mjs";
   export let provider;

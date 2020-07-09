@@ -1,5 +1,7 @@
 import { readable } from "svelte/store";
 import App from "./App.svelte";
+import { WaitingGuard } from "svelte-guard-history-router";
+import Waiting from "./pages/Waiting.svelte";
 
 let serviceWorkerRegistration;
 
@@ -22,6 +24,9 @@ async function init() {
 }
 
 init();
+
+
+export const waitingGuard = new WaitingGuard(Waiting);
 
 export default new App({
   target: document.body

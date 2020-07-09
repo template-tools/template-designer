@@ -11,7 +11,7 @@ import {
   ObjectStoreRoute
 } from "svelte-guard-history-router";
 
-import provider from "../provider.mjs";
+import provider from "./provider.mjs";
 
 export class ProvidersRoute extends IteratorStoreRoute {
   iteratorFor(properties) {
