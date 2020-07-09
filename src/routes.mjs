@@ -34,7 +34,7 @@ export class ProviderRoute extends ObjectStoreRoute {
 }
 
 export class RepositoryGroupsRoute extends IteratorStoreRoute {
-  iteratorFor(properties) {
+  iteratorFor() {
     return provider.repositoryGroups();
   }
 }
