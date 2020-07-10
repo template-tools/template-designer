@@ -21,16 +21,12 @@ export class ProvidersRoute extends IteratorStoreRoute {
 }
 
 export class ProviderRoute extends ChildStoreRoute {
-  matches(object, properties) {
-    return object.name === properties.provider;
+  get propertyMapping() {
+    return { provider: "name" };
   }
 
-  propertiesFor(provider) {
-    return provider instanceof BaseProvider
-      ? {
-          provider: provider.name
-        }
-      : undefined;
+  get factory() {
+    return BaseProvider;
   }
 }
 
@@ -41,6 +37,14 @@ export class RepositoryGroupsRoute extends IteratorStoreRoute {
 }
 
 export class RepositoryGroupRoute extends ObjectStoreRoute {
+  get factory() {
+    return RepositoryGroup;
+  }
+
+  get propertyMapping() {
+    return { group: "name" };
+  }
+
   objectFor(properties) {
     return provider.repositoryGroup(properties.group);
   }
@@ -56,6 +60,14 @@ export class RepositoriesRoute extends IteratorStoreRoute {
 }
 
 export class RepositoryRoute extends ObjectStoreRoute {
+  get factory() {
+    return Repository;
+  }
+
+  get propertyMapping() {
+    return { repository: "name" };
+  }
+
   objectFor(properties) {
     return provider.repository(properties.group + "/" + properties.repository);
   }
@@ -79,17 +91,24 @@ export class HooksRoute extends IteratorStoreRoute {
 }
 
 export class HookRoute extends ChildStoreRoute {
-
-  matches(object, properties) {
-    return object.id === properties.hook;
+  get propertyMapping() {
+    return { hook: "id" };
   }
 
-  propertiesFor(object) {
-    return object instanceof Hook ? { hook: object.id } : undefined;
+  get factory() {
+    return Hook;
   }
 }
 
 export class BranchRoute extends ObjectStoreRoute {
+  get factory() {
+    return Branch;
+  }
+
+  get propertyMapping() {
+    return { branch: "name" };
+  }
+
   objectFor(properties) {
     return provider.branch(
       `${properties.group}/${properties.repository}#${properties.branch}`
@@ -108,6 +127,14 @@ export class BranchRoute extends ObjectStoreRoute {
 }
 
 export class PullRequestRoute extends ObjectStoreRoute {
+  get factory() {
+    return PullRequest;
+  }
+
+  get propertyMapping() {
+    return { pr: "name" };
+  }
+
   async objectFor(properties) {
     const r = await provider.repository(
       `${properties.group}/${properties.repository}`
@@ -145,6 +172,14 @@ export class ContentEntriesRoute extends IteratorStoreRoute {
 }
 
 export class ContentEntryRoute extends ObjectStoreRoute {
+  get factory() {
+    return ContentEntry;
+  }
+
+  get propertyMapping() {
+    return { entry: "name" };
+  }
+
   async objectFor(properties) {
     const branch = await provider.branch(
       `${properties.group}/${properties.repository}#${properties.branch}`

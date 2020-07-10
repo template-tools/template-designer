@@ -14,7 +14,5 @@
     factory={HookRoute}
     linkComponent={HookLink}
     component={Hook}>
-    <slot name="link">
-    </slot>
     </Route>
 </Route>
