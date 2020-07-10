@@ -8,7 +8,8 @@ import {
 } from "repository-provider";
 import {
   IteratorStoreRoute,
-  ObjectStoreRoute
+  ObjectStoreRoute,
+  ChildStoreRoute
 } from "svelte-guard-history-router";
 
 import provider from "./provider.mjs";
@@ -19,13 +20,9 @@ export class ProvidersRoute extends IteratorStoreRoute {
   }
 }
 
-export class ProviderRoute extends ObjectStoreRoute {
-  async objectFor(properties) {
-    for await (const provider of this.parent.iteratorFor()) {
-      if(provider.name === properties.provider) {
-        return provider;
-      }
-    }
+export class ProviderRoute extends ChildStoreRoute {
+  matches(object, properties) {
+    return object.name === properties.provider;
   }
 
   propertiesFor(provider) {
@@ -72,23 +69,23 @@ export class RepositoryRoute extends ObjectStoreRoute {
 
 export class HooksRoute extends IteratorStoreRoute {
   async iteratorFor(properties) {
-    const repo = await provider.repository(properties.group + "/" + properties.repository);
+    const repo = await provider.repository(
+      properties.group + "/" + properties.repository
+    );
     return repo.hooks();
   }
 
   propertiesFor() {}
 }
 
-export class HookRoute extends ObjectStoreRoute {
-  async objectFor(properties) {
-    const repo = await provider.repository(properties.group + "/" + properties.repository);
-    return repo.hook(properties.hook);
+export class HookRoute extends ChildStoreRoute {
+
+  matches(object, properties) {
+    return object.id === properties.hook;
   }
 
   propertiesFor(object) {
-    return object instanceof Hook
-      ? { hook: object.id }
-      : undefined;
+    return object instanceof Hook ? { hook: object.id } : undefined;
   }
 }
 
