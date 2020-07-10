@@ -3,7 +3,6 @@ import {
   RepositoryGroup,
   Repository,
   Branch,
-  Hook,
   PullRequest
 } from "repository-provider";
 import {
