@@ -1,18 +1,31 @@
 <script>
-  import { Route } from "svelte-guard-history-router";
+  import {
+    Route,
+    IteratorStoreRoute,
+    ChildStoreRoute
+  } from "svelte-guard-history-router";
+  import { Hook } from "repository-provider";
+  import { HooksRoute } from "./routes.mjs";
 
-  import Hooks from "./pages/Hooks.svelte";
-  import Hook from "./pages/Hook.svelte";
+  import HooksPage from "./pages/Hooks.svelte";
+  import HookPage from "./pages/Hook.svelte";
   import HookLink from "./components/HookLink.svelte";
 
-  import { HooksRoute, HookRoute } from "./routes.mjs";
+  class HookRoute extends ChildStoreRoute {
+    get propertyMapping() {
+      return { hook: "id" };
+    }
+
+    get factory() {
+      return Hook;
+    }
+  }
 </script>
 
-<Route path="/hook" factory={HooksRoute} component={Hooks}>
+<Route path="/hook" factory={HooksRoute} component={HooksPage}>
   <Route
     path="/:hook"
     factory={HookRoute}
     linkComponent={HookLink}
-    component={Hook}>
-    </Route>
+    component={HookPage} />
 </Route>

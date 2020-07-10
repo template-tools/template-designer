@@ -90,15 +90,6 @@ export class HooksRoute extends IteratorStoreRoute {
   propertiesFor() {}
 }
 
-export class HookRoute extends ChildStoreRoute {
-  get propertyMapping() {
-    return { hook: "id" };
-  }
-
-  get factory() {
-    return Hook;
-  }
-}
 
 export class BranchRoute extends ObjectStoreRoute {
   get factory() {
