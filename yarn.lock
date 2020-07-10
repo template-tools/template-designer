@@ -2235,17 +2235,17 @@ gitea-repository-provider@^1.12.1:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.5.0"
 
-github-repository-provider@^7.15.2:
-  version "7.15.2"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.15.2.tgz#fbfc7026d58b2dce2ba28d18a0c03e6112b9c70b"
-  integrity sha512-RY9xcyHbCvpLsMyqGU00B/uM6FylDiZxjsduT5PzPzuljX0hw5xm7rU6kpi6TRDEW1IxF5LnJqH/gKDxiGtOeg==
+github-repository-provider@^7.15.3:
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.15.3.tgz#38cb23705f12804b5dece5b4a54cc20b9a6dadb3"
+  integrity sha512-VN9ZFkkrjRM5o6V0W8ncE3MySLYEqrxmNImUOVZDriWLe4A4upVEDMlxtaXUCl8L4TlZMhoVxMvcnf0wdpZJ6g==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "1.1.0"
     node-fetch "3.0.0-beta.7"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.5.0"
+    repository-provider "^23.6.2"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -5281,10 +5281,10 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
-repository-provider@^23.5.0:
-  version "23.5.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.5.0.tgz#0406beef5ffee2c758a9b7d692c366e0d2a351c6"
-  integrity sha512-VG+b+LV8yigEAFQKj1KMGwpJhulT7gmsjoWCMXdFjp1H2H1sWch6Ru/5aWWdkeP6dDyzfRzhSYizxWpKetEIdA==
+repository-provider@^23.5.0, repository-provider@^23.6.2:
+  version "23.6.2"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.2.tgz#51a85c7be469945b995c3ed4df2d5b5f1b7b167e"
+  integrity sha512-NUg67vZLHIwpXRSDqOgQ+ptZ8vr+wVHF+qzpvoDDAzN7U5+Cvhm7qqqlz0w61x7ZoS7OnSDYfSJNshCAh+W/RQ==
   dependencies:
     matching-iterator "^1.0.0"
 
