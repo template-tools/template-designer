@@ -7,8 +7,6 @@
   import AuthAccept from "./pages/AuthAccept.svelte";
 
   import Providers from "./pages/Providers.svelte";
-  import Provider from "./pages/Provider.svelte";
-  import ProviderLink from "./components/ProviderLink.svelte";
   import RepositoryGroups from "./pages/RepositoryGroups.svelte";
   import RepositoryGroup from "./pages/RepositoryGroup.svelte";
   import RepositoryGroupLink from "./components/RepositoryGroupLink.svelte";
@@ -18,13 +16,13 @@
 
   import {
     ProvidersRoute,
-    ProviderRoute,
     RepositoryGroupsRoute,
     RepositoryGroupRoute,
     RepositoriesRoute,
     RepositoryRoute
   } from "./routes.mjs";
 
+  import ProviderRoutes from "./ProviderRoutes.svelte";
   import HookRoutes from "./HookRoutes.svelte";
   import PullRequestRoutes from "./PullRequestRoutes.svelte";
   import BranchRoutes from "./BranchRoutes.svelte";
@@ -45,11 +43,7 @@
       <li>
         <Route path="/provider" factory={ProvidersRoute} component={Providers}>
           Providers
-          <Route
-            path="/:provider"
-            factory={ProviderRoute}
-            linkComponent={ProviderLink}
-            component={Provider} />
+          <ProviderRoutes/>
         </Route>
         <Route
           path="/group"
