@@ -13,5 +13,8 @@
     path="/:hook"
     factory={HookRoute}
     linkComponent={HookLink}
-    component={Hook} />
+    component={Hook}>
+    <slot name="link">
+    </slot>
+    </Route>
 </Route>
