@@ -1,12 +1,31 @@
 <script>
-  import { Route } from "svelte-guard-history-router";
-  import { PullRequestRoute } from "./routes.mjs";
-  import PullRequest from "./pages/PullRequest.svelte";
+  import { PullRequest } from "repository-provider";
+  import {
+    Route,
+    ChildStoreRoute,
+    IteratorStoreRoute
+  } from "svelte-guard-history-router";
+  import PullRequestPage from "./pages/PullRequest.svelte";
   import PullRequestLink from "./components/PullRequestLink.svelte";
+
+  export let provider;
+
+  export class PullRequestRoute extends IteratorStoreRoute {
+    async iteratorFor(properties) {
+      const r = await provider.repository(
+        `${properties.group}/${properties.repository}`
+      );
+      return r.pullRequests();
+    }
+    propertiesFor() {}
+  }
 </script>
 
-<Route
-  path="/pr/:pr"
-  factory={PullRequestRoute}
-  linkComponent={PullRequestLink}
-  component={PullRequest} />
+<Route path="/pr" objectInstance={PullRequest} factory={PullRequestRoute}>
+  <Route
+    path="/:pr"
+    propertyMapping={{ pr: 'name' }}
+    factory={ChildStoreRoute}
+    linkComponent={PullRequestLink}
+    component={PullRequestPage} />
+</Route>

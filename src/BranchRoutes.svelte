@@ -1,27 +1,34 @@
 <script>
-  import { Route } from "svelte-guard-history-router";
-
   import {
-    BranchRoute,
-    ContentEntriesRoute,
-    ContentEntryRoute
-  } from "./routes.mjs";
-
-  import Branch from "./pages/Branch.svelte";
+    Route,
+    ChildStoreRoute,
+    IteratorStoreRoute
+  } from "svelte-guard-history-router";
+  import { Branch } from "repository-provider";
+  import BranchPage from "./pages/Branch.svelte";
   import BranchLink from "./components/BranchLink.svelte";
-  import ContentEntries from "./pages/ContentEntries.svelte";
-  import ContentEntry from "./pages/ContentEntry.svelte";
+
+  export let provider;
+
+  class BranchesRoute extends IteratorStoreRoute {
+    async iteratorFor(properties) {
+      const repository = await provider.repository(
+        `${properties.group}/${properties.repository}`
+      );
+
+      return repository.branches();
+    }
+    propertiesFor() {}
+  }
 </script>
 
-<Route
-  path="/branch/:branch"
-  factory={BranchRoute}
-  linkComponent={BranchLink}
-  component={Branch}>
-  <Route path="/entry" factory={ContentEntriesRoute} component={ContentEntries}>
-    <Route
-      path="/:entry"
-      factory={ContentEntryRoute}
-      component={ContentEntry} />
+<Route path="/branch" objectInstance={Branch} factory={BranchesRoute}>
+  <Route
+    path="/:branch"
+    propertyMapping={{ branch: 'name' }}
+    factory={ChildStoreRoute}
+    linkComponent={BranchLink}
+    component={BranchPage}>
+    <slot />
   </Route>
 </Route>

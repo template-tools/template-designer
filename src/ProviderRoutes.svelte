@@ -24,7 +24,7 @@
   objectInstance={BaseProvider}
   factory={ProvidersRoute}
   component={ProvidersPage}>
-  <slot/>
+  <slot />
   <Route
     path="/:provider"
     factory={ChildStoreRoute}

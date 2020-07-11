@@ -6,25 +6,13 @@
   import Home from "./pages/Home.svelte";
   import AuthAccept from "./pages/AuthAccept.svelte";
 
-  import Providers from "./pages/Providers.svelte";
-  import RepositoryGroups from "./pages/RepositoryGroups.svelte";
-  import RepositoryGroup from "./pages/RepositoryGroup.svelte";
-  import RepositoryGroupLink from "./components/RepositoryGroupLink.svelte";
-  import Repositories from "./pages/Repositories.svelte";
-  import Repository from "./pages/Repository.svelte";
-  import RepositoryLink from "./components/RepositoryLink.svelte";
-
-  import {
-    RepositoryGroupsRoute,
-    RepositoryGroupRoute,
-    RepositoriesRoute,
-    RepositoryRoute
-  } from "./routes.mjs";
-
   import ProviderRoutes from "./ProviderRoutes.svelte";
+  import RepositoryGroupRoutes from "./RepositoryGroupRoutes.svelte";
+  import RepositoryRoutes from "./RepositoryRoutes.svelte";
   import HookRoutes from "./HookRoutes.svelte";
   import PullRequestRoutes from "./PullRequestRoutes.svelte";
   import BranchRoutes from "./BranchRoutes.svelte";
+  import ContentEntryRoutes from "./ContentEntryRoutes.svelte";
 
   import { waitingGuard } from "./main.mjs";
   import provider from "./provider.mjs";
@@ -42,35 +30,17 @@
     <ul class="left">
       <li>
         <ProviderRoutes {provider}>Provider</ProviderRoutes>
-        <Route
-          path="/group"
-          factory={RepositoryGroupsRoute}
-          guards={waitingGuard}
-          component={RepositoryGroups}>
+        <RepositoryGroupRoutes {provider} guards={waitingGuard}>
           Groups
-          <Route
-            path="/:group"
-            factory={RepositoryGroupRoute}
-            linkComponent={RepositoryGroupLink}
-            component={RepositoryGroup} />
-        </Route>
+        </RepositoryGroupRoutes>
 
-        <Route
-          path="/repository"
-          factory={RepositoriesRoute}
-          guards={waitingGuard}
-          component={Repositories}>
-          Repositories
-          <Route
-            path="/:group/:repository"
-            factory={RepositoryRoute}
-            linkComponent={RepositoryLink}
-            component={Repository}>
-            <BranchRoutes />
-            <PullRequestRoutes />
-            <HookRoutes {provider}/>
-          </Route>
-        </Route>
+        <RepositoryRoutes {provider} guards={waitingGuard}>
+          <BranchRoutes {provider}>
+            <ContentEntryRoutes {provider} />
+          </BranchRoutes>
+          <PullRequestRoutes {provider} />
+          <HookRoutes {provider} />
+        </RepositoryRoutes>
       </li>
       <li>
         <Route path="/about" component={About}>About</Route>
