@@ -2,8 +2,7 @@ import {
   RepositoryGroup,
   Repository,
   Branch,
-  PullRequest,
-  Hook
+  PullRequest
 } from "repository-provider";
 import {
   IteratorStoreRoute,
@@ -59,21 +58,6 @@ export class RepositoryRoute extends ObjectStoreRoute {
       ? { repository: repository.name, group: repository.owner.name }
       : undefined;
   }
-}
-
-export class HooksRoute extends IteratorStoreRoute {
-  get objectInstance() {
-    return Hook;
-  }
-
-  async iteratorFor(properties) {
-    const repo = await provider.repository(
-      properties.group + "/" + properties.repository
-    );
-    return repo.hooks();
-  }
-
-  propertiesFor() {}
 }
 
 export class BranchRoute extends ObjectStoreRoute {

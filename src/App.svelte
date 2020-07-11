@@ -68,7 +68,7 @@
             component={Repository}>
             <BranchRoutes />
             <PullRequestRoutes />
-            <HookRoutes />
+            <HookRoutes {provider}/>
           </Route>
         </Route>
       </li>
