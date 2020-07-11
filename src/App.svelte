@@ -15,7 +15,6 @@
   import RepositoryLink from "./components/RepositoryLink.svelte";
 
   import {
-    ProvidersRoute,
     RepositoryGroupsRoute,
     RepositoryGroupRoute,
     RepositoriesRoute,
@@ -28,6 +27,7 @@
   import BranchRoutes from "./BranchRoutes.svelte";
 
   import { waitingGuard } from "./main.mjs";
+  import provider from "./provider.mjs";
 
   import * as style from "./main.css";
 </script>
@@ -41,10 +41,7 @@
 
     <ul class="left">
       <li>
-        <Route path="/provider" factory={ProvidersRoute} component={Providers}>
-          Providers
-          <ProviderRoutes/>
-        </Route>
+        <ProviderRoutes {provider} />
         <Route
           path="/group"
           factory={RepositoryGroupsRoute}

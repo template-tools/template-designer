@@ -1,5 +1,4 @@
 import {
-  BaseProvider,
   RepositoryGroup,
   Repository,
   Branch,
@@ -12,16 +11,6 @@ import {
 } from "svelte-guard-history-router";
 
 import provider from "./provider.mjs";
-
-export class ProvidersRoute extends IteratorStoreRoute {
-  get objectInstance() {
-    return BaseProvider;
-  }
-
-  iteratorFor() {
-    return provider.providers;
-  }
-}
 
 export class RepositoryGroupsRoute extends IteratorStoreRoute {
   iteratorFor() {
