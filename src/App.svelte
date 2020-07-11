@@ -41,7 +41,7 @@
 
     <ul class="left">
       <li>
-        <ProviderRoutes {provider} />
+        <ProviderRoutes {provider}>Provider</ProviderRoutes>
         <Route
           path="/group"
           factory={RepositoryGroupsRoute}
