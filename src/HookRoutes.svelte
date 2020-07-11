@@ -26,12 +26,12 @@
 
 <Route
   path="/hook"
-  objectInstance={Hook}
   factory={HooksRoute}
   component={HooksPage}>
   <Route
     path="/:hook"
     factory={ChildStoreRoute}
+    objectInstance={Hook}
     propertyMapping={{ hook: 'id' }}
     linkComponent={HookLink}
     component={HookPage} />

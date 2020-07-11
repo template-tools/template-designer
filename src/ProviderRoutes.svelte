@@ -21,13 +21,13 @@
 
 <Route
   path="/provider"
-  objectInstance={BaseProvider}
   factory={ProvidersRoute}
   component={ProvidersPage}>
   <slot />
   <Route
     path="/:provider"
     factory={ChildStoreRoute}
+    objectInstance={BaseProvider}
     propertyMapping={{ provider: 'name' }}
     linkComponent={ProviderLink}
     component={ProviderPage} />

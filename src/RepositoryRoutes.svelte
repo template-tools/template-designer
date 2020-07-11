@@ -37,14 +37,14 @@
 
 <Route
   path="/repository"
-  objectInstance={Repository}
   factory={RepositoriesRoute}
-  {guards}
-  component={RepositoriesPage}>
+  component={RepositoriesPage}
+  {guards}>
   Repositories
   <Route
     path="/:group/:repository"
-    propertyMapping={{ repository: "name" }}
+    propertyMapping={{ repository: 'name' }}
+    objectInstance={Repository}
     factory={RepositoryRoute}
     linkComponent={RepositoryLink}
     component={RepositoryPage} />

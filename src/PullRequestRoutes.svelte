@@ -21,9 +21,10 @@
   }
 </script>
 
-<Route path="/pr" objectInstance={PullRequest} factory={PullRequestRoute}>
+<Route path="/pr" factory={PullRequestRoute}>
   <Route
     path="/:pr"
+    objectInstance={PullRequest}
     propertyMapping={{ pr: 'name' }}
     factory={ChildStoreRoute}
     linkComponent={PullRequestLink}

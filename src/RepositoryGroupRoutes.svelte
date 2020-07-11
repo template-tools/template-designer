@@ -28,13 +28,13 @@
 
 <Route
   path="/group"
-  objectInstance={RepositoryGroup}
   factory={RepositoryGroupsRoute}
-  {guards}
-  component={RepositoryGroupsPage}>
+  component={RepositoryGroupsPage}
+  {guards}>
   <slot />
   <Route
     path="/:group"
+    objectInstance={RepositoryGroup}
     propertyMapping={{ group: 'name' }}
     factory={RepositoryGroupRoute}
     linkComponent={RepositoryGroupLink}

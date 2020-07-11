@@ -22,9 +22,10 @@
   }
 </script>
 
-<Route path="/branch" objectInstance={Branch} factory={BranchesRoute}>
+<Route path="/branch" factory={BranchesRoute}>
   <Route
     path="/:branch"
+    objectInstance={Branch}
     propertyMapping={{ branch: 'name' }}
     factory={ChildStoreRoute}
     linkComponent={BranchLink}
