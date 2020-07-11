@@ -1,8 +1,10 @@
 import {
+  BaseProvider,
   RepositoryGroup,
   Repository,
   Branch,
-  PullRequest
+  PullRequest,
+  Hook
 } from "repository-provider";
 import {
   IteratorStoreRoute,
@@ -12,6 +14,10 @@ import {
 import provider from "./provider.mjs";
 
 export class ProvidersRoute extends IteratorStoreRoute {
+  get objectInstance() {
+    return BaseProvider;
+  }
+
   iteratorFor() {
     return provider.providers;
   }
@@ -24,7 +30,7 @@ export class RepositoryGroupsRoute extends IteratorStoreRoute {
 }
 
 export class RepositoryGroupRoute extends ObjectStoreRoute {
-  get factory() {
+  get objectInstance() {
     return RepositoryGroup;
   }
 
@@ -47,7 +53,7 @@ export class RepositoriesRoute extends IteratorStoreRoute {
 }
 
 export class RepositoryRoute extends ObjectStoreRoute {
-  get factory() {
+  get objectInstance() {
     return Repository;
   }
 
@@ -67,6 +73,10 @@ export class RepositoryRoute extends ObjectStoreRoute {
 }
 
 export class HooksRoute extends IteratorStoreRoute {
+  get objectInstance() {
+    return Hook;
+  }
+
   async iteratorFor(properties) {
     const repo = await provider.repository(
       properties.group + "/" + properties.repository
@@ -78,7 +88,7 @@ export class HooksRoute extends IteratorStoreRoute {
 }
 
 export class BranchRoute extends ObjectStoreRoute {
-  get factory() {
+  get objectInstance() {
     return Branch;
   }
 
@@ -104,7 +114,7 @@ export class BranchRoute extends ObjectStoreRoute {
 }
 
 export class PullRequestRoute extends ObjectStoreRoute {
-  get factory() {
+  get objectInstance() {
     return PullRequest;
   }
 
@@ -149,7 +159,7 @@ export class ContentEntriesRoute extends IteratorStoreRoute {
 }
 
 export class ContentEntryRoute extends ObjectStoreRoute {
-  get factory() {
+  get objectInstance() {
     return ContentEntry;
   }
 
