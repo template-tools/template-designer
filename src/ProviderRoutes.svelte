@@ -1,6 +1,5 @@
 <script>
   import { BaseProvider } from "repository-provider";
-
   import {
     Route,
     ChildStoreRoute,
@@ -19,10 +18,7 @@
   }
 </script>
 
-<Route
-  path="/provider"
-  factory={ProvidersRoute}
-  component={ProvidersPage}>
+<Route path="/provider" factory={ProvidersRoute} component={ProvidersPage}>
   <slot />
   <Route
     path="/:provider"

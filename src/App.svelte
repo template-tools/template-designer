@@ -1,11 +1,14 @@
 <script>
-  import { Router, Route, Outlet } from "svelte-guard-history-router";
-  import base from "consts:base";
-
+  import {
+    Router,
+    Route,
+    Outlet,
+    WaitingGuard
+  } from "svelte-guard-history-router";
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import AuthAccept from "./pages/AuthAccept.svelte";
-
+  import Waiting from "./pages/Waiting.svelte";
   import ProviderRoutes from "./ProviderRoutes.svelte";
   import RepositoryGroupRoutes from "./RepositoryGroupRoutes.svelte";
   import RepositoryRoutes from "./RepositoryRoutes.svelte";
@@ -13,11 +16,11 @@
   import PullRequestRoutes from "./PullRequestRoutes.svelte";
   import BranchRoutes from "./BranchRoutes.svelte";
   import ContentEntryRoutes from "./ContentEntryRoutes.svelte";
-
-  import { waitingGuard } from "./main.mjs";
   import provider from "./provider.mjs";
-
+  import base from "consts:base";
   import * as style from "./main.css";
+
+  const waitingGuard = new WaitingGuard(Waiting);
 </script>
 
 <Router {base}>
