@@ -10,18 +10,19 @@
 
   export let provider;
 
-  export class PullRequestRoute extends IteratorStoreRoute {
-    async iteratorFor(properties) {
-      const r = await provider.repository(
-        `${properties.group}/${properties.repository}`
-      );
-      return r.pullRequests();
-    }
-    propertiesFor() {}
+  async function iteratorPullRequests(properties) {
+    console.log("PR",properties);
+    const r = await provider.repository(
+      `${properties.group}/${properties.repository}`
+    );
+    return r.pullRequests();
   }
 </script>
 
-<Route path="/pr" factory={PullRequestRoute}>
+<Route
+  path="/pr"
+  iteratorFor={iteratorPullRequests}
+  factory={IteratorStoreRoute}>
   <Route
     path="/:pr"
     objectInstance={PullRequest}

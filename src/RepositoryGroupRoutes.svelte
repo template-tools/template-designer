@@ -5,7 +5,6 @@
     IteratorStoreRoute
   } from "svelte-guard-history-router";
   import { RepositoryGroup } from "repository-provider";
-
   import RepositoryGroupsPage from "./pages/RepositoryGroups.svelte";
   import RepositoryGroupPage from "./pages/RepositoryGroup.svelte";
   import RepositoryGroupLink from "./components/RepositoryGroupLink.svelte";
@@ -13,10 +12,8 @@
   export let provider;
   export let guards;
 
-  class RepositoryGroupsRoute extends IteratorStoreRoute {
-    iteratorFor() {
-      return provider.repositoryGroups();
-    }
+  function iteratorGroups() {
+    return provider.repositoryGroups();
   }
 
   class RepositoryGroupRoute extends ChildStoreRoute {
@@ -28,7 +25,8 @@
 
 <Route
   path="/group"
-  factory={RepositoryGroupsRoute}
+  factory={IteratorStoreRoute}
+  iteratorFor={iteratorGroups}
   component={RepositoryGroupsPage}
   {guards}>
   <slot />

@@ -11,14 +11,16 @@
 
   export let provider;
 
-  export class ProvidersRoute extends IteratorStoreRoute {
-    iteratorFor() {
-      return provider.providers;
-    }
+  function providerIterator() {
+    return provider.providers;
   }
 </script>
 
-<Route path="/provider" factory={ProvidersRoute} component={ProvidersPage}>
+<Route
+  path="/provider"
+  factory={IteratorStoreRoute}
+  iteratorFor={providerIterator}
+  component={ProvidersPage}>
   <slot />
   <Route
     path="/:provider"

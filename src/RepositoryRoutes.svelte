@@ -12,12 +12,8 @@
   export let provider;
   export let guards;
 
-  class RepositoriesRoute extends IteratorStoreRoute {
-    iteratorFor() {
-      return provider.repositories();
-    }
-
-    propertiesFor() {}
+  function iteratorRepositories() {
+    return provider.repositories();
   }
 
   class RepositoryRoute extends ChildStoreRoute {
@@ -37,7 +33,8 @@
 
 <Route
   path="/repository"
-  factory={RepositoriesRoute}
+  factory={IteratorStoreRoute}
+  iteratorFor={iteratorRepositories}
   component={RepositoriesPage}
   {guards}>
   Repositories
