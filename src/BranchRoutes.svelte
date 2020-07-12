@@ -10,19 +10,19 @@
 
   export let provider;
 
-  class BranchesRoute extends IteratorStoreRoute {
-    async iteratorFor(properties) {
-      const repository = await provider.repository(
-        `${properties.group}/${properties.repository}`
-      );
+  async function iteratorBranches(properties) {
+    const repository = await provider.repository(
+      `${properties.group}/${properties.repository}`
+    );
 
-      return repository.branches();
-    }
-    propertiesFor() {}
+    return repository.branches();
   }
 </script>
 
-<Route path="/branch" factory={BranchesRoute}>
+<Route
+  path="/branch"
+  iteratorFor={iteratorBranches}
+  factory={IteratorStoreRoute}>
   <Route
     path="/:branch"
     objectInstance={Branch}

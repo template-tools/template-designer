@@ -12,21 +12,18 @@
 
   export let provider;
 
-  class HooksRoute extends IteratorStoreRoute {
-    async iteratorFor(properties) {
-      const repo = await provider.repository(
-        properties.group + "/" + properties.repository
-      );
-      return repo.hooks();
-    }
-
-    propertiesFor() {}
+  async function iteratorHooks(properties) {
+    const repo = await provider.repository(
+      properties.group + "/" + properties.repository
+    );
+    return repo.hooks();
   }
 </script>
 
 <Route
   path="/hook"
-  factory={HooksRoute}
+  iteratorFor={iteratorHooks}
+  factory={IteratorStoreRoute}
   component={HooksPage}>
   <Route
     path="/:hook"
