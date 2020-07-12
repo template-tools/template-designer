@@ -12,7 +12,7 @@
   export let provider;
   export let guards;
 
-  function iteratorRepositories() {
+  function repositoryIterator() {
     return provider.repositories();
   }
 
@@ -34,7 +34,7 @@
 <Route
   path="/repository"
   factory={IteratorStoreRoute}
-  iteratorFor={iteratorRepositories}
+  iteratorFor={repositoryIterator}
   component={RepositoriesPage}
   {guards}>
   Repositories
@@ -44,5 +44,7 @@
     objectInstance={Repository}
     factory={RepositoryRoute}
     linkComponent={RepositoryLink}
-    component={RepositoryPage} />
+    component={RepositoryPage}>
+    <slot />
+  </Route>
 </Route>
