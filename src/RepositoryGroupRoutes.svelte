@@ -16,10 +16,8 @@
     return provider.repositoryGroups();
   }
 
-  class RepositoryGroupRoute extends ChildStoreRoute {
-    objectFor(properties) {
-      return provider.repositoryGroup(properties.group);
-    }
+  function groupObject(properties) {
+    return provider.repositoryGroup(properties.group);
   }
 </script>
 
@@ -33,8 +31,9 @@
   <Route
     path="/:group"
     objectInstance={RepositoryGroup}
+    objectFor={groupObject}
     propertyMapping={{ group: 'name' }}
-    factory={RepositoryGroupRoute}
+    factory={ChildStoreRoute}
     linkComponent={RepositoryGroupLink}
     component={RepositoryGroupPage} />
 </Route>
