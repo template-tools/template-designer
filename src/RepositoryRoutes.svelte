@@ -16,18 +16,8 @@
     return provider.repositories();
   }
 
-  class RepositoryRoute extends ChildStoreRoute {
-    objectFor(properties) {
-      return provider.repository(
-        properties.group + "/" + properties.repository
-      );
-    }
-
-    propertiesFor(repository) {
-      return repository instanceof Repository
-        ? { repository: repository.name, group: repository.owner.name }
-        : undefined;
-    }
+  function objectRepository(properties) {
+    return provider.repository(properties.group + "/" + properties.repository);
   }
 </script>
 
@@ -42,7 +32,8 @@
     path="/:group/:repository"
     propertyMapping={{ repository: 'name', group: 'owner.name' }}
     objectInstance={Repository}
-    factory={RepositoryRoute}
+    objectFor={objectRepository}
+    factory={ChildStoreRoute}
     linkComponent={RepositoryLink}
     component={RepositoryPage}>
     <slot />
