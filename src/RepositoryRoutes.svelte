@@ -40,7 +40,7 @@
   Repositories
   <Route
     path="/:group/:repository"
-    propertyMapping={{ repository: 'name' }}
+    propertyMapping={{ repository: 'name', group: 'owner.name' }}
     objectInstance={Repository}
     factory={RepositoryRoute}
     linkComponent={RepositoryLink}
