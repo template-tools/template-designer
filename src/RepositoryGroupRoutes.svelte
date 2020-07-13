@@ -12,11 +12,11 @@
   export let provider;
   export let guards;
 
-  function iteratorGroups() {
+  function iteratorGroups(transition, properties) {
     return provider.repositoryGroups();
   }
 
-  function groupObject(properties) {
+  function groupObject(transition, properties) {
     return provider.repositoryGroup(properties.group);
   }
 </script>

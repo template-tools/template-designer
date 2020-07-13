@@ -8,7 +8,7 @@
   export let provider;
 
   class ContentEntriesRoute extends IteratorStoreRoute {
-    async iteratorFor(properties) {
+    async iteratorFor(transition, properties) {
       const branch = await provider.branch(
         `${properties.group}/${properties.repository}#${properties.branch}`
       );

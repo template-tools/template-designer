@@ -12,7 +12,7 @@
 
   export let provider;
 
-  async function iteratorHooks(properties) {
+  async function iteratorHooks(transition, properties) {
     const repo = await provider.repository(
       properties.group + "/" + properties.repository
     );

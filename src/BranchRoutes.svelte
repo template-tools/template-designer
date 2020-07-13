@@ -10,7 +10,7 @@
 
   export let provider;
 
-  async function iteratorBranches(properties) {
+  async function iteratorBranches(transition, properties) {
     const repository = await provider.repository(
       `${properties.group}/${properties.repository}`
     );

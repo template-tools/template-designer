@@ -11,7 +11,7 @@
 
   export let provider;
 
-  function providerIterator() {
+  function providerIterator(transition, properties) {
     return provider.providers;
   }
 </script>
