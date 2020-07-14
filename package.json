@@ -26,14 +26,14 @@
     "bitbucket-repository-provider": "^3.7.13",
     "buffer": "^5.6.0",
     "gitea-repository-provider": "^1.13.0",
-    "github-repository-provider": "^7.15.4",
+    "github-repository-provider": "^7.15.5",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.0.4",
-    "svelte-guard-history-router": "^2.19.0",
+    "svelte-guard-history-router": "^2.20.0",
     "svelte-session-manager": "^1.1.4"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^13.0.1",
+    "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-inject": "^4.0.2",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@rollup/plugin-virtual": "^2.0.3",
