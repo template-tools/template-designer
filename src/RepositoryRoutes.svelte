@@ -11,20 +11,12 @@
 
   export let provider;
   export let guards;
-
-  function repositoryIterator(transition, properties) {
-    return provider.repositories();
-  }
-
-  function objectRepository(transition, properties) {
-    return provider.repository(properties.group + "/" + properties.repository);
-  }
 </script>
 
 <Route
   path="/repository"
   factory={IteratorStoreRoute}
-  iteratorFor={repositoryIterator}
+  iteratorFor={(transition, properties) => provider.repositories()}
   component={RepositoriesPage}
   {guards}>
   Repositories
@@ -32,7 +24,7 @@
     path="/:group/:repository"
     propertyMapping={{ repository: 'name', group: 'owner.name' }}
     objectInstance={Repository}
-    objectFor={objectRepository}
+    objectFor={(transition, properties) => provider.repository(properties.group + '/' + properties.repository)}
     factory={ChildStoreRoute}
     linkComponent={RepositoryLink}
     component={RepositoryPage}>
