@@ -10,16 +10,12 @@
   import ProviderLink from "./components/ProviderLink.svelte";
 
   export let provider;
-
-  function providerIterator(transition, properties) {
-    return provider.providers;
-  }
 </script>
 
 <Route
   path="/provider"
   factory={IteratorStoreRoute}
-  iteratorFor={providerIterator}
+  iteratorFor={() => provider.providers}
   component={ProvidersPage}>
   <slot />
   <Route
