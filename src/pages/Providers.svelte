@@ -2,7 +2,6 @@
   import { ObjectLink } from "svelte-guard-history-router";
   import providerFactories from "../provider-factories.mjs";
   import provider from "../provider.mjs";
-  //import { ProvidersRoute } from "../routes/repositories.mjs";
   import { api, client_id, redirect_uri, state } from "../auth.mjs";
 
   async function addProvider(ev) {
@@ -24,7 +23,9 @@
     */
   }
 
-  let providers = provider.providers;
+  export let router;
+
+  const route = router.route;
 </script>
 
 <table>
@@ -55,7 +56,7 @@
     <th>Active</th>
   </thead>
   <tbody>
-    {#each providers as provider}
+    {#each $route as provider}
       <tr>
         <td>
           <ObjectLink object={provider} />
