@@ -1,9 +1,10 @@
 <script>
   import { getAttribute } from "repository-provider";
-  import Attributes from "./Attributes.svelte";
-  import AttributeField from "./AttributeField.svelte";
-  import SecureAttributeField from "./SecureAttributeField.svelte";
-
+  import {
+    Attributes,
+    AttributeField,
+    SecureAttributeField
+  } from "svelte-repository-provider";
   import { provider as aggregatedProvider } from "../provider.mjs";
   export let provider;
 

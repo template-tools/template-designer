@@ -1,5 +1,5 @@
 <script>
-  import Attributes from "./Attributes.svelte";
+  import { Attributes } from "svelte-repository-provider";
 
   export let hook;
 </script>

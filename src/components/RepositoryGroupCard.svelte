@@ -1,6 +1,6 @@
 <script>
   import { ObjectLink } from "svelte-guard-history-router";
-  import Attributes from "./Attributes.svelte";
+  import { Attributes } from "svelte-repository-provider";
 
   export let repositoryGroup;
 </script>

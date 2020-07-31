@@ -1,7 +1,7 @@
 <script>
   import { ObjectLink, Link } from "svelte-guard-history-router";
+  import { Attributes } from "svelte-repository-provider";
   import iteratorStore from "../iterator-store.mjs";
-  import Attributes from "./Attributes.svelte";
 
   export let branch;
 
@@ -18,9 +18,7 @@
   <ul>
     {#each $entries as entry (entry.name)}
       <li>
-        <ObjectLink object={[entry, branch]}>
-          {entry.name}
-        </ObjectLink>
+        <ObjectLink object={[entry, branch]}>{entry.name}</ObjectLink>
       </li>
     {/each}
   </ul>
