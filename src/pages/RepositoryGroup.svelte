@@ -1,5 +1,6 @@
 <script>
-  import RepositoryGroupCard from "../components/RepositoryGroupCard.svelte";
+  import {RepositoryGroupCard } from "svelte-repository-provider";
+
   export let router;
 
   const cr = router.route;
