@@ -1,9 +1,7 @@
 <script>
   import { ObjectLink } from "svelte-guard-history-router";
-  import { Attributes } from "svelte-repository-provider";
-
+  import { Attributes, PullRequestCard } from "svelte-repository-provider";
   import iteratorStore from "../iterator-store.mjs";
-  import PullRequestCard from "./PullRequestCard.svelte";
 
   export let repository;
 
