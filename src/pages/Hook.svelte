@@ -1,5 +1,6 @@
 <script>
-  import HookCard from "../components/HookCard.svelte";
+  import { HookCard } from "svelte-repository-provider";
+
   export let router;
 
   const cr = router.route;

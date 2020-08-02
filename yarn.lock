@@ -4198,9 +4198,9 @@ one-time-execution-method@^2.0.1:
   integrity sha512-EnXAbsSsJ+rJSBx/kxuoZWIXuOxe0bYNxgAV3Y6wONXY2cBpGrAmnUwHCbBwviAYn/oykFyTSlWMEnMOfCBeFQ==
 
 onetime@^5.1.0:
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.0.tgz#fff0f3c91617fe62bb50189636e99ac8a6df7be5"
-  integrity sha512-5NcSkPHhwTVFIQN+TUqXoS5+dlElHXdpAWu9I0HP20YOtIi+aZ0Ct82jdlILDxjLEAWwvm+qj1m6aEtsDVmm6Q==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/onetime/-/onetime-5.1.1.tgz#5c8016847b0d67fcedb7eef254751cfcdc7e9418"
+  integrity sha512-ZpZpjcJeugQfWsfyQlshVoowIIQ1qBGSVll4rfDq6JJVO//fesjoX808hXWfBjY+ROZgpKDI5TRSRBSoJiZ8eg==
   dependencies:
     mimic-fn "^2.1.0"
 
@@ -5986,10 +5986,10 @@ svelte-guard-history-router@^2.23.9:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.2.0.tgz#9f7b0b17266ccd3daf4c36d6026d8691acd7a08d"
-  integrity sha512-ADUo1IQhYKJgv8U6ln7isvrIZd8lGd7XOzdm8rW2YmxwWcG803bV4inyaRRAyeXyzpbYxwsDHowvZucT3Kvfug==
+svelte-repository-provider@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.3.0.tgz#de7a40f55d90103163455be3a9f44ce17adfcb29"
+  integrity sha512-8c1yZ/AEjP8kWtnWGHdLFTsCqD6P9U80VAvYnqjiIkDpoiUtqKEzXqlr1/Jp9hvrgBxZ3hPwMjkExVCRi6imIQ==
   dependencies:
     svelte-guard-history-router "^2.23.9"
 
