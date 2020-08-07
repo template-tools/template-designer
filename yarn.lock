@@ -5947,19 +5947,19 @@ svelte-common@^2.1.5:
   resolved "https://registry.yarnpkg.com/svelte-common/-/svelte-common-2.1.6.tgz#687b0b8efbcd7306cfbbc155e1fc8325bf51dc03"
   integrity sha512-I9U/y4NzqJu5eaVablaZPJra5RHRORlJ3uGxGGLsGvZf362RcKZPy83H/gVv7CvDVWG+VIUneZ40p+pIHCPwAw==
 
-svelte-guard-history-router@^2.23.9, svelte-guard-history-router@^2.24.0:
+svelte-guard-history-router@^2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/svelte-guard-history-router/-/svelte-guard-history-router-2.24.0.tgz#a3300335b73b27e4bfe9ad7c6c6f37775c2df001"
   integrity sha512-lgVoeZJmarliKkBw1J8b2Hy9SxSZ9xSUM26RDBUau5Q+w1vFaezXcsUJvKAIMF+RI16GJQBQZevHPDHZ3BFazg==
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.3.0.tgz#de7a40f55d90103163455be3a9f44ce17adfcb29"
-  integrity sha512-8c1yZ/AEjP8kWtnWGHdLFTsCqD6P9U80VAvYnqjiIkDpoiUtqKEzXqlr1/Jp9hvrgBxZ3hPwMjkExVCRi6imIQ==
+svelte-repository-provider@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.3.1.tgz#b0a441c3642529c6c00a1fe80600d5f6f867d333"
+  integrity sha512-RwCACzI32OnKcXNjJwdY0tyFLYLSwDlPa/Eg3wghCsB6tq/JWIO7Th2t/S0Xivg6O97poymQTcfDUi6wKCrYZA==
   dependencies:
-    svelte-guard-history-router "^2.23.9"
+    svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.6:
   version "1.1.7"
