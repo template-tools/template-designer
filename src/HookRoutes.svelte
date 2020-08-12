@@ -5,10 +5,10 @@
     IteratorStoreRoute
   } from "svelte-guard-history-router";
   import { Hook } from "repository-provider";
+  import { HookLink } from "svelte-repository-provider";
 
   import HooksPage from "./pages/Hooks.svelte";
   import HookPage from "./pages/Hook.svelte";
-  import HookLink from "./components/HookLink.svelte";
 
   export let provider;
 
