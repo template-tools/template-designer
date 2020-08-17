@@ -2194,17 +2194,17 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.13.2:
-  version "1.13.2"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.2.tgz#85759ecc238e96e5f7c55eec6a8a711a7f45d733"
-  integrity sha512-ts2GsoIh5xL2LUOTYZjdZnCzXUBlDcEVqxdVindtiTuy13DY04jaogvNTQ3XcYrPluck19nD3bQBiBcT0v0xmg==
+gitea-repository-provider@^1.13.3:
+  version "1.13.3"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.3.tgz#4839c2bb9a32c1b780f3c38306d5c5d5d7ca617e"
+  integrity sha512-LHi5b4ugupeFo7a4AfL1OqsT3Suk9n1JF9R1w3zbYxxnU1PxQF8UqQh4qelFSBnugiRJlzJ7gCQaUmSpLpidMQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "^1.1.0"
     node-fetch "3.0.0-beta.8"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.3"
+    repository-provider "^23.6.4"
 
 github-repository-provider@^7.15.8:
   version "7.15.8"
@@ -5194,7 +5194,7 @@ registry-url@^3.0.3:
   dependencies:
     rc "^1.0.1"
 
-repository-provider@^23.6.3, repository-provider@^23.6.4:
+repository-provider@^23.6.4:
   version "23.6.4"
   resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.4.tgz#a9424bda9776473ddceaca150e896c736c14a79c"
   integrity sha512-5Vb5m74JEQUJP4rcnivvFnDkUiO2JZ5EdjW3uFwSv5z8VOy3fwGwYv12MCR+A/sSeL2+F13fDUsaz9U/VPHWPQ==
