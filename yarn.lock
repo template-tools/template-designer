@@ -2206,17 +2206,17 @@ gitea-repository-provider@^1.13.4:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.5"
 
-github-repository-provider@^7.15.8:
-  version "7.15.8"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.15.8.tgz#f6c4c7c31087df243ab4dfa3a6efadda75456fb0"
-  integrity sha512-g56vrZ37Ysk075hWSL3jMC7fkoGPfLbKR7ICd7HbbZSEBYlpm6LPtG7J3eeyHNrwV/YHQHOA5ONCvROObCW+Rw==
+github-repository-provider@^7.15.9:
+  version "7.15.9"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.15.9.tgz#33b6442ae737a76e5e6bb2792e06dd866e407b0f"
+  integrity sha512-yalxn+4+xRvYnVH9uqMBwiloi/SZntb5+vR1Fr0Wa97wO14l7DeyEPyx33YdX9SMCGipH3zx5UPhYBsNTi5yFA==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
-    matching-iterator "1.1.1"
+    matching-iterator "1.1.2"
     node-fetch "3.0.0-beta.8"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.4"
+    repository-provider "^23.6.5"
 
 glob-parent@^5.1.0:
   version "5.1.1"
@@ -3490,10 +3490,10 @@ marked@^1.0.0:
   resolved "https://registry.yarnpkg.com/marked/-/marked-1.1.1.tgz#e5d61b69842210d5df57b05856e0c91572703e6a"
   integrity sha512-mJzT8D2yPxoPh7h0UXkB+dBj4FykPJ2OIfxAWeIHrvoHDkFxukV/29QxoFQoPM6RLEwhIFdJpmKBlqVM3s2ZIw==
 
-matching-iterator@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.1.1.tgz#8e4f1172818dd7c59a365741f1ec2c4fab90e65b"
-  integrity sha512-kFCrJrLMfxqPxbf4ZZyplXcfFhnKVZ3bQqMvK3tqejHgRGnKnVlflXnmQsx/8WFo5qfcUvNrYoOd7d0RUkdr1A==
+matching-iterator@1.1.2, matching-iterator@^1.1.0, matching-iterator@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/matching-iterator/-/matching-iterator-1.1.2.tgz#f8810bf02f54bc025ce194b745751daedc78c48c"
+  integrity sha512-oBnCB/Uh6yDGuaGhKjZgWu2zPARC7M5cMn6pSgrcavXVMQHatpJeVa+iM27iXj3Cg3r/Gu5klyZxhamkSPFcGw==
 
 matching-iterator@^1.1.0, matching-iterator@^1.1.2:
   version "1.1.2"
