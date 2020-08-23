@@ -5,8 +5,8 @@
     ChildStoreRoute,
     IteratorStoreRoute
   } from "svelte-guard-history-router";
+  import { PullRequestLink } from "svelte-repository-provider";
   import PullRequestPage from "./pages/PullRequest.svelte";
-  import PullRequestLink from "./components/PullRequestLink.svelte";
 
   export let provider;
 
