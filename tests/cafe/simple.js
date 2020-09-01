@@ -2,7 +2,7 @@ import { Selector } from "testcafe";
 
 const base = "http://localhost:5000/services/component-template-designer";
 
-fixture`log`.page`${base}/index.html`;
+fixture`overview`.page`${base}/index.html`;
 
 test("overview", async t => {
   await t.wait(1000);
