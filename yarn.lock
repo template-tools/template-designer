@@ -2206,10 +2206,10 @@ gitea-repository-provider@^1.13.4:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.5"
 
-github-repository-provider@^7.15.9:
-  version "7.15.9"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.15.9.tgz#33b6442ae737a76e5e6bb2792e06dd866e407b0f"
-  integrity sha512-yalxn+4+xRvYnVH9uqMBwiloi/SZntb5+vR1Fr0Wa97wO14l7DeyEPyx33YdX9SMCGipH3zx5UPhYBsNTi5yFA==
+github-repository-provider@^7.16.1:
+  version "7.16.1"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.16.1.tgz#2e17ef604a148a0ccebd7cf0b47ab11bcf0038d2"
+  integrity sha512-TwryMgyPVjVNHPAN/lD4L001K7fTiwvJnChQpN+7VRtUJAJhZ496ffABaevaTFnWFpCF30ZaPgc0GR3TgVOTHQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
@@ -5345,10 +5345,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.26.8:
-  version "2.26.8"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.8.tgz#7b02353835a73c4797f42177a5fa3fc074012713"
-  integrity sha512-li9WaJYc5z9WzV1jhZbPQCrsOpGNsI+Li1qyrn5n745ZNSnlkRlBtj1Hs+Z0Dc2N1+P7HT34UKAEASqN9Th8cg==
+rollup@^2.26.9:
+  version "2.26.9"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.9.tgz#4b6ce4e9044dd257d7314d8ed9b4d4d8a7d166c9"
+  integrity sha512-XIiWYLayLqV+oY4S2Lub/shJq4uk/QQLwWToYCL4LjZbYHbFK3czea4UDVRUJu+zNmKmxq5Zb/OG7c5HSvH2TQ==
   optionalDependencies:
     fsevents "~2.1.2"
 
