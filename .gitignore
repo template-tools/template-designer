@@ -10,3 +10,4 @@ node_modules
 *.mjs.map
 *.css.map
 public/bundle.*
+bundle.*
