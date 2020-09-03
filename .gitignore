@@ -6,7 +6,5 @@ node_modules
 *.node
 .test
 .tmp
-*.js.map
-*.mjs.map
-*.css.map
 bundle.*
+*.map
