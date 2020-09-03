@@ -1,4 +1,3 @@
-*.css.map
 rollup.config.*
 build
 tests
@@ -8,6 +7,5 @@ doc
 .tmp
 .test
 .vscode
-*.js.map
-*.mjs.map
 .github
+*.map
