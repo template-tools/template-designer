@@ -26,8 +26,8 @@
 <Router {base}>
   <nav>
     <Route href="/" path="*" component={Home}>
-      <img class="logo" src="images/git.svg" alt="Template Designer" />
-      Template Designer
+      <img class="logo" src="images/git.svg" alt="Template Designer" />Template
+      Designer
     </Route>
 
     <ul class="left">

@@ -6,9 +6,14 @@ fixture`overview`.page`${base}/index.html`;
 
 test("overview", async t => {
   await t.wait(1000);
-  const log = Selector("#log");
 
+  const logoExists = Selector(".logo").exists;
+
+  await t.expect(logoExists).ok();
+
+  /*
   await t
-    .expect(Selector("#log").innerText)
-    .contains("line 1\nline 2\nline 3\nline 4\n");
+    .expect(Selector(".logo").alt)
+    .contains("Template Designer");
+    */
 });
