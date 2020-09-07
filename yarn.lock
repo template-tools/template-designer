@@ -3515,10 +3515,10 @@ gitea-repository-provider@^1.13.4:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.5"
 
-github-repository-provider@^7.16.3:
-  version "7.16.3"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.16.3.tgz#7d880076e1313cae2d6f7b0e799c3f756bf26e46"
-  integrity sha512-SjwLfYM7qR5B+EtKWZrjsM8ZHolReZvDJjERjZ3Mdwr6Ng0xNEN5q1LPUP4x523jnaJftBqCQX7UO8UUr5hNxw==
+github-repository-provider@^7.16.4:
+  version "7.16.4"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.16.4.tgz#438575c8fa4ab5928ef02ff493de67a1181be1b0"
+  integrity sha512-A+OKpYVx7cOnEa7NNVFXN16C0X6i9PKVMd2PGbeMkD7qI8A36SOsP21BB4agXTbLmN1GWdg/Y36sSq5R2SBCOg==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
@@ -7397,10 +7397,10 @@ rollup-plugin-svelte@^6.0.0:
     rollup-pluginutils "^2.8.2"
     sourcemap-codec "^1.4.8"
 
-rollup-plugin-terser@^7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.1.tgz#df72d8272e03fcb504a76f414b9509c63c5eaf54"
-  integrity sha512-HL0dgzSxBYG/Ly9i/E5Sc+PuKKZ0zBzk11VmLCfdUtpqH4yYqkLclPkTqRy85FU9246yetImOClaQ/ufnj08vg==
+rollup-plugin-terser@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-terser/-/rollup-plugin-terser-7.0.2.tgz#e8fbba4869981b2dc35ae7e8a502d5c6c04d324d"
+  integrity sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     jest-worker "^26.2.1"
