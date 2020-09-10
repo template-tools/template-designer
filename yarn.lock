@@ -1503,16 +1503,16 @@ bin-v8-flags-filter@^1.1.2:
   resolved "https://registry.yarnpkg.com/bin-v8-flags-filter/-/bin-v8-flags-filter-1.2.0.tgz#023fc4ee22999b2b1f6dd1b7253621366841537e"
   integrity sha512-g8aeYkY7GhyyKRvQMBsJQZjhm2iCX3dKYvfrMpwVR8IxmUGrkpCBFoKbB9Rh0o3sTLCjU/1tFpZ4C7j3f+D+3g==
 
-bitbucket-repository-provider@^3.7.17:
-  version "3.7.17"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.17.tgz#4da1edcb437babc378607ae3ae57f2d74e0ab22c"
-  integrity sha512-H9n6l1byinsJVanWXee7GWSOd8vfaaURd69BE8j5qJNu264CfvY3kEgNIvfH48NEjCYlEvy7lFL7+4/aI0Lxlg==
+bitbucket-repository-provider@^3.7.18:
+  version "3.7.18"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.18.tgz#54fd9140432ca99c05ebac812563d6773cba05d3"
+  integrity sha512-apy0TzBqQqE7rNK8EP/FMZrkOZKqXgDxdTJhGhgqTUDF7mM6wC40ZK0kkFEJ7vzy3No69zxZbcso1a/s9p+A5g==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.2"
-    node-fetch "3.0.0-beta.8"
+    node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
 
 bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
