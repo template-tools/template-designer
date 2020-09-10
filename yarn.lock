@@ -8141,12 +8141,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.1.tgz#54fe85d62386ef1ad053099e02df43dc10a5db9b"
-  integrity sha512-S+FFY3WsbZKSPxQtiyBv0YCMHGkD6pUqr2bvxCUZYCUEBgmaXD2JfrNi9sDGsO9hEBE0IamvRX2GfOoGGCYneg==
+svelte-repository-provider@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.2.tgz#3711db9de9fb470b7c1cb5b39c9b6caddbfcaa3b"
+  integrity sha512-vQ5f8G6iVy42nXo06xQfQgYFT9D7nK5dxwq2/yWt+zrSz17ZpxwVnTktVb7Ib3a0VRQCNgi28o3g530xaUL+0A==
   dependencies:
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
