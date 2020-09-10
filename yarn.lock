@@ -459,13 +459,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.10:
-  version "2.8.10"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.10.tgz#862bd47306264efaf174c1a0318da2262bf53097"
-  integrity sha512-ugNVdZpVqVnyikK+KSICpQMGWWUsz+qLdzl+Frdu+iSLqnhujLuPHsvmXvbBakuaSaSQawKrYbP0bdgqtHxhIg==
+aggregation-repository-provider@^2.8.11:
+  version "2.8.11"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.11.tgz#3908c4bac3763cccbfb0877f49d4fae522d1ef0d"
+  integrity sha512-XU5OyHh3cV9OPXAjJLjnIr5s2WAm6OTjcExaytdgtJAtyBb2cOMaOeFazTMTLtmwm/h0Xdk8Q0Hglw3SxvSogA==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
 
 ajv@^6.12.3:
   version "6.12.4"
@@ -1503,16 +1503,16 @@ bin-v8-flags-filter@^1.1.2:
   resolved "https://registry.yarnpkg.com/bin-v8-flags-filter/-/bin-v8-flags-filter-1.2.0.tgz#023fc4ee22999b2b1f6dd1b7253621366841537e"
   integrity sha512-g8aeYkY7GhyyKRvQMBsJQZjhm2iCX3dKYvfrMpwVR8IxmUGrkpCBFoKbB9Rh0o3sTLCjU/1tFpZ4C7j3f+D+3g==
 
-bitbucket-repository-provider@^3.7.17:
-  version "3.7.17"
-  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.17.tgz#4da1edcb437babc378607ae3ae57f2d74e0ab22c"
-  integrity sha512-H9n6l1byinsJVanWXee7GWSOd8vfaaURd69BE8j5qJNu264CfvY3kEgNIvfH48NEjCYlEvy7lFL7+4/aI0Lxlg==
+bitbucket-repository-provider@^3.7.18:
+  version "3.7.18"
+  resolved "https://registry.yarnpkg.com/bitbucket-repository-provider/-/bitbucket-repository-provider-3.7.18.tgz#54fd9140432ca99c05ebac812563d6773cba05d3"
+  integrity sha512-apy0TzBqQqE7rNK8EP/FMZrkOZKqXgDxdTJhGhgqTUDF7mM6wC40ZK0kkFEJ7vzy3No69zxZbcso1a/s9p+A5g==
   dependencies:
     content-entry "^2.5.0"
     matching-iterator "^1.1.2"
-    node-fetch "3.0.0-beta.8"
+    node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
 
 bluebird@^3.5.0, bluebird@^3.5.1, bluebird@^3.5.3, bluebird@^3.5.5:
   version "3.7.2"
@@ -3515,17 +3515,17 @@ gitea-repository-provider@^1.13.5:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.6"
 
-github-repository-provider@^7.17.0:
-  version "7.17.0"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.0.tgz#0d3a758f5c7f7d7518cb79a60ab8a6a1dc45f19e"
-  integrity sha512-kz4nj9GrWCpgRqpVDniRdab7Dgqb1MD/Vv7A+hoNEz7QQw+gfIY9F2YM/31s+kQcKq+XAEwxM5ImT7tyFLn+KA==
+github-repository-provider@^7.17.2:
+  version "7.17.2"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.2.tgz#ec124f3e0f50bd547ff1f062a91cd765c8506a6a"
+  integrity sha512-qQdzsPiezqt0TPaYoM529kAW0sb/Qz29spPG1psfJg1YBYsIIWQZn6kDZbp/8Ow9DML9mGI4O950Prm1VaXkOQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -8141,12 +8141,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.1.tgz#54fe85d62386ef1ad053099e02df43dc10a5db9b"
-  integrity sha512-S+FFY3WsbZKSPxQtiyBv0YCMHGkD6pUqr2bvxCUZYCUEBgmaXD2JfrNi9sDGsO9hEBE0IamvRX2GfOoGGCYneg==
+svelte-repository-provider@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.2.tgz#3711db9de9fb470b7c1cb5b39c9b6caddbfcaa3b"
+  integrity sha512-vQ5f8G6iVy42nXo06xQfQgYFT9D7nK5dxwq2/yWt+zrSz17ZpxwVnTktVb7Ib3a0VRQCNgi28o3g530xaUL+0A==
   dependencies:
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
