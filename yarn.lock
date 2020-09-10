@@ -7213,10 +7213,10 @@ replicator@^1.0.3:
   resolved "https://registry.yarnpkg.com/replicator/-/replicator-1.0.3.tgz#c0b3ea31e749015bae5d52273f2ae35d541b87ef"
   integrity sha512-WsKsraaM0x0QHy5CtzdgFXUxyowoBhyNkmPqmZShW6h+rOWnyT6Od3zRdTX9r616rAA6kDC9MKQGnSM/CJKfVQ==
 
-repository-provider@^23.6.5:
-  version "23.6.5"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.5.tgz#1e430535d24430bfc8461c4975b4cd5469fb4ad5"
-  integrity sha512-gwgcGDIyCEzaFyNk8VI5RTkifoaU+aBkTvsky17PpVmbGgyhfGgS1eoPhUzamNYWT1R8nl9DiTphiOlyEAb9yg==
+repository-provider@^23.6.5, repository-provider@^23.6.6:
+  version "23.6.6"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.6.tgz#f3bfccdf66170a4501168fb43287c32320df9dd1"
+  integrity sha512-wOon2R5AUcEfydkmjXzIFVdOMFi22fzS715FihfWw8c6gd4Ya9Mj4j5ChAxHlmRkNh0N0FrfHVAYtcO7z5OAow==
   dependencies:
     matching-iterator "^1.1.2"
 
@@ -8141,12 +8141,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.1.tgz#54fe85d62386ef1ad053099e02df43dc10a5db9b"
-  integrity sha512-S+FFY3WsbZKSPxQtiyBv0YCMHGkD6pUqr2bvxCUZYCUEBgmaXD2JfrNi9sDGsO9hEBE0IamvRX2GfOoGGCYneg==
+svelte-repository-provider@^1.5.2:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.2.tgz#3711db9de9fb470b7c1cb5b39c9b6caddbfcaa3b"
+  integrity sha512-vQ5f8G6iVy42nXo06xQfQgYFT9D7nK5dxwq2/yWt+zrSz17ZpxwVnTktVb7Ib3a0VRQCNgi28o3g530xaUL+0A==
   dependencies:
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
