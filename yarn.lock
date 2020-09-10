@@ -3503,17 +3503,17 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.13.4:
-  version "1.13.4"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.4.tgz#24da579bd74c0cbb9e5217d436945a93ba58f92f"
-  integrity sha512-A7cutK/8tOYs4HKNWreCYblAtpGHDAJaR3+15bgWOGadwAIeb1CDuE1WkvZg/D3Q5ulqy1fTuAS5ZxLUbV+y/A==
+gitea-repository-provider@^1.13.5:
+  version "1.13.5"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.5.tgz#d96327c434c4b6f78ccd25344c797ef41ff52989"
+  integrity sha512-14stuSTa7VEGn8EAgtgbbBzHMZ5aghnM30oKD5sUHZSv/6MIGjDuNUfxBaW0Xhaowp1igRlSWpgBl+yKEIEE8w==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "^1.1.2"
-    node-fetch "3.0.0-beta.8"
+    node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.5"
+    repository-provider "^23.6.6"
 
 github-repository-provider@^7.17.0:
   version "7.17.0"
@@ -7213,10 +7213,10 @@ replicator@^1.0.3:
   resolved "https://registry.yarnpkg.com/replicator/-/replicator-1.0.3.tgz#c0b3ea31e749015bae5d52273f2ae35d541b87ef"
   integrity sha512-WsKsraaM0x0QHy5CtzdgFXUxyowoBhyNkmPqmZShW6h+rOWnyT6Od3zRdTX9r616rAA6kDC9MKQGnSM/CJKfVQ==
 
-repository-provider@^23.6.5:
-  version "23.6.5"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.5.tgz#1e430535d24430bfc8461c4975b4cd5469fb4ad5"
-  integrity sha512-gwgcGDIyCEzaFyNk8VI5RTkifoaU+aBkTvsky17PpVmbGgyhfGgS1eoPhUzamNYWT1R8nl9DiTphiOlyEAb9yg==
+repository-provider@^23.6.5, repository-provider@^23.6.6:
+  version "23.6.6"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.6.tgz#f3bfccdf66170a4501168fb43287c32320df9dd1"
+  integrity sha512-wOon2R5AUcEfydkmjXzIFVdOMFi22fzS715FihfWw8c6gd4Ya9Mj4j5ChAxHlmRkNh0N0FrfHVAYtcO7z5OAow==
   dependencies:
     matching-iterator "^1.1.2"
 
