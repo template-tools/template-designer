@@ -3221,10 +3221,10 @@ fetch-link-util@^1.0.1:
   resolved "https://registry.yarnpkg.com/fetch-link-util/-/fetch-link-util-1.0.1.tgz#71d00c22f196f28309f7ca7b3a47a0b842e62b83"
   integrity sha512-XUdruCia6Fj2toiNtNBzy0fkG1308yo5h7XyfsqkuO0UgMO9kP+n3N9QED8Hd84uG2k6ieEekth6mhSMZoAS0g==
 
-fetch-rate-limit-util@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fetch-rate-limit-util/-/fetch-rate-limit-util-1.1.0.tgz#5570a918475a99d013ab963a9062ccd7d33872c7"
-  integrity sha512-rOQWUeCyAbPfFwM6iU5438VBy505Tfz4kDCh10MRLtQ+/TJzH/ozqnsp4O2bfnS0TwGxTsNld7rDfIiWijHyWg==
+fetch-rate-limit-util@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/fetch-rate-limit-util/-/fetch-rate-limit-util-1.1.2.tgz#40f9a176984b52656b092e44428e24016b3538ea"
+  integrity sha512-EhvcpMN6eCFcYC546AyX4M3G2RyOLdtvQmXZzLJATg0GPvSDle8mpeHsrYwIAWyLn/PAdaE2PLspukQKWv4z+w==
 
 figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.2"
@@ -3520,14 +3520,14 @@ gitea-repository-provider@^1.13.5:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.6"
 
-github-repository-provider@^7.17.3:
-  version "7.17.3"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.3.tgz#6035f0d0c3458ba030c41d512785d2b0b7e5b194"
-  integrity sha512-ErySJEtPey0Y2toKZCXGivJxZJULxNy11yKEffHUpuSX57EYrTFGQ9KxS8IPDKDJ2yacEPvZfoaY9E6GjVoLtA==
+github-repository-provider@^7.17.6:
+  version "7.17.6"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.6.tgz#9f753980e4b09e33b311e695d8183b39c6caef9d"
+  integrity sha512-rIw4MCNTABLoSCsEMUbOEm8VJz8QXEvYOfFBAxI1VHyU8Yzd+6IBYYdLnpVUIL/yQjURA3eOk1wRx/OJcX8Cvg==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
-    fetch-rate-limit-util "^1.0.0"
+    fetch-rate-limit-util "^1.1.1"
     matching-iterator "1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
@@ -8152,10 +8152,10 @@ svelte-session-manager@^1.1.7:
   resolved "https://registry.yarnpkg.com/svelte-session-manager/-/svelte-session-manager-1.1.7.tgz#d1dbaaeba9a24f15b4fb9044ff46c04a7eaffcf6"
   integrity sha512-oIcCrOiZK0vY0nU8ikW2c5jjVy23zzuxMxdaQdRVkNZSKOom1V/+biqrOeux80K2C3OridsKVJgni6+tEbOxpA==
 
-svelte@^3.25.0:
-  version "3.25.0"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.25.0.tgz#e7f89d11a2223ac02d29f75f82b2a9cca7fd7a54"
-  integrity sha512-CUfq+YTC5Q0tBg7Q9X/QxNutdEYp7ogdbcTZF3mrowOlp3+OF1ZexHwI0Io2VqFSDxht7TlA2lTIQC4RnhR1MQ==
+svelte@^3.25.1:
+  version "3.25.1"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.25.1.tgz#218def1243fea5a97af6eb60f5e232315bb57ac4"
+  integrity sha512-IbrVKTmuR0BvDw4ii8/gBNy8REu7nWTRy9uhUz+Yuae5lIjWgSGwKlWtJGC2Vg95s+UnXPqDu0Kk/sUwe0t2GQ==
 
 svgo@^1.0.0:
   version "1.3.2"
