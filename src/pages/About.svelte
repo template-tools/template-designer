@@ -1,5 +1,5 @@
 <script>
-  import { About, SessionDetails } from "svelte-common";
+  import { About } from "svelte-common";
 
   import name from "consts:name";
   import version from "consts:version";
@@ -11,6 +11,6 @@
 <About {name} {version} {description}>
   <tr>
     <td>Service Worker</td>
-    <td>{$serviceWorker.state}</td>
+    <td colspan="2">{$serviceWorker.state}</td>
   </tr>
 </About>
