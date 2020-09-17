@@ -7211,10 +7211,10 @@ replicator@^1.0.3:
   resolved "https://registry.yarnpkg.com/replicator/-/replicator-1.0.3.tgz#c0b3ea31e749015bae5d52273f2ae35d541b87ef"
   integrity sha512-WsKsraaM0x0QHy5CtzdgFXUxyowoBhyNkmPqmZShW6h+rOWnyT6Od3zRdTX9r616rAA6kDC9MKQGnSM/CJKfVQ==
 
-repository-provider@^23.6.6, repository-provider@^23.7.0:
-  version "23.7.0"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.7.0.tgz#9746c46266f77a8e01810beb911544b22e32a759"
-  integrity sha512-9ivtmBcPYDCiNycXMjJ5tU6quKdMucAzQggCByhqtnGqaXDRfTGbx59MnZX1hQ8cfTnnkBaU6tKWIj2iGqt/NA==
+repository-provider@^23.6.6, repository-provider@^23.7.0, repository-provider@^23.7.2:
+  version "23.7.2"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.7.2.tgz#8cde61ea8ac9c7f3d88c18da0d5ede43c071227a"
+  integrity sha512-hOYryucAMVDSV/eViz6844IOwRIBA92MZVl7pio54AgtFusTMBm01LJNZDx9lk8FEADOgvMvUgQirjUZuWCi+g==
   dependencies:
     matching-iterator "^1.1.2"
 
@@ -8139,12 +8139,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.3:
-  version "1.5.3"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.3.tgz#548046906d53e22db83761b4a81d14bbe1506815"
-  integrity sha512-iHBZ8XZbdsLy3VUm+Y3k7wekVkgc8aB3+SVSs88i1oVsfXmBI4xx5POFLqPz23xEpj6ZDdA05VMemhDxwG8+Dg==
+svelte-repository-provider@^1.5.5:
+  version "1.5.5"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.5.tgz#ff9d4bd62b7e2bccb7075f45d0c921ab9a265381"
+  integrity sha512-d18PMhcCYzN9MMnzGtF/AdWL3rgivAcTwuqlRHfGXCfDciCw6EEpQPT0m0h7Bgvx+yNFoSMhkUIxI5mrubtX4Q==
   dependencies:
-    repository-provider "^23.7.0"
+    repository-provider "^23.7.2"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
