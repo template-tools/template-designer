@@ -24,7 +24,7 @@
     "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 1000 --app \"rollup -c rollup.config.mjs -w\""
   },
   "dependencies": {
-    "aggregation-repository-provider": "^2.8.11",
+    "aggregation-repository-provider": "^2.8.12",
     "bitbucket-repository-provider": "^3.7.19",
     "buffer": "^5.6.0",
     "gitea-repository-provider": "^1.13.5",
