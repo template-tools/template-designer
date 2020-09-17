@@ -3221,10 +3221,10 @@ fetch-link-util@^1.0.1:
   resolved "https://registry.yarnpkg.com/fetch-link-util/-/fetch-link-util-1.0.1.tgz#71d00c22f196f28309f7ca7b3a47a0b842e62b83"
   integrity sha512-XUdruCia6Fj2toiNtNBzy0fkG1308yo5h7XyfsqkuO0UgMO9kP+n3N9QED8Hd84uG2k6ieEekth6mhSMZoAS0g==
 
-fetch-rate-limit-util@^1.1.1:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/fetch-rate-limit-util/-/fetch-rate-limit-util-1.1.2.tgz#40f9a176984b52656b092e44428e24016b3538ea"
-  integrity sha512-EhvcpMN6eCFcYC546AyX4M3G2RyOLdtvQmXZzLJATg0GPvSDle8mpeHsrYwIAWyLn/PAdaE2PLspukQKWv4z+w==
+fetch-rate-limit-util@^1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/fetch-rate-limit-util/-/fetch-rate-limit-util-1.1.3.tgz#d927f8af8f8732a9c654456fa2e9e4c569d033d8"
+  integrity sha512-A1yNYUSb/dTfoAvnMn7uS9Eobv1M00pH3OUUvx/G3MdMWhccDJvjyeXjM3hloIUlyggXaPiIglWFFyT042dLZg==
 
 figgy-pudding@^3.4.1, figgy-pudding@^3.5.1:
   version "3.5.2"
@@ -3520,18 +3520,18 @@ gitea-repository-provider@^1.13.5:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.6.6"
 
-github-repository-provider@^7.17.6:
-  version "7.17.6"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.6.tgz#9f753980e4b09e33b311e695d8183b39c6caef9d"
-  integrity sha512-rIw4MCNTABLoSCsEMUbOEm8VJz8QXEvYOfFBAxI1VHyU8Yzd+6IBYYdLnpVUIL/yQjURA3eOk1wRx/OJcX8Cvg==
+github-repository-provider@^7.17.9:
+  version "7.17.9"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.9.tgz#b6a6c271a117e7654d990b2f2661cf08ec196bea"
+  integrity sha512-zgk9zRrGq8VZWZJKInT4jZHXoqgF1VI5hRQtalVwFD3M/fE3RiSWCdLKTPDemiRD0OMywLIpEFW6IxK5YRBNxA==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
-    fetch-rate-limit-util "^1.1.1"
+    fetch-rate-limit-util "^1.1.3"
     matching-iterator "1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.6.6"
+    repository-provider "^23.7.0"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -7211,10 +7211,10 @@ replicator@^1.0.3:
   resolved "https://registry.yarnpkg.com/replicator/-/replicator-1.0.3.tgz#c0b3ea31e749015bae5d52273f2ae35d541b87ef"
   integrity sha512-WsKsraaM0x0QHy5CtzdgFXUxyowoBhyNkmPqmZShW6h+rOWnyT6Od3zRdTX9r616rAA6kDC9MKQGnSM/CJKfVQ==
 
-repository-provider@^23.6.6:
-  version "23.6.6"
-  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.6.6.tgz#f3bfccdf66170a4501168fb43287c32320df9dd1"
-  integrity sha512-wOon2R5AUcEfydkmjXzIFVdOMFi22fzS715FihfWw8c6gd4Ya9Mj4j5ChAxHlmRkNh0N0FrfHVAYtcO7z5OAow==
+repository-provider@^23.6.6, repository-provider@^23.7.0:
+  version "23.7.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.7.0.tgz#9746c46266f77a8e01810beb911544b22e32a759"
+  integrity sha512-9ivtmBcPYDCiNycXMjJ5tU6quKdMucAzQggCByhqtnGqaXDRfTGbx59MnZX1hQ8cfTnnkBaU6tKWIj2iGqt/NA==
   dependencies:
     matching-iterator "^1.1.2"
 
@@ -7420,10 +7420,10 @@ rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^2.26.11:
-  version "2.26.11"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.26.11.tgz#4fc31de9c7b83d50916fc8395f8c3d24730cdaae"
-  integrity sha512-xyfxxhsE6hW57xhfL1I+ixH8l2bdoIMaAecdQiWF3N7IgJEMu99JG+daBiSZQjnBpzFxa0/xZm+3pbCdAQehHw==
+rollup@^2.27.0:
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.27.0.tgz#f2b70a8dd583bc3675b36686289aa9a51e27af4f"
+  integrity sha512-1WlbhNdzhLjdhh2wsf6CDxmuBAYG+5O53fYqCcGv8aJOoX/ymCfCY6oZnvllXZzaC/Ng+lPPwq9EMbHOKc5ozA==
   optionalDependencies:
     fsevents "~2.1.2"
 
