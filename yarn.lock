@@ -3520,10 +3520,10 @@ gitea-repository-provider@^1.13.8:
     one-time-execution-method "^2.0.1"
     repository-provider "^23.7.2"
 
-github-repository-provider@^7.17.9:
-  version "7.17.9"
-  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.9.tgz#b6a6c271a117e7654d990b2f2661cf08ec196bea"
-  integrity sha512-zgk9zRrGq8VZWZJKInT4jZHXoqgF1VI5hRQtalVwFD3M/fE3RiSWCdLKTPDemiRD0OMywLIpEFW6IxK5YRBNxA==
+github-repository-provider@^7.17.11:
+  version "7.17.11"
+  resolved "https://registry.yarnpkg.com/github-repository-provider/-/github-repository-provider-7.17.11.tgz#1cec041946220aa0464c8464f67e0745ed9a2f7d"
+  integrity sha512-hd+kAmixx4jQWk3fW/kNtIrjgbPPNwQ4D0742obr5bqAfrnbQH56oMtn30lCUPj6ywftYN+2CjHCGdpRID11qQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
@@ -3531,7 +3531,7 @@ github-repository-provider@^7.17.9:
     matching-iterator "1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.7.0"
+    repository-provider "^23.7.2"
 
 glob-parent@^3.1.0:
   version "3.1.0"
