@@ -3,7 +3,6 @@
   import name from "consts:name";
   import version from "consts:version";
   import description from "consts:description";
-
   import { serviceWorker } from "../main.mjs";
 </script>
 
