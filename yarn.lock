@@ -3004,10 +3004,10 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
-esotope-hammerhead@0.5.5:
-  version "0.5.5"
-  resolved "https://registry.yarnpkg.com/esotope-hammerhead/-/esotope-hammerhead-0.5.5.tgz#dccae8ffe588238c3c3db9b78df45fe95add498a"
-  integrity sha512-EuSYJDtF8gLMB24lzjHw2KotauPsVJybFrtGfQyMm48oC7sTkspA26DqcqcbnRl4GC6sPVKWEx+ex72eqopX9Q==
+esotope-hammerhead@0.5.6:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/esotope-hammerhead/-/esotope-hammerhead-0.5.6.tgz#f846638bc10adf068642decdf54b9a9ac856ccfb"
+  integrity sha512-E5cJKuecAEt/psafJ8rBjAezBS5/5iqyzgzRPH2JWEhZYTRzkphX9c9djqpJj8Zcfv7PpqgNgXXbaqxgCIVsPw==
   dependencies:
     "@types/estree" "^0.0.39"
 
@@ -3508,17 +3508,17 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.13.8:
-  version "1.13.8"
-  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.8.tgz#752c439f876e68694ed781435c730d576eded0d6"
-  integrity sha512-GkVOcnL7W/EcQ2SRwjECZxtXDgyhSPczHeNqKFgUUkg+PLxzu+TYqMSJduvzd9hb0REpt28a+0ShK6EPwXvjWQ==
+gitea-repository-provider@^1.13.12:
+  version "1.13.12"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.12.tgz#680d87931f4ed928ba375924574294f77b1eb42d"
+  integrity sha512-RAsmRcGfXo5xj8qPbUld+wQJ2ARjMkOC5T1K17wD178yzWNwEnJuexpWgsUw4/9WQRE64VTcSC12Y79kBoz7oQ==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "^1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.7.2"
+    repository-provider "^23.8.0"
 
 github-repository-provider@^7.17.11:
   version "7.17.11"
@@ -8139,12 +8139,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.5:
-  version "1.5.5"
-  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.5.tgz#ff9d4bd62b7e2bccb7075f45d0c921ab9a265381"
-  integrity sha512-d18PMhcCYzN9MMnzGtF/AdWL3rgivAcTwuqlRHfGXCfDciCw6EEpQPT0m0h7Bgvx+yNFoSMhkUIxI5mrubtX4Q==
+svelte-repository-provider@^1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.7.tgz#5a30978a98ef8fbd40903bef55fb040d962e4230"
+  integrity sha512-zi8GDBbNaxxCLiViJ9X7Qf4AGkeizBCgOuIKI5DKwlM7Li04s3zvNpkdzcpPEVOp0kVT6ANCpuIa7TjzVbbhJA==
   dependencies:
-    repository-provider "^23.7.2"
+    repository-provider "^23.8.0"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
@@ -8241,10 +8241,10 @@ testcafe-browser-tools@2.0.13:
     read-file-relative "^1.2.0"
     which-promise "^1.0.0"
 
-testcafe-hammerhead@17.1.15:
-  version "17.1.15"
-  resolved "https://registry.yarnpkg.com/testcafe-hammerhead/-/testcafe-hammerhead-17.1.15.tgz#2855db1d795f598ee331eda4ff7b0ca0309255d9"
-  integrity sha512-FvuaODbFUkoqyzH0OapiMO3/ISCB/v+0kKi0+5DhcIz1tRBishzyfLbHFyKXUf6rm0IhGJlME93uKFOM9NNOMw==
+testcafe-hammerhead@17.1.18:
+  version "17.1.18"
+  resolved "https://registry.yarnpkg.com/testcafe-hammerhead/-/testcafe-hammerhead-17.1.18.tgz#1de65d6f63f7037a150f0987826f1f528df91c71"
+  integrity sha512-mrIMd1NsX+aRH37wb6tlGZoQMttXw0cwJn23iI4Y00oD8VwJfBz0x01Df1HVSuodjTqCEKdJHvDnyjAAsGjaAw==
   dependencies:
     acorn-hammerhead "^0.3.0"
     asar "^2.0.1"
@@ -8253,7 +8253,7 @@ testcafe-hammerhead@17.1.15:
     crypto-md5 "^1.0.0"
     css "2.2.3"
     debug "4.1.1"
-    esotope-hammerhead "0.5.5"
+    esotope-hammerhead "0.5.6"
     iconv-lite "0.5.1"
     lodash "^4.17.19"
     lru-cache "2.6.3"
@@ -8315,10 +8315,10 @@ testcafe-reporter-xunit@^2.1.0:
   resolved "https://registry.yarnpkg.com/testcafe-reporter-xunit/-/testcafe-reporter-xunit-2.1.0.tgz#e6d66c572ce15af266706af0fd610b2a841dd443"
   integrity sha1-5tZsVyzhWvJmcGrw/WELKoQd1EM=
 
-testcafe@^1.9.2:
-  version "1.9.2"
-  resolved "https://registry.yarnpkg.com/testcafe/-/testcafe-1.9.2.tgz#35f3603bdc5241033eda9ad55d600d8c005a2801"
-  integrity sha512-85du0zDvzFWleVqRTTsAr8Lo+3gn4yETs9qFZBIEufk6oN1fLzgv6Q14GeaH3/IaKi+/smv55umTce/OXX0mbA==
+testcafe@^1.9.3:
+  version "1.9.3"
+  resolved "https://registry.yarnpkg.com/testcafe/-/testcafe-1.9.3.tgz#049b5d10127ce83993a46e35f429696ce774770b"
+  integrity sha512-1L5c8lHitGz/0Ta6AtA+J4e+YveV+XeoaY06mBWuVnijp56zJG4Xz1O2XNbMgprfLj7oNl96DW/MjJyW9B8QzA==
   dependencies:
     "@types/node" "^10.12.19"
     async-exit-hook "^1.1.2"
@@ -8385,7 +8385,7 @@ testcafe@^1.9.2:
     source-map-support "^0.5.16"
     strip-bom "^2.0.0"
     testcafe-browser-tools "2.0.13"
-    testcafe-hammerhead "17.1.15"
+    testcafe-hammerhead "17.1.18"
     testcafe-legacy-api "4.0.0"
     testcafe-reporter-json "^2.1.0"
     testcafe-reporter-list "^2.1.0"
