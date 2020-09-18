@@ -459,13 +459,13 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-aggregation-repository-provider@^2.8.12:
-  version "2.8.12"
-  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.12.tgz#4ed75d90f6601192806317154dde9cd1295acf23"
-  integrity sha512-u1etegZeIiFkrwAsHRp6t19SqRfVTZjldX+oB2PLthSp8xlRhMOWvJ+eJL2FpMpSdUzM6wyWSs/hB1hiqAF8xA==
+aggregation-repository-provider@^2.8.13:
+  version "2.8.13"
+  resolved "https://registry.yarnpkg.com/aggregation-repository-provider/-/aggregation-repository-provider-2.8.13.tgz#900c57260def0fcb660367c9331e5b2176217c89"
+  integrity sha512-gUkUVjujij49PoLYhRtpNS+F4gGv3c1w+S6Pv432UJz+a2rIIZ3zRXf0Uuo2cN4/xjVGCq/nEvWKrLrK+T85fg==
   dependencies:
     aggregate-async-iterator "^1.1.1"
-    repository-provider "^23.7.1"
+    repository-provider "^23.7.3"
 
 ajv@^6.12.3:
   version "6.12.4"
@@ -7211,10 +7211,10 @@ replicator@^1.0.3:
   resolved "https://registry.yarnpkg.com/replicator/-/replicator-1.0.3.tgz#c0b3ea31e749015bae5d52273f2ae35d541b87ef"
   integrity sha512-WsKsraaM0x0QHy5CtzdgFXUxyowoBhyNkmPqmZShW6h+rOWnyT6Od3zRdTX9r616rAA6kDC9MKQGnSM/CJKfVQ==
 
-repository-provider@^23.7.1, repository-provider@^23.7.2:
-  version "23.7.2"
-  resolved "http://mfelten.dynv6.net/services/verdaccio/repository-provider/-/repository-provider-23.7.2.tgz#8cde61ea8ac9c7f3d88c18da0d5ede43c071227a"
-  integrity sha512-hOYryucAMVDSV/eViz6844IOwRIBA92MZVl7pio54AgtFusTMBm01LJNZDx9lk8FEADOgvMvUgQirjUZuWCi+g==
+repository-provider@^23.7.2, repository-provider@^23.7.3:
+  version "23.8.0"
+  resolved "https://registry.yarnpkg.com/repository-provider/-/repository-provider-23.8.0.tgz#1aacc04e3749ef6a89e6ae70bcd5a4fe1f115764"
+  integrity sha512-jp2ZqgeuoTpJBvhVPhthPO4D5vUp8/jgDap39tNZNHwqypLiJzYRBP3p6Mn3YUGQXOfBnz3w5eplyocqC1dnjA==
   dependencies:
     matching-iterator "^1.1.2"
 
