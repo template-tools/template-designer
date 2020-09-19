@@ -9,7 +9,6 @@ export const ASSETS = [
     "favicon.ico",
     "index.html",
     "bundle.main.mjs",
-    "bundle.css",
-    "bundle.svelte.css"
+    "bundle.css"
   ];
   
