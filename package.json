@@ -28,7 +28,7 @@
     "bitbucket-repository-provider": "^3.7.22",
     "buffer": "^5.6.0",
     "gitea-repository-provider": "^1.13.12",
-    "github-repository-provider": "^7.17.13",
+    "github-repository-provider": "^7.17.15",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.11.1",
     "svelte-guard-history-router": "^2.24.0",
