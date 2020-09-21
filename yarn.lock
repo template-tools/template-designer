@@ -3516,17 +3516,17 @@ git-log-parser@^1.2.0:
     through2 "~2.0.0"
     traverse "~0.6.6"
 
-gitea-repository-provider@^1.13.12:
-  version "1.13.12"
-  resolved "https://registry.npmjs.org/gitea-repository-provider/-/gitea-repository-provider-1.13.12.tgz#680d87931f4ed928ba375924574294f77b1eb42d"
-  integrity sha512-RAsmRcGfXo5xj8qPbUld+wQJ2ARjMkOC5T1K17wD178yzWNwEnJuexpWgsUw4/9WQRE64VTcSC12Y79kBoz7oQ==
+gitea-repository-provider@^1.13.14:
+  version "1.13.14"
+  resolved "https://registry.yarnpkg.com/gitea-repository-provider/-/gitea-repository-provider-1.13.14.tgz#7d606385ddabc0c7cd4402f54c3f7c6f52d0c4d9"
+  integrity sha512-TwU5X/bx3sKo2A5p04yscjHBCJjvhFsPKV4k9NLrqxtGQyVvKMFZg5BjD5rgl5stlE5Kn2bE6/LNU6PFM2k32A==
   dependencies:
     content-entry "^2.5.0"
     fetch-link-util "^1.0.1"
     matching-iterator "^1.1.2"
     node-fetch "3.0.0-beta.9"
     one-time-execution-method "^2.0.1"
-    repository-provider "^23.8.0"
+    repository-provider "^23.9.0"
 
 github-repository-provider@^7.17.15:
   version "7.17.15"
@@ -8152,12 +8152,12 @@ svelte-guard-history-router@^2.24.0:
   dependencies:
     multi-path-matcher "^2.1.2"
 
-svelte-repository-provider@^1.5.7:
-  version "1.5.7"
-  resolved "https://registry.npmjs.org/svelte-repository-provider/-/svelte-repository-provider-1.5.7.tgz#5a30978a98ef8fbd40903bef55fb040d962e4230"
-  integrity sha512-zi8GDBbNaxxCLiViJ9X7Qf4AGkeizBCgOuIKI5DKwlM7Li04s3zvNpkdzcpPEVOp0kVT6ANCpuIa7TjzVbbhJA==
+svelte-repository-provider@^1.5.8:
+  version "1.5.8"
+  resolved "https://registry.yarnpkg.com/svelte-repository-provider/-/svelte-repository-provider-1.5.8.tgz#a450ee341e9083ed81a9c56eaa2af3a151e97d6b"
+  integrity sha512-K2pWysfM9NhvfeJUiYMuSTuXV3ecYG728r/Es/L5Djd8O+zbHtiG0J4IhHiVq2NCejq4H2NiEZUrja251/w4FA==
   dependencies:
-    repository-provider "^23.8.0"
+    repository-provider "^23.9.0"
     svelte-guard-history-router "^2.24.0"
 
 svelte-session-manager@^1.1.7:
