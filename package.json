@@ -21,7 +21,7 @@
     "prepare": "rollup -c rollup.config.mjs",
     "start": "rollup -c -w rollup.config.mjs",
     "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js --skip-js-errors -s build/test --app-init-delay 1000 --app \"rollup -c rollup.config.mjs -w\""
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --skip-js-errors --app-init-delay 1000 --app \"rollup -c rollup.config.mjs -w\""
   },
   "dependencies": {
     "aggregation-repository-provider": "^2.8.14",
