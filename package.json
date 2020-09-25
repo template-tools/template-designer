@@ -97,7 +97,9 @@
   },
   "template": {
     "properties": {
-      "testcafe": { "options": "--app-init-delay 5000" }
+      "testcafe": {
+        "options": "--app-init-delay 5000"
+      }
     },
     "inheritFrom": [
       "arlac77/template-arlac77-github",

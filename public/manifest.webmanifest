@@ -5,12 +5,14 @@
   "start_url": "./index.html",
   "display": "standalone",
   "orientation": "portrait",
-  "categories": ["utilities"],
   "icons": [
     {
       "src": "images/git.svg",
       "sizes": "150x150"
     }
   ],
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "categories": [
+    "utilities"
+  ]
 }
