@@ -64,7 +64,7 @@
   },
   "homepage": "https://github.com/arlac77/component-template-designer#readme",
   "config": {
-    "title": "Template Designer",
+    "title": "Component Template Designer",
     "api": "/services/component-template-designer/api",
     "base": "/services/component-template-designer",
     "proxyTarget": "https://somewhere/"
