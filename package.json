@@ -30,7 +30,7 @@
     "gitea-repository-provider": "^1.13.14",
     "github-repository-provider": "^7.17.15",
     "mf-styling": "arlac77/mf-styling",
-    "svelte-common": "^2.15.0",
+    "svelte-common": "^2.16.1",
     "svelte-guard-history-router": "^2.26.1",
     "svelte-repository-provider": "^1.5.8",
     "svelte-session-manager": "^1.1.7"
@@ -54,7 +54,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "semantic-release": "^17.1.2",
     "svelte": "^3.29.0",
-    "testcafe": "^1.9.3"
+    "testcafe": "^1.9.4"
   },
   "repository": {
     "type": "git",
