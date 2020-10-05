@@ -5,6 +5,7 @@
     Outlet,
     WaitingGuard
   } from "svelte-guard-history-router";
+  import { TopNav } from "svelte-common";
   import About from "./pages/About.svelte";
   import Home from "./pages/Home.svelte";
   import AuthAccept from "./pages/AuthAccept.svelte";
@@ -24,7 +25,7 @@
 </script>
 
 <Router {base}>
-  <nav>
+  <TopNav offset={42}>
     <Route href="/" path="*" component={Home}>
       <img class="logo" src="images/git.svg" alt="Template Designer" />Template
       Designer
@@ -49,7 +50,7 @@
         <Route path="/about" component={About}>About</Route>
       </li>
     </ul>
-  </nav>
+  </TopNav>
   <Route path="/auth/accept" component={AuthAccept} />
 
   <main>
