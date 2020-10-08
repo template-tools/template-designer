@@ -6,8 +6,8 @@
   },
   "description": "drag & drop your template",
   "keywords": [
-    "template",
     "svelte",
+    "template",
     "web"
   ],
   "contributors": [
@@ -31,7 +31,7 @@
     "github-repository-provider": "^7.17.17",
     "mf-styling": "arlac77/mf-styling",
     "svelte-common": "^2.17.0",
-    "svelte-guard-history-router": "^2.26.1",
+    "svelte-guard-history-router": "^2.26.2",
     "svelte-repository-provider": "^1.5.8",
     "svelte-session-manager": "^1.1.7"
   },
@@ -45,7 +45,7 @@
     "@semantic-release/release-notes-generator": "^9.0.1",
     "npm-pkgbuild": "^6.12.9",
     "postcss-import": "^12.0.1",
-    "rollup": "^2.28.2",
+    "rollup": "^2.29.0",
     "rollup-plugin-consts": "^1.0.2",
     "rollup-plugin-dev": "^1.1.2",
     "rollup-plugin-livereload": "^2.0.0",
