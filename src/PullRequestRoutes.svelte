@@ -10,12 +10,11 @@
 
   export let provider;
 
-  async function iteratorPullRequests(transition, properties) {
-    console.log("PR",properties);
+  async function * iteratorPullRequests(transition, properties) {
     const r = await provider.repository(
       `${properties.group}/${properties.repository}`
     );
-    return r.pullRequests();
+    yield * r.pullRequests();
   }
 </script>
 
