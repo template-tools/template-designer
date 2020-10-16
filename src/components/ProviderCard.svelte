@@ -37,7 +37,14 @@
 
 <div class="card">
   <div class="card-content">
-    <h5 class="card-title">{provider.name}</h5>
+    <h5 class="card-title">
+      <img
+        src="images/{provider.constructor.name}.svg"
+        width="18"
+        height="18"
+        alt={provider.name} />
+      {provider.name}
+    </h5>
     <Attributes object={provider} />
   </div>
 
