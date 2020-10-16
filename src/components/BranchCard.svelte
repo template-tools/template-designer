@@ -1,5 +1,5 @@
 <script>
-  import { ObjectLink, Link } from "svelte-guard-history-router";
+  import { ObjectLink } from "svelte-guard-history-router";
   import { Attributes } from "svelte-repository-provider";
   import iteratorStore from "../iterator-store.mjs";
 
