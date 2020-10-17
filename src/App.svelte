@@ -34,11 +34,11 @@
     <ul class="left">
       <li>
         <ProviderRoutes {provider}>Provider</ProviderRoutes>
-        <RepositoryGroupRoutes {provider} guards={waitingGuard}>
+        <RepositoryGroupRoutes {provider} guard={waitingGuard}>
           Groups
         </RepositoryGroupRoutes>
 
-        <RepositoryRoutes {provider} guards={waitingGuard}>
+        <RepositoryRoutes {provider} guard={waitingGuard}>
           <BranchRoutes {provider}>
             <ContentEntryRoutes {provider} />
           </BranchRoutes>
