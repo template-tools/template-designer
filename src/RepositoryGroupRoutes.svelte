@@ -17,12 +17,12 @@
   path="/group"
   factory={IteratorStoreRoute}
   iteratorFor={() => provider.repositoryGroups()}
+  objectInstance={RepositoryGroup}
   component={RepositoryGroupsPage}
   {guards}>
   <slot />
   <Route
     path="/:group"
-    objectInstance={RepositoryGroup}
     objectFor={(transition, properties) => provider.repositoryGroup(properties.group)}
     propertyMapping={{ group: 'name' }}
     factory={ChildStoreRoute}

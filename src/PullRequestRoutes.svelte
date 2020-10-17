@@ -21,10 +21,10 @@
 <Route
   path="/pr"
   iteratorFor={iteratorPullRequests}
+  objectInstance={PullRequest}
   factory={IteratorStoreRoute}>
   <Route
     path="/:pr"
-    objectInstance={PullRequest}
     propertyMapping={{ pr: 'name' }}
     factory={ChildStoreRoute}
     linkComponent={PullRequestLink}

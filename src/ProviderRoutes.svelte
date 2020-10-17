@@ -16,12 +16,12 @@
   path="/provider"
   factory={IteratorStoreRoute}
   iteratorFor={() => provider.providers}
+  objectInstance={BaseProvider}
   component={ProvidersPage}>
   <slot />
   <Route
     path="/:provider"
     factory={ChildStoreRoute}
-    objectInstance={BaseProvider}
     propertyMapping={{ provider: 'name' }}
     linkComponent={ProviderLink}
     component={ProviderPage} />

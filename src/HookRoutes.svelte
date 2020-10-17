@@ -23,12 +23,12 @@
 <Route
   path="/hook"
   iteratorFor={iteratorHooks}
+  objectInstance={Hook}
   factory={IteratorStoreRoute}
   component={HooksPage}>
   <Route
     path="/:hook"
     factory={ChildStoreRoute}
-    objectInstance={Hook}
     propertyMapping={{ hook: 'id' }}
     linkComponent={HookLink}
     component={HookPage} />

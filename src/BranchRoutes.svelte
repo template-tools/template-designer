@@ -22,10 +22,10 @@
 <Route
   path="/branch"
   iteratorFor={iteratorBranches}
+  objectInstance={Branch}
   factory={IteratorStoreRoute}>
   <Route
     path="/:branch"
-    objectInstance={Branch}
     propertyMapping={{ branch: 'name' }}
     factory={ChildStoreRoute}
     linkComponent={BranchLink}

@@ -17,13 +17,13 @@
   path="/repository"
   factory={IteratorStoreRoute}
   iteratorFor={(transition, properties) => provider.repositories()}
+  objectInstance={Repository}
   component={RepositoriesPage}
   {guards}>
   Repositories
   <Route
     path="/:group/:repository"
     propertyMapping={{ repository: 'name', group: 'owner.name' }}
-    objectInstance={Repository}
     objectFor={(transition, properties) => provider.repository(properties.group + '/' + properties.repository)}
     factory={ChildStoreRoute}
     linkComponent={RepositoryLink}

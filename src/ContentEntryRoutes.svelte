@@ -57,10 +57,10 @@
 <Route
   path="/entry"
   factory={ContentEntriesRoute}
+  objectInstance={ContentEntry}
   component={ContentEntriesPage}>
   <Route
     path="/:entry"
-    objectInstance={ContentEntry}
     propertyMapping={{ entry: 'name' }}
     factory={ContentEntryRoute}
     component={ContentEntryPage} />
