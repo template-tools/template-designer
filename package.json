@@ -24,17 +24,17 @@
     "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 5000 --app \"rollup -c rollup.config.mjs -w\""
   },
   "dependencies": {
-    "aggregation-repository-provider": "^2.8.18",
-    "bitbucket-repository-provider": "^3.7.30",
+    "aggregation-repository-provider": "^2.8.19",
+    "bitbucket-repository-provider": "^3.7.31",
     "buffer": "^5.6.0",
     "content-entry": "^2.5.1",
-    "gitea-repository-provider": "^1.14.0",
-    "github-repository-provider": "^7.17.24",
+    "gitea-repository-provider": "^1.14.1",
+    "github-repository-provider": "^7.17.25",
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^23.12.0",
     "svelte-common": "^2.19.0",
     "svelte-guard-history-router": "^3.1.1",
-    "svelte-repository-provider": "^1.5.15",
+    "svelte-repository-provider": "^1.5.16",
     "svelte-session-manager": "^1.1.8"
   },
   "devDependencies": {
