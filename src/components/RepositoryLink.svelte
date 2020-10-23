@@ -1,10 +1,7 @@
 <script>
+  import ProviderLogo from "../components/ProviderLogo.svelte";
   export let object;
 </script>
 
-<img
-  src="images/{object.provider.constructor.name}.svg"
-  width="18"
-  height="18"
-  alt={object.provider.name} />
+<ProviderLogo provider={object.provider} />
 {object.fullName}

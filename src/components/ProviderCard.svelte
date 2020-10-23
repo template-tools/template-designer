@@ -5,6 +5,7 @@
     AttributeField,
     SecureAttributeField
   } from "svelte-repository-provider";
+  import ProviderLogo from "../components/ProviderLogo.svelte";
   import { provider as aggregatedProvider } from "../provider.mjs";
   export let provider;
 
@@ -38,11 +39,7 @@
 <div class="card">
   <div class="card-content">
     <h5 class="card-title">
-      <img
-        src="images/{provider.constructor.name}.svg"
-        width="18"
-        height="18"
-        alt={provider.name} />
+      <ProviderLogo {provider}/>
       {provider.name}
     </h5>
     <Attributes object={provider} />

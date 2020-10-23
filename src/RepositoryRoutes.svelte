@@ -10,7 +10,7 @@
   import RepositoryLink from "./components/RepositoryLink.svelte";
 
   export let provider;
-  export let guards;
+  export let guard;
 </script>
 
 <Route
@@ -19,7 +19,7 @@
   iteratorFor={(transition, properties) => provider.repositories()}
   objectInstance={Repository}
   component={RepositoriesPage}
-  {guards}>
+  {guard}>
   Repositories
   <Route
     path="/:group/:repository"

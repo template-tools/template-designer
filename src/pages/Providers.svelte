@@ -1,5 +1,6 @@
 <script>
   import { ObjectLink } from "svelte-guard-history-router";
+  import ProviderLogo from "../components/ProviderLogo.svelte";
   import providerFactories from "../provider-factories.mjs";
   import provider from "../provider.mjs";
   import { api, client_id, redirect_uri, state } from "../auth.mjs";
@@ -36,11 +37,7 @@
     {#each providerFactories as factory, i (i)}
       <tr>
         <td>
-          <img
-            src="images/{factory.name}.svg"
-            width="16"
-            height="16"
-            alt={factory.name} />
+          <ProviderLogo provider={factory}/>
           {factory.name}
         </td>
         <td>
