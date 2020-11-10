@@ -9,3 +9,4 @@ doc
 .vscode
 .github
 *.map
+netlify.toml
