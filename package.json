@@ -21,7 +21,8 @@
     "prepare": "rollup -c rollup.config.mjs",
     "start": "rollup -c -w rollup.config.mjs",
     "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 5000 --app \"rollup -c rollup.config.mjs -w\""
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 5000 --app \"rollup -c rollup.config.mjs -w\"",
+    "build": "rollup -c tests/app/rollup.config.mjs"
   },
   "dependencies": {
     "aggregation-repository-provider": "^2.8.43",
@@ -108,6 +109,7 @@
     "inheritFrom": [
       "arlac77/template-arlac77-github",
       "arlac77/template-github-action",
+      "arlac77/template-netlify",
       "arlac77/template-svelte-app",
       "arlac77/template-testcafe"
     ]
