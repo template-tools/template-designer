@@ -12,9 +12,9 @@
   export let provider;
 
   class ContentEntriesRoute extends IteratorStoreRoute {
-    async *iteratorFor(transition, properties) {
+    async *iteratorFor(transition) {
       const branch = await provider.branch(
-        `${properties.group}/${properties.repository}#${properties.branch}`
+        `${transition.params.group}/${transition.params.repository}#${transition.params.branch}`
       );
       yield* branch.entries();
     }
@@ -32,9 +32,9 @@
   }
 
   class ContentEntryRoute extends ObjectStoreRoute {
-    async objectFor(properties) {
+    async objectFor(transition) {
       const branch = await provider.branch(
-        `${properties.group}/${properties.repository}#${properties.branch}`
+        `${transition.params.group}/${transition.params.repository}#${transition.params.branch}`
       );
 
       return await branch.entry(properties.entry);

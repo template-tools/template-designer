@@ -23,7 +23,7 @@
   <slot />
   <Route
     path="/:group"
-    objectFor={(transition, properties) => provider.repositoryGroup(properties.group)}
+    objectFor={transition => provider.repositoryGroup(transition.params.group)}
     propertyMapping={{ group: 'name' }}
     factory={ChildStoreRoute}
     linkComponent={RepositoryGroupLink}
