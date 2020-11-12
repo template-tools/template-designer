@@ -25,12 +25,12 @@
     "build": "rollup -c rollup.config.mjs"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^2.8.47",
+    "aggregation-repository-provider": "^2.8.49",
     "bitbucket-repository-provider": "^3.7.55",
     "buffer": "^6.0.1",
     "content-entry": "^2.5.1",
     "gitea-repository-provider": "^1.14.30",
-    "github-repository-provider": "^7.18.17",
+    "github-repository-provider": "^7.18.19",
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^24.2.2",
     "svelte-common": "^2.19.0",
