@@ -12,9 +12,9 @@
 
   export let provider;
 
-  async function* iteratorHooks(transition, properties) {
+  async function* iteratorHooks(transition) {
     const repo = await provider.repository(
-      properties.group + "/" + properties.repository
+      transition.params.group + "/" + transition.params.repository
     );
     yield* repo.hooks();
   }

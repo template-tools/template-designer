@@ -10,9 +10,9 @@
 
   export let provider;
 
-  async function * iteratorPullRequests(transition, properties) {
+  async function * iteratorPullRequests(transition) {
     const r = await provider.repository(
-      `${properties.group}/${properties.repository}`
+      `${transition.params.group}/${transition.params.repository}`
     );
     yield * r.pullRequests();
   }

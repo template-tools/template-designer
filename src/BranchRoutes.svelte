@@ -10,9 +10,9 @@
 
   export let provider;
 
-  async function* iteratorBranches(transition, properties) {
+  async function* iteratorBranches(transition) {
     const repository = await provider.repository(
-      `${properties.group}/${properties.repository}`
+      `${transition.params.group}/${transition.params.repository}`
     );
 
     yield* repository.branches();
