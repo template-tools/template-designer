@@ -34,7 +34,7 @@
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^24.2.2",
     "svelte-common": "^2.19.0",
-    "svelte-guard-history-router": "^3.3.8",
+    "svelte-guard-history-router": "^3.5.0",
     "svelte-repository-provider": "^1.7.19",
     "svelte-session-manager": "^1.1.10"
   },
