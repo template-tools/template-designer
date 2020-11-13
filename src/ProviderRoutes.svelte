@@ -2,8 +2,8 @@
   import { BaseProvider } from "repository-provider";
   import {
     Route,
-    ChildStoreRoute,
-    IteratorStoreRoute
+    DetailRoute,
+    MasterRoute
   } from "svelte-guard-history-router";
   import ProvidersPage from "./pages/Providers.svelte";
   import ProviderPage from "./pages/Provider.svelte";
@@ -14,14 +14,14 @@
 
 <Route
   path="/provider"
-  factory={IteratorStoreRoute}
+  factory={MasterRoute}
   iteratorFor={() => provider.providers}
   objectInstance={BaseProvider}
   component={ProvidersPage}>
   <slot />
   <Route
     path="/:provider"
-    factory={ChildStoreRoute}
+    factory={DetailRoute}
     propertyMapping={{ provider: 'name' }}
     linkComponent={ProviderLink}
     component={ProviderPage} />

@@ -4,14 +4,14 @@
   import {
     Route,
     ObjectStoreRoute,
-    IteratorStoreRoute
+    MasterRoute
   } from "svelte-guard-history-router";
   import ContentEntriesPage from "./pages/ContentEntries.svelte";
   import ContentEntryPage from "./pages/ContentEntry.svelte";
 
   export let provider;
 
-  class ContentEntriesRoute extends IteratorStoreRoute {
+  class ContentEntriesRoute extends MasterRoute {
     async *iteratorFor(transition) {
       const branch = await provider.branch(
         `${transition.params.group}/${transition.params.repository}#${transition.params.branch}`

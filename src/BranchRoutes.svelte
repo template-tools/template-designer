@@ -1,8 +1,8 @@
 <script>
   import {
     Route,
-    ChildStoreRoute,
-    IteratorStoreRoute
+    DetailRoute,
+    MasterRoute
   } from "svelte-guard-history-router";
   import { Branch } from "repository-provider";
   import BranchPage from "./pages/Branch.svelte";
@@ -23,11 +23,11 @@
   path="/branch"
   iteratorFor={iteratorBranches}
   objectInstance={Branch}
-  factory={IteratorStoreRoute}>
+  factory={MasterRoute}>
   <Route
     path="/:branch"
     propertyMapping={{ branch: 'name' }}
-    factory={ChildStoreRoute}
+    factory={DetailRoute}
     linkComponent={BranchLink}
     component={BranchPage}>
     <slot />

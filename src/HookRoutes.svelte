@@ -1,8 +1,8 @@
 <script>
   import {
     Route,
-    ChildStoreRoute,
-    IteratorStoreRoute
+    DetailRoute,
+    MasterRoute
   } from "svelte-guard-history-router";
   import { Hook } from "repository-provider";
   import { HookLink } from "svelte-repository-provider";
@@ -24,11 +24,11 @@
   path="/hook"
   iteratorFor={iteratorHooks}
   objectInstance={Hook}
-  factory={IteratorStoreRoute}
+  factory={MasterRoute}
   component={HooksPage}>
   <Route
     path="/:hook"
-    factory={ChildStoreRoute}
+    factory={DetailRoute}
     propertyMapping={{ hook: 'id' }}
     linkComponent={HookLink}
     component={HookPage} />

@@ -1,8 +1,8 @@
 <script>
   import {
     Route,
-    ChildStoreRoute,
-    IteratorStoreRoute
+    DetailRoute,
+    MasterRoute
   } from "svelte-guard-history-router";
   import { RepositoryGroup } from "repository-provider";
   import RepositoryGroupsPage from "./pages/RepositoryGroups.svelte";
@@ -15,7 +15,7 @@
 
 <Route
   path="/group"
-  factory={IteratorStoreRoute}
+  factory={MasterRoute}
   iteratorFor={() => provider.repositoryGroups()}
   objectInstance={RepositoryGroup}
   component={RepositoryGroupsPage}
@@ -25,7 +25,7 @@
     path="/:group"
     objectFor={transition => provider.repositoryGroup(transition.params.group)}
     propertyMapping={{ group: 'name' }}
-    factory={ChildStoreRoute}
+    factory={DetailRoute}
     linkComponent={RepositoryGroupLink}
     component={RepositoryGroupPage} />
 </Route>

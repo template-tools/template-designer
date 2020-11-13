@@ -2,8 +2,8 @@
   import { PullRequest } from "repository-provider";
   import {
     Route,
-    ChildStoreRoute,
-    IteratorStoreRoute
+    DetailRoute,
+    MasterRoute
   } from "svelte-guard-history-router";
   import { PullRequestLink } from "svelte-repository-provider";
   import PullRequestPage from "./pages/PullRequest.svelte";
@@ -22,11 +22,11 @@
   path="/pr"
   iteratorFor={iteratorPullRequests}
   objectInstance={PullRequest}
-  factory={IteratorStoreRoute}>
+  factory={MasterRoute}>
   <Route
     path="/:pr"
     propertyMapping={{ pr: 'name' }}
-    factory={ChildStoreRoute}
+    factory={DetailRoute}
     linkComponent={PullRequestLink}
     component={PullRequestPage} />
 </Route>
