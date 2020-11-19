@@ -27,6 +27,7 @@
   export let router;
 
   const route = router.route;
+  const providers = $route.value;
 </script>
 
 <table>
@@ -53,7 +54,7 @@
     <th>Active</th>
   </thead>
   <tbody>
-    {#each $route as provider}
+    {#each providers as provider}
       <tr>
         <td>
           <ObjectLink object={provider} />

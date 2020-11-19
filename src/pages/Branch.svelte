@@ -4,8 +4,9 @@
   export let router;
 
   const route = router.route;
+  const branch = $route.value;
 </script>
 
-{#if $route}
-  <BranchCard branch={$route} />
+{#if branch}
+  <BranchCard {branch} />
 {:else}No such branch{/if}

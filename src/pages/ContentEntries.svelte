@@ -2,6 +2,7 @@
   export let router;
 
   const route = router.route;
+  const entries = $route.value;
 </script>
 
 <table class="bordered striped hoverable">
@@ -11,7 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    {#each $route as entry (entry.name)}
+    {#each entries as entry (entry.name)}
       <tr>
         <td>{entry.name}</td>
       </tr>

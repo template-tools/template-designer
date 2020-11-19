@@ -4,8 +4,9 @@
   export let router;
 
   const route = router.route;
+  const entry = $route.value;
 </script>
 
-{#if $route}
-  <ContentEntryCard object={$route} />
+{#if entry}
+  <ContentEntryCard {entry} />
 {:else}No such entry{/if}
