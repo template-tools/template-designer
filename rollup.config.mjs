@@ -67,8 +67,7 @@ export default () => {
           plugins: [postcssImport]
         }),
         svelte({
-          dev: !production,
-          emitCss: true
+          dev: !production
         }),
         ...resolverPlugins,
         !production &&
