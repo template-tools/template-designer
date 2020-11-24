@@ -7,7 +7,7 @@
   } from "svelte-guard-history-router";
   import ProvidersPage from "./pages/Providers.svelte";
   import ProviderPage from "./pages/Provider.svelte";
-  import ProviderLink from "./components/ProviderLink.svelte";
+  import NamedProviderObjectLink from "./components/NamedProviderObjectLink.svelte";
 
   export let provider;
 </script>
@@ -23,6 +23,6 @@
     path="/:provider"
     factory={DetailRoute}
     propertyMapping={{ provider: 'name' }}
-    linkComponent={ProviderLink}
+    linkComponent={NamedProviderObjectLink}
     component={ProviderPage} />
 </Route>

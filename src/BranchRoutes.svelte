@@ -6,7 +6,7 @@
   } from "svelte-guard-history-router";
   import { Branch } from "repository-provider";
   import BranchPage from "./pages/Branch.svelte";
-  import BranchLink from "./components/BranchLink.svelte";
+  import NamedProviderObjectLink from "./components/NamedProviderObjectLink.svelte";
 
   export let provider;
 
@@ -28,7 +28,7 @@
     path="/:branch"
     propertyMapping={{ branch: 'name' }}
     factory={DetailRoute}
-    linkComponent={BranchLink}
+    linkComponent={NamedProviderObjectLink}
     component={BranchPage}>
     <slot />
   </Route>

@@ -7,7 +7,7 @@
   import { RepositoryGroup } from "repository-provider";
   import RepositoryGroupsPage from "./pages/RepositoryGroups.svelte";
   import RepositoryGroupPage from "./pages/RepositoryGroup.svelte";
-  import RepositoryGroupLink from "./components/RepositoryGroupLink.svelte";
+  import NamedProviderObjectLink from "./components/NamedProviderObjectLink.svelte";
 
   export let provider;
   export let guard;
@@ -26,6 +26,6 @@
     objectFor={transition => provider.repositoryGroup(transition.params.group)}
     propertyMapping={{ group: 'name' }}
     factory={DetailRoute}
-    linkComponent={RepositoryGroupLink}
+    linkComponent={NamedProviderObjectLink}
     component={RepositoryGroupPage} />
 </Route>

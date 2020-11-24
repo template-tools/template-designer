@@ -1,5 +1,5 @@
 <script>
-  import ProviderLogo from "../components/ProviderLogo.svelte";
+  import ProviderLogo from "./ProviderLogo.svelte";
 
   export let object;
 </script>
