@@ -3,5 +3,4 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 [![minified size](https://badgen.net/bundlephobia/min/@component-template/designer)](https://bundlephobia.com/result?p=@component-template/designer)
 [![downloads](http://img.shields.io/npm/dm/@component-template/designer.svg?style=flat-square)](https://npmjs.org/package/@component-template/designer)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/arlac77/component-template-designer.git)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e6da37be-57f8-40d4-bf85-07ad688a73b1/deploy-status)](https://app.netlify.com/sites/designer/deploys)
