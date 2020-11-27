@@ -26,16 +26,16 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^2.9.11",
-    "bitbucket-repository-provider": "^3.7.66",
+    "bitbucket-repository-provider": "^3.7.67",
     "buffer": "^6.0.1",
     "content-entry": "^2.6.0",
-    "gitea-repository-provider": "^1.14.41",
-    "github-repository-provider": "^7.20.12",
+    "gitea-repository-provider": "^1.14.42",
+    "github-repository-provider": "^7.20.13",
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^24.8.0",
     "svelte-common": "^3.0.0",
     "svelte-guard-history-router": "^4.2.0",
-    "svelte-repository-provider": "^1.7.31",
+    "svelte-repository-provider": "^1.7.32",
     "svelte-session-manager": "^1.2.0"
   },
   "devDependencies": {
