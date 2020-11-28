@@ -3,9 +3,9 @@
   import {
     Route,
     DetailRoute,
-    MasterRoute
+    MasterRoute,
+    NamedObjectLink
   } from "svelte-guard-history-router";
-  import { PullRequestLink } from "svelte-repository-provider";
   import PullRequestPage from "./pages/PullRequest.svelte";
 
   export let provider;
@@ -27,6 +27,6 @@
     path="/:pr"
     propertyMapping={{ pr: 'name' }}
     factory={DetailRoute}
-    linkComponent={PullRequestLink}
+    linkComponent={NamedObjectLink}
     component={PullRequestPage} />
 </Route>
