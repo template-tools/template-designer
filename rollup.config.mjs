@@ -86,7 +86,7 @@ export default () => {
       }
     },
     {
-      input: "src/service-worker.mjs",
+      input: "src/service-worker/main.mjs",
       output: {
         interop: false,
         sourcemap: true,
