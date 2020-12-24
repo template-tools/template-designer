@@ -9,6 +9,11 @@
     {
       "src": "images/git.svg",
       "sizes": "150x150"
+    },
+    {
+      "src": "images/icon.svg",
+      "sizes": "150x150",
+      "purpose": "any"
     }
   ],
   "background_color": "#ffffff",
