@@ -1,4 +1,4 @@
-import livereload from 'rollup-plugin-livereload';
+import livereload from "rollup-plugin-livereload";
 import { readFileSync } from "fs";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
@@ -38,16 +38,17 @@ export default () => {
       ...config
     })
   ];
-  
+
   const resolverPlugins = [
     resolve({
       browser: true,
       preferBuiltins: false,
-      dedupe: importee => importee === "svelte" || importee.startsWith("svelte/")
+      dedupe: importee =>
+        importee === "svelte" || importee.startsWith("svelte/")
     }),
     commonjs()
   ];
-  
+
   return [
     {
       input: "src/main.mjs",
@@ -67,7 +68,9 @@ export default () => {
           plugins: [postcssImport]
         }),
         svelte({
-          dev: !production
+          compilerOptions: {
+            dev: !production
+          }
         }),
         ...resolverPlugins,
         !production &&
