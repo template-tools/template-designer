@@ -86,7 +86,7 @@
     "installdir": "/services/${name}/frontend",
     "hooks": "pacman/hooks.sh",
     "depends": {
-      "nginx-mainline": ">=1.19.8"
+      "nginx-mainline": ">=1.19.10"
     }
   },
   "release": {
