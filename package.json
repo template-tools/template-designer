@@ -28,15 +28,15 @@
     "aggregation-repository-provider": "^3.2.11",
     "bitbucket-repository-provider": "^3.8.3",
     "buffer": "^6.0.1",
-    "content-entry": "^2.6.3",
-    "gitea-repository-provider": "^1.16.6",
+    "content-entry": "^2.6.4",
+    "gitea-repository-provider": "^1.16.7",
     "github-repository-provider": "^7.22.5",
     "mf-styling": "arlac77/mf-styling",
-    "repository-provider": "^25.2.3",
+    "repository-provider": "^25.2.4",
     "svelte-common": "^4.4.6",
-    "svelte-guard-history-router": "^4.2.7",
-    "svelte-repository-provider": "^1.7.59",
-    "svelte-session-manager": "^1.4.3"
+    "svelte-guard-history-router": "^4.2.8",
+    "svelte-repository-provider": "^1.7.61",
+    "svelte-session-manager": "^1.4.4"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
