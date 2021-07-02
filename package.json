@@ -25,17 +25,17 @@
     "build": "rollup -c rollup.config.mjs"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^3.2.15",
-    "bitbucket-repository-provider": "^3.8.4",
+    "aggregation-repository-provider": "^3.2.17",
+    "bitbucket-repository-provider": "^3.8.5",
     "buffer": "^6.0.1",
-    "content-entry": "^2.6.4",
-    "gitea-repository-provider": "^1.16.9",
-    "github-repository-provider": "^7.22.7",
+    "content-entry": "^2.6.5",
+    "gitea-repository-provider": "^1.16.10",
+    "github-repository-provider": "^7.22.8",
     "mf-styling": "arlac77/mf-styling",
-    "repository-provider": "^25.2.5",
-    "svelte-common": "^4.4.7",
-    "svelte-guard-history-router": "^4.2.10",
-    "svelte-repository-provider": "^1.7.63",
+    "repository-provider": "^25.2.8",
+    "svelte-common": "^4.4.8",
+    "svelte-guard-history-router": "^4.2.11",
+    "svelte-repository-provider": "^1.7.65",
     "svelte-session-manager": "^1.4.5"
   },
   "devDependencies": {
