@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^3.2.20",
-    "bitbucket-repository-provider": "^3.8.5",
+    "bitbucket-repository-provider": "^3.8.6",
     "buffer": "^6.0.1",
     "content-entry": "^2.6.5",
     "gitea-repository-provider": "^1.16.10",
@@ -35,7 +35,7 @@
     "repository-provider": "^25.2.9",
     "svelte-common": "^4.4.8",
     "svelte-guard-history-router": "^4.2.11",
-    "svelte-repository-provider": "^1.7.65",
+    "svelte-repository-provider": "^1.7.66",
     "svelte-session-manager": "^1.4.5"
   },
   "devDependencies": {
