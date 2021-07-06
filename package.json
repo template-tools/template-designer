@@ -81,7 +81,6 @@
       "${installdir}/": {
         "base": "public"
       },
-      "/etc/nginx/config.d/${name}.conf": "pacman/nginx.conf",
       "/etc/nginx/sites/common/${name}.conf": "pacman/nginx.conf"
     },
     "installdir": "/services/${name}/frontend",
