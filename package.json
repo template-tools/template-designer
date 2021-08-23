@@ -29,7 +29,7 @@
     "bitbucket-repository-provider": "^3.9.1",
     "buffer": "^6.0.1",
     "content-entry": "^2.6.5",
-    "gitea-repository-provider": "^1.16.18",
+    "gitea-repository-provider": "^1.16.19",
     "github-repository-provider": "^7.23.8",
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^25.5.2",
