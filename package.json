@@ -33,7 +33,7 @@
     "github-repository-provider": "^7.23.35",
     "mf-styling": "arlac77/mf-styling",
     "repository-provider": "^25.5.12",
-    "svelte-common": "^4.4.15",
+    "svelte-common": "^4.4.16",
     "svelte-guard-history-router": "^4.3.5",
     "svelte-repository-provider": "^1.7.67",
     "svelte-session-manager": "^2.0.10"
