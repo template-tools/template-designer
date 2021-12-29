@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-inject": "^4.0.3",
+    "@rollup/plugin-inject": "^4.0.4",
     "@rollup/plugin-node-resolve": "^13.1.1",
     "@rollup/plugin-virtual": "^2.0.3",
     "@semantic-release/commit-analyzer": "^9.0.2",
@@ -51,7 +51,7 @@
     "postcss-import": "^14.0.2",
     "rollup": "^2.62.0",
     "rollup-plugin-consts": "^1.0.2",
-    "rollup-plugin-dev": "^2.0.1",
+    "rollup-plugin-dev": "^2.0.2",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-svelte": "^7.1.0",
