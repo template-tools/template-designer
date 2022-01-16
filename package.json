@@ -28,7 +28,7 @@
     "aggregation-repository-provider": "^4.0.16",
     "bitbucket-repository-provider": "^3.10.5",
     "buffer": "^6.0.1",
-    "content-entry": "^4.1.1",
+    "content-entry": "^4.1.2",
     "gitea-repository-provider": "^1.16.54",
     "github-repository-provider": "^7.25.14",
     "mf-styling": "arlac77/mf-styling",
