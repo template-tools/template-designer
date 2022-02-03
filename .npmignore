@@ -10,3 +10,4 @@ doc
 .github
 *.map
 netlify.toml
+pkg
