@@ -74,17 +74,17 @@
     "proxyTarget": "https://somewhere/",
     "title": "Component Template Designer"
   },
-  "pacman": {
+  "pkg": {
     "name": "component-template-designer",
     "groups": "web",
     "content": {
       "${installdir}/": {
         "base": "public"
       },
-      "/etc/nginx/sites/common/${name}.conf": "pacman/nginx.conf"
+      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf"
     },
     "installdir": "/services/${name}/frontend",
-    "hooks": "pacman/hooks.sh",
+    "hooks": "pkg/hooks.sh",
     "depends": {
       "nginx-mainline": ">=1.21.4"
     }
@@ -94,7 +94,7 @@
       [
         "@semantic-release/exec",
         {
-          "publishCmd": "npx npm-pkgbuild --pkgver ${nextRelease.version} pkgbuild pacman makepkg"
+          "publishCmd": "npx npm-pkgbuild"
         }
       ],
       "@semantic-release/commit-analyzer",
