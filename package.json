@@ -32,7 +32,7 @@
     "gitea-repository-provider": "^1.16.67",
     "github-repository-provider": "^7.25.25",
     "mf-styling": "arlac77/mf-styling",
-    "repository-provider": "^26.4.5",
+    "repository-provider": "^26.5.0",
     "svelte-common": "^4.4.19",
     "svelte-guard-history-router": "^4.5.2",
     "svelte-repository-provider": "^1.7.67",
