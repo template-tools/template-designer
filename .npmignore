@@ -10,3 +10,5 @@ doc
 .github
 *.map
 netlify.toml
+pkg
+jsconfig.json
