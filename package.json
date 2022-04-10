@@ -78,14 +78,19 @@
       "${install.dir}": {
         "base": "public"
       },
-      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
+      "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf",
+      "${installdir}/": {
+        "base": "public/"
+      },
+      "/etc/nginx/sites/common/${name}.conf": "pkg/nginx.conf"
     },
     "hooks": "pkg/hooks.sh",
     "groups": "web",
     "depends": {
       "nginx-mainline": ">=1.21.4"
     },
-    "install.dir": "/services/${name}/frontend/"
+    "install.dir": "/services/${name}/frontend/",
+    "installdir": "/services/component-template-designer/frontend"
   },
   "release": {
     "plugins": [
