@@ -24,7 +24,7 @@
     "build": "rollup -c rollup.config.mjs"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.0.0",
+    "aggregation-repository-provider": "^5.0.1",
     "bitbucket-repository-provider": "^4.1.0",
     "buffer": "^6.0.1",
     "content-entry": "^5.0.0",
