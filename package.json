@@ -77,7 +77,7 @@
     "proxyTarget": "https://somewhere/",
     "title": "Component Template Designer"
   },
-  "pkg": {
+  "pkgbuild": {
     "content": {
       "${install.dir}": {
         "base": "public"
