@@ -30,7 +30,7 @@
     "bitbucket-repository-provider": "^4.1.19",
     "buffer": "^6.0.1",
     "content-entry": "^5.0.0",
-    "gitea-repository-provider": "^2.1.42",
+    "gitea-repository-provider": "^2.1.43",
     "github-repository-provider": "^7.26.29",
     "mf-styling": "^1.0.13",
     "repository-provider": "^29.1.0",
