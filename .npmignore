@@ -12,5 +12,4 @@ doc
 *.map
 netlify.toml
 pkg
-jsconfig.json
 .stylelintrc.json
