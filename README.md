@@ -6,3 +6,4 @@
 [![GitHub Issues](https://img.shields.io/github/issues/arlac77/component-template-designer.svg?style=flat-square)](https://github.com/arlac77/component-template-designer/issues)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Farlac77%2Fcomponent-template-designer%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/arlac77/component-template-designer/goto)
 [![Coverage Status](https://coveralls.io/repos/arlac77/component-template-designer/badge.svg)](https://coveralls.io/github/arlac77/component-template-designer)
+[![Tested with TestCafe](https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg)](https://github.com/DevExpress/testcafe)
