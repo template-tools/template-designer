@@ -34,7 +34,7 @@
     "github-repository-provider": "^7.30.7",
     "mf-styling": "^1.2.22",
     "repository-provider": "^31.2.6",
-    "svelte-common": "^4.4.38",
+    "svelte-common": "^4.4.39",
     "svelte-guard-history-router": "^4.6.12",
     "svelte-repository-provider": "^1.7.67",
     "svelte-session-manager": "^2.0.10"
@@ -47,7 +47,7 @@
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/exec": "^6.0.3",
     "@semantic-release/release-notes-generator": "^10.0.3",
-    "npm-pkgbuild": "^10.7.8",
+    "npm-pkgbuild": "^10.7.9",
     "postcss": "^8.4.14",
     "postcss-import": "^14.1.0",
     "rollup": "^2.75.5",
