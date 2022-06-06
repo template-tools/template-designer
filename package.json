@@ -30,11 +30,11 @@
     "bitbucket-repository-provider": "^4.2.6",
     "buffer": "^6.0.1",
     "content-entry": "^5.0.5",
-    "gitea-repository-provider": "^2.2.4",
+    "gitea-repository-provider": "^2.2.5",
     "github-repository-provider": "^7.30.7",
     "mf-styling": "^1.2.22",
     "repository-provider": "^31.2.6",
-    "svelte-common": "^4.4.38",
+    "svelte-common": "^4.4.39",
     "svelte-guard-history-router": "^4.6.12",
     "svelte-repository-provider": "^1.7.67",
     "svelte-session-manager": "^2.0.10"
