@@ -26,15 +26,15 @@
     "build": "rollup -c rollup.config.mjs"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.2.38",
+    "aggregation-repository-provider": "^5.2.39",
     "bitbucket-repository-provider": "^4.2.12",
     "buffer": "^6.0.1",
     "content-entry": "^5.0.6",
     "gitea-repository-provider": "^2.2.13",
-    "github-repository-provider": "^7.30.17",
+    "github-repository-provider": "^7.30.19",
     "mf-styling": "^1.2.22",
     "repository-provider": "^31.2.7",
-    "svelte-common": "^4.5.1",
+    "svelte-common": "^4.6.0",
     "svelte-guard-history-router": "^4.6.14",
     "svelte-repository-provider": "^1.7.68",
     "svelte-session-manager": "^2.0.10"
