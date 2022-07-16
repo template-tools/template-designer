@@ -85,7 +85,6 @@
       "${nginx.sites.dir}${name}.conf": "pkg/nginx.conf"
     },
     "hooks": "pkg/hooks.sh",
-    "groups": "web",
     "install.dir": "${install.base.dir}${name}/frontend/"
   },
   "release": {
