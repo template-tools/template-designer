@@ -32,7 +32,7 @@
     "content-entry": "^5.0.8",
     "gitea-repository-provider": "^2.2.22",
     "github-repository-provider": "^7.31.5",
-    "mf-styling": "^1.2.36",
+    "mf-styling": "^1.2.40",
     "repository-provider": "^32.0.4",
     "svelte-common": "^4.6.10",
     "svelte-guard-history-router": "^5.1.10",
