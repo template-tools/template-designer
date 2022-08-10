@@ -35,7 +35,7 @@
     "mf-styling": "^1.2.44",
     "repository-provider": "^32.0.5",
     "svelte-common": "^4.6.13",
-    "svelte-guard-history-router": "^5.1.12",
+    "svelte-guard-history-router": "^5.1.13",
     "svelte-repository-provider": "^1.7.68",
     "svelte-session-manager": "^2.0.10"
   },
