@@ -29,7 +29,7 @@
     "aggregation-repository-provider": "^5.2.45",
     "bitbucket-repository-provider": "^4.2.25",
     "buffer": "^6.0.1",
-    "content-entry": "^5.2.2",
+    "content-entry": "^5.2.3",
     "gitea-repository-provider": "^2.2.25",
     "github-repository-provider": "^7.31.10",
     "mf-styling": "^1.2.45",
