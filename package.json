@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-inject": "^4.0.4",
+    "@rollup/plugin-inject": "^5.0.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
     "@rollup/plugin-virtual": "^2.1.0",
     "@semantic-release/commit-analyzer": "^9.0.2",
