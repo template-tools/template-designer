@@ -17,13 +17,12 @@
   ],
   "license": "BSD-2-Clause",
   "scripts": {
-    "prepare": "rollup -c rollup.config.mjs && rollup -c",
-    "start": "rollup -c -w rollup.config.mjs && rollup -c -w",
+    "prepare": "rollup -c rollup.config.mjs",
+    "start": "rollup -c -w rollup.config.mjs",
     "test": "npm run test:cafe",
-    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 5000 --app \"rollup -c  -w\"",
+    "test:cafe": "testcafe $BROWSER:headless tests/cafe/*.js -s build/test --app-init-delay 5000 --app \"rollup -c -w rollup.config.mjs\"",
     "lint": "npm run lint:css",
-    "lint:css": "stylelint ./src/*.css",
-    "build": "rollup -c rollup.config.mjs"
+    "lint:css": "stylelint ./src/*.css"
   },
   "dependencies": {
     "aggregation-repository-provider": "^5.3.0",
