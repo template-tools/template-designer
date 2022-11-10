@@ -60,7 +60,7 @@
     "stylelint": "^14.14.1",
     "stylelint-config-standard": "^28.0.0",
     "svelte": "^3.52.0",
-    "testcafe": "^2.0.2"
+    "testcafe": "^2.1.0"
   },
   "repository": {
     "type": "git",
