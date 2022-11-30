@@ -31,10 +31,10 @@
     "content-entry": "^5.2.15",
     "gitea-repository-provider": "^2.4.5",
     "github-repository-provider": "^7.33.6",
-    "mf-styling": "^1.7.24",
+    "mf-styling": "^1.7.26",
     "repository-provider": "^32.2.1",
-    "svelte-common": "^4.19.17",
-    "svelte-guard-history-router": "^5.5.5",
+    "svelte-common": "^4.19.18",
+    "svelte-guard-history-router": "^5.5.6",
     "svelte-repository-provider": "^1.7.68",
     "svelte-session-manager": "^2.0.11"
   },
