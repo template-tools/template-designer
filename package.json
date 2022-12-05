@@ -25,7 +25,7 @@
     "lint:css": "stylelint ./src/*.css"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.3.3",
+    "aggregation-repository-provider": "^5.3.4",
     "bitbucket-repository-provider": "^4.4.10",
     "buffer": "^6.0.1",
     "content-entry": "^5.2.15",
@@ -34,7 +34,7 @@
     "mf-styling": "^1.7.27",
     "repository-provider": "^32.2.3",
     "svelte-common": "^4.20.0",
-    "svelte-guard-history-router": "^5.5.10",
+    "svelte-guard-history-router": "^5.5.11",
     "svelte-repository-provider": "^1.7.68",
     "svelte-session-manager": "^2.0.11"
   },
