@@ -48,7 +48,7 @@
     "@semantic-release/release-notes-generator": "^10.0.3",
     "npm-pkgbuild": "^10.15.18",
     "postcss": "^8.4.19",
-    "postcss-import": "^15.0.1",
+    "postcss-import": "^15.1.0",
     "rollup": "^2.79.1",
     "rollup-plugin-consts": "^1.1.0",
     "rollup-plugin-dev": "^2.0.4",
