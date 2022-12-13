@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^5.3.5",
-    "bitbucket-repository-provider": "^4.4.12",
+    "bitbucket-repository-provider": "^4.4.13",
     "buffer": "^6.0.1",
     "content-entry": "^5.2.15",
     "gitea-repository-provider": "^2.4.8",
