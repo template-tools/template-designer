@@ -30,7 +30,7 @@
     "buffer": "^6.0.1",
     "content-entry": "^5.2.15",
     "gitea-repository-provider": "^2.4.10",
-    "github-repository-provider": "^7.33.13",
+    "github-repository-provider": "^7.33.14",
     "mf-styling": "^1.7.33",
     "repository-provider": "^32.3.6",
     "svelte-common": "^4.21.3",
