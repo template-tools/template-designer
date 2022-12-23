@@ -25,11 +25,11 @@
     "lint:css": "stylelint ./src/*.css"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.3.7",
+    "aggregation-repository-provider": "^5.3.8",
     "bitbucket-repository-provider": "^4.4.15",
     "buffer": "^6.0.1",
     "content-entry": "^5.2.15",
-    "gitea-repository-provider": "^2.4.10",
+    "gitea-repository-provider": "^2.4.11",
     "github-repository-provider": "^7.33.14",
     "mf-styling": "^1.7.33",
     "repository-provider": "^32.3.6",
