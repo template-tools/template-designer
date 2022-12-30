@@ -25,16 +25,16 @@
     "lint:css": "stylelint ./src/*.css"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.3.10",
-    "bitbucket-repository-provider": "^4.4.19",
+    "aggregation-repository-provider": "^5.3.12",
+    "bitbucket-repository-provider": "^4.4.21",
     "buffer": "^6.0.1",
     "content-entry": "^5.2.16",
-    "gitea-repository-provider": "^2.4.14",
+    "gitea-repository-provider": "^2.4.18",
     "github-repository-provider": "^7.33.18",
     "mf-styling": "^1.7.33",
-    "repository-provider": "^32.3.11",
+    "repository-provider": "^32.3.18",
     "svelte-common": "^4.21.5",
-    "svelte-guard-history-router": "^5.5.13",
+    "svelte-guard-history-router": "^5.5.15",
     "svelte-repository-provider": "^1.7.68",
     "svelte-session-manager": "^2.0.11"
   },
