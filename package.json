@@ -25,12 +25,12 @@
     "lint:css": "stylelint ./src/*.css"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^5.3.17",
-    "bitbucket-repository-provider": "^4.4.25",
+    "aggregation-repository-provider": "^5.3.18",
+    "bitbucket-repository-provider": "^4.4.26",
     "buffer": "^6.0.1",
     "content-entry": "^5.2.16",
-    "gitea-repository-provider": "^2.4.26",
-    "github-repository-provider": "^7.33.26",
+    "gitea-repository-provider": "^2.4.27",
+    "github-repository-provider": "^7.33.27",
     "mf-styling": "^1.7.34",
     "repository-provider": "^32.4.4",
     "svelte-common": "^4.21.7",
