@@ -108,6 +108,10 @@
             {
               "path": "dist/*.pkg.*",
               "label": "Arch Linux Package"
+            },
+            {
+              "path": "dist/*.rpm",
+              "label": "RPM"
             }
           ]
         }
