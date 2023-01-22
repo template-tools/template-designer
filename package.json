@@ -47,6 +47,9 @@
     "svelte": "^3.55.1",
     "testcafe": "^2.2.0"
   },
+  "optionalDependencies": {
+  	"mf-hosting-frontend": "^1.4.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/arlac77/component-template-designer.git"
