@@ -13,3 +13,4 @@ doc
 netlify.toml
 pkg
 .stylelintrc.json
+dist
