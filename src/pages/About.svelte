@@ -5,9 +5,7 @@
     ServiceWorkerDetails,
     ServiceWorkerRegistrationDetails
   } from "svelte-common";
-  import name from "consts:title";
-  import version from "consts:version";
-  import description from "consts:description";
+  import { name, version, description } from "../constants.mjs";
   import { serviceWorker, serviceWorkerRegistration } from "../service-worker/registration.mjs";
 </script>
 
