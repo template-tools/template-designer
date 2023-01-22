@@ -1,4 +1,3 @@
-rollup.config.*
 build
 tests
 doc
@@ -10,7 +9,6 @@ doc
 .vscode
 .github
 *.map
-netlify.toml
 pkg
 .stylelintrc.json
 dist
