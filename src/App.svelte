@@ -18,7 +18,7 @@
   import BranchRoutes from "./BranchRoutes.svelte";
   import ContentEntryRoutes from "./ContentEntryRoutes.svelte";
   import provider from "./provider.mjs";
-  import base from "consts:base";
+  import {base} from "./conststants.mjs";
   import * as style from "./main.css";
 
   const waitingGuard = new WaitingGuard(Waiting);
