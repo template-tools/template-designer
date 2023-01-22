@@ -1,5 +1,5 @@
 {
-  "name": "component-template-designer",
+  "name": "@template-tools/template-designer",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
