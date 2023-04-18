@@ -32,12 +32,12 @@
     "content-entry": "^8.0.1",
     "gitea-repository-provider": "^3.0.5",
     "github-repository-provider": "^8.0.11",
-    "mf-styling": "^1.7.52",
+    "mf-styling": "^1.7.53",
     "repository-provider": "^32.7.3",
-    "svelte-common": "^4.22.13",
-    "svelte-guard-history-router": "^5.5.31",
-    "svelte-repository-provider": "^1.7.72",
-    "svelte-session-manager": "^2.2.1"
+    "svelte-common": "^4.22.14",
+    "svelte-guard-history-router": "^5.5.32",
+    "svelte-repository-provider": "^1.7.74",
+    "svelte-session-manager": "^2.2.2"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^9.0.2",
