@@ -30,13 +30,13 @@
     "aggregation-repository-provider": "^5.3.28",
     "bitbucket-repository-provider": "^5.1.6",
     "content-entry": "^8.0.1",
-    "gitea-repository-provider": "^3.1.5",
-    "github-repository-provider": "^8.0.18",
+    "gitea-repository-provider": "^3.1.6",
+    "github-repository-provider": "^8.0.19",
     "mf-styling": "^1.7.57",
     "repository-provider": "^32.7.20",
     "svelte-common": "^4.22.21",
     "svelte-guard-history-router": "^5.5.35",
-    "svelte-repository-provider": "^1.7.83",
+    "svelte-repository-provider": "^1.7.84",
     "svelte-session-manager": "^2.2.5"
   },
   "devDependencies": {
