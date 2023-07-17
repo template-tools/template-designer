@@ -37,7 +37,7 @@
     "svelte-common": "^6.3.2",
     "svelte-guard-history-router": "^5.6.0",
     "svelte-repository-provider": "^1.7.91",
-    "svelte-session-manager": "^2.2.10"
+    "svelte-session-manager": "^2.2.11"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^10.0.1",
