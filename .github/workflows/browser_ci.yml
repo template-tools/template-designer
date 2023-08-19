@@ -8,7 +8,7 @@ jobs:
         os:
           - ubuntu-latest
         node:
-          - 16.20.1
+          - 16.20.2
         browser:
           - chrome
           - firefox
