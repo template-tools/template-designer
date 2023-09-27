@@ -35,7 +35,7 @@
     "mf-styling": "^3.0.5",
     "repository-provider": "^33.0.0",
     "svelte-common": "^6.7.2",
-    "svelte-guard-history-router": "^6.0.5",
+    "svelte-guard-history-router": "^6.0.6",
     "svelte-repository-provider": "^1.7.96",
     "svelte-session-manager": "^2.2.12"
   },
@@ -53,7 +53,7 @@
     "vite": "^4.4.9"
   },
   "optionalDependencies": {
-    "mf-hosting-cloudflare": "^1.0.5",
+    "mf-hosting-cloudflare": "^1.0.6",
     "mf-hosting-frontend": "^2.2.3"
   },
   "repository": {
