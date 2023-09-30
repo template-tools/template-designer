@@ -33,7 +33,7 @@
     "gitea-repository-provider": "^3.1.9",
     "github-repository-provider": "^8.0.24",
     "mf-styling": "^3.0.5",
-    "repository-provider": "^33.0.0",
+    "repository-provider": "^33.0.1",
     "svelte-common": "^6.7.2",
     "svelte-guard-history-router": "^6.0.6",
     "svelte-repository-provider": "^1.7.96",
