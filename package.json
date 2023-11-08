@@ -27,10 +27,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^6.0.0",
+    "aggregation-repository-provider": "^6.0.1",
     "bitbucket-repository-provider": "^6.0.0",
     "content-entry": "^8.0.1",
-    "gitea-repository-provider": "^4.0.1",
+    "gitea-repository-provider": "^4.0.2",
     "github-repository-provider": "^8.0.29",
     "mf-styling": "^3.1.1",
     "repository-provider": "^34.0.2",
