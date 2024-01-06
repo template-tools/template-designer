@@ -8,4 +8,5 @@ build
 .tmp
 bundle.*
 *.map
+bun.lockb
 dist
