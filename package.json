@@ -32,12 +32,12 @@
     "bitbucket-repository-provider": "^6.0.8",
     "content-entry": "^8.0.1",
     "gitea-repository-provider": "^4.0.10",
-    "github-repository-provider": "^8.0.34",
+    "github-repository-provider": "^8.0.35",
     "mf-styling": "^3.1.2",
     "repository-provider": "^35.0.4",
     "svelte-common": "^6.9.7",
     "svelte-guard-history-router": "^6.0.6",
-    "svelte-repository-provider": "^1.7.102",
+    "svelte-repository-provider": "^1.7.103",
     "svelte-session-manager": "^2.2.14"
   },
   "devDependencies": {
