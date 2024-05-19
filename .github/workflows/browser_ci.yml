@@ -41,7 +41,7 @@ jobs:
         with:
           path: ${{ github.workspace }}/build/test/**/*
           retention-days: 3
-          name: screenshots
+          name: screenshots-${{ matrix.browser }}
         if: always()
   release:
     needs:
