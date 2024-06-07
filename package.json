@@ -29,7 +29,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^6.1.9",
+    "aggregation-repository-provider": "^7.0.0",
     "bitbucket-repository-provider": "^6.0.24",
     "content-entry": "^11.0.1",
     "gitea-repository-provider": "^4.2.3",
