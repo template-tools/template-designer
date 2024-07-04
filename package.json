@@ -33,7 +33,7 @@
     "bitbucket-repository-provider": "^6.0.26",
     "content-entry": "^11.0.1",
     "gitea-repository-provider": "^4.2.4",
-    "github-repository-provider": "^9.0.18",
+    "github-repository-provider": "^9.0.19",
     "mf-styling": "^3.1.6",
     "repository-provider": "^35.2.23",
     "svelte-common": "^6.10.23",
