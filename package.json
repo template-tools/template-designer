@@ -34,11 +34,11 @@
     "content-entry": "^11.0.1",
     "gitea-repository-provider": "^4.2.5",
     "github-repository-provider": "^9.0.21",
-    "mf-styling": "^3.2.1",
+    "mf-styling": "^3.2.3",
     "repository-provider": "^35.2.23",
-    "svelte-common": "^6.15.17",
+    "svelte-common": "^6.15.18",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.1",
+    "svelte-repository-provider": "^2.0.2",
     "svelte-session-manager": "^3.0.6"
   },
   "devDependencies": {
