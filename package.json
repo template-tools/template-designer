@@ -34,7 +34,7 @@
     "content-entry": "^11.1.1",
     "gitea-repository-provider": "^4.2.5",
     "github-repository-provider": "^9.0.21",
-    "mf-styling": "^3.2.5",
+    "mf-styling": "^3.2.6",
     "repository-provider": "^35.2.25",
     "svelte-common": "^6.15.25",
     "svelte-guard-history-router": "^6.1.2",
@@ -57,7 +57,7 @@
   },
   "optionalDependencies": {
     "mf-hosting-cloudflare": "^1.0.7",
-    "mf-hosting-frontend": "^3.8.1"
+    "mf-hosting-frontend": "^3.8.2"
   },
   "repository": {
     "type": "git",
