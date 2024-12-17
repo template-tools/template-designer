@@ -36,10 +36,10 @@
     "github-repository-provider": "^9.0.21",
     "mf-styling": "^3.2.6",
     "repository-provider": "^35.2.27",
-    "svelte-common": "^6.15.46",
+    "svelte-common": "^6.15.48",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-repository-provider": "^2.0.17",
-    "svelte-session-manager": "^3.0.21"
+    "svelte-session-manager": "^3.0.22"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.0",
