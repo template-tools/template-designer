@@ -1,6 +1,6 @@
 [![Svelte v5](https://img.shields.io/badge/svelte-v5-orange.svg)](https://svelte.dev)
 [![npm](https://img.shields.io/npm/v/@template-tools/template-designer.svg)](https://www.npmjs.com/package/@template-tools/template-designer)
-[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://spdx.org/licenses/0BSD.html)
 [![bundlejs](https://deno.bundlejs.com/?q=@template-tools/template-designer\&badge=detailed)](https://bundlejs.com/?q=@template-tools/template-designer)
 [![downloads](http://img.shields.io/npm/dm/@template-tools/template-designer.svg?style=flat-square)](https://npmjs.org/package/@template-tools/template-designer)
 [![GitHub Issues](https://img.shields.io/github/issues/template-tools/template-designer.svg?style=flat-square)](https://github.com/template-tools/template-designer/issues)
