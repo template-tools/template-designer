@@ -29,7 +29,7 @@ jobs:
         with:
           firefox-version: ${{ matrix.firefox }}
       - uses: actions/checkout@v4.2.2
-      - uses: actions/setup-node@v4.1.0
+      - uses: actions/setup-node@v4.2.0
         with:
           node-version: ${{ matrix.node-version }}
           cache: npm
@@ -82,7 +82,7 @@ jobs:
           sudo apt-get install -f ./pacman-utils_5.2.2-3_amd64.deb
           fi
       - uses: actions/checkout@v4.2.2
-      - uses: actions/setup-node@v4.1.0
+      - uses: actions/setup-node@v4.2.0
         with:
           node-version: 22.7.0
           cache: npm
