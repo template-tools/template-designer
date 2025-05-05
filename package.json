@@ -35,10 +35,10 @@
     "gitea-repository-provider": "^4.2.5",
     "github-repository-provider": "^9.0.21",
     "mf-styling": "^3.2.12",
-    "repository-provider": "^35.3.0",
+    "repository-provider": "^35.3.1",
     "svelte-common": "^6.19.2",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.32",
+    "svelte-repository-provider": "^2.0.33",
     "svelte-session-manager": "^3.0.39"
   },
   "devDependencies": {
