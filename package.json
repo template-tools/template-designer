@@ -31,14 +31,14 @@
   "dependencies": {
     "aggregation-repository-provider": "^7.0.14",
     "bitbucket-repository-provider": "^6.1.10",
-    "content-entry": "^14.2.1",
+    "content-entry": "^14.2.2",
     "gitea-repository-provider": "^4.2.19",
-    "github-repository-provider": "^9.2.13",
+    "github-repository-provider": "^9.2.14",
     "mf-styling": "^3.2.12",
-    "repository-provider": "^35.4.15",
+    "repository-provider": "^35.4.16",
     "svelte-common": "^6.19.6",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.42",
+    "svelte-repository-provider": "^2.0.43",
     "svelte-session-manager": "^3.0.41"
   },
   "devDependencies": {
