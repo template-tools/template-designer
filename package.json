@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^7.0.18",
-    "bitbucket-repository-provider": "^6.1.12",
+    "bitbucket-repository-provider": "^6.1.13",
     "content-entry": "^14.2.3",
     "gitea-repository-provider": "^4.2.19",
     "github-repository-provider": "^9.2.15",
