@@ -29,13 +29,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^7.0.29",
+    "aggregation-repository-provider": "^7.0.30",
     "bitbucket-repository-provider": "^6.1.18",
     "content-entry": "^14.2.3",
     "gitea-repository-provider": "^4.2.19",
     "github-repository-provider": "^9.2.21",
     "mf-styling": "^3.2.13",
-    "repository-provider": "^35.4.25",
+    "repository-provider": "^35.4.26",
     "svelte-common": "^6.19.19",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-repository-provider": "^2.0.48",
