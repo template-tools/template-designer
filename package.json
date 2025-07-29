@@ -29,17 +29,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^7.0.34",
+    "aggregation-repository-provider": "^7.0.36",
     "bitbucket-repository-provider": "^6.2.3",
     "content-entry": "^14.2.3",
-    "gitea-repository-provider": "^4.3.3",
-    "github-repository-provider": "^9.2.26",
+    "gitea-repository-provider": "^4.3.4",
+    "github-repository-provider": "^9.2.27",
     "mf-styling": "^3.2.13",
     "repository-provider": "^35.5.9",
-    "svelte-common": "^6.19.22",
+    "svelte-common": "^6.19.24",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-repository-provider": "^2.0.48",
-    "svelte-session-manager": "^3.0.47"
+    "svelte-session-manager": "^3.0.48"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
