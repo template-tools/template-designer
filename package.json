@@ -36,7 +36,7 @@
     "github-repository-provider": "^9.2.29",
     "mf-styling": "^3.2.13",
     "repository-provider": "^35.5.10",
-    "svelte-common": "^6.19.27",
+    "svelte-common": "^6.19.28",
     "svelte-guard-history-router": "^6.1.2",
     "svelte-repository-provider": "^2.0.48",
     "svelte-session-manager": "^3.0.48"
@@ -49,7 +49,7 @@
     "@sveltejs/vite-plugin-svelte": "^6.1.0",
     "npm-pkgbuild": "^18.2.22",
     "semantic-release": "^24.2.7",
-    "stylelint": "^16.23.0",
+    "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
     "svelte": "^5.38.0",
     "testcafe": "^3.7.2",
