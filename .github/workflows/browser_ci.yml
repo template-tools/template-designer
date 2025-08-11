@@ -44,7 +44,7 @@ jobs:
           name: screenshots-${{ matrix.browser }}
         if: always()
       - name: checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
       - name: prepare node
         uses: actions/setup-node@v4.4.0
         with:
@@ -96,7 +96,7 @@ jobs:
           PKGBUILD_PUBLISH: ${{ secrets.PKGBUILD_PUBLISH }}
           PKGEXT: .pkg.tar.xz
       - name: checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v5.0.0
       - name: prepare node
         uses: actions/setup-node@v4.4.0
         with:
