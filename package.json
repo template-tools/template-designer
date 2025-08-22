@@ -30,15 +30,15 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^7.0.39",
-    "bitbucket-repository-provider": "^6.2.9",
+    "bitbucket-repository-provider": "^6.2.10",
     "content-entry": "^14.2.4",
     "gitea-repository-provider": "^4.3.8",
     "github-repository-provider": "^9.2.30",
     "mf-styling": "^3.2.13",
-    "repository-provider": "^35.5.13",
-    "svelte-common": "^6.19.31",
+    "repository-provider": "^35.5.14",
+    "svelte-common": "^6.19.32",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.50",
+    "svelte-repository-provider": "^2.0.51",
     "svelte-session-manager": "^3.0.50"
   },
   "devDependencies": {
