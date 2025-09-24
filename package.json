@@ -30,7 +30,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^7.0.40",
+    "aggregation-repository-provider": "^7.0.41",
     "bitbucket-repository-provider": "^6.3.0",
     "content-entry": "^14.2.5",
     "gitea-repository-provider": "^4.4.0",
@@ -39,8 +39,8 @@
     "repository-provider": "^35.6.0",
     "svelte-common": "^6.19.33",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.52",
-    "svelte-session-manager": "^3.0.51"
+    "svelte-repository-provider": "^2.0.53",
+    "svelte-session-manager": "^3.0.52"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
