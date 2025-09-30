@@ -30,11 +30,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^7.0.41",
-    "bitbucket-repository-provider": "^6.3.0",
+    "aggregation-repository-provider": "^7.0.42",
+    "bitbucket-repository-provider": "^6.3.1",
     "content-entry": "^14.2.5",
     "gitea-repository-provider": "^4.4.0",
-    "github-repository-provider": "^9.3.1",
+    "github-repository-provider": "^9.3.2",
     "mf-styling": "^3.2.14",
     "repository-provider": "^35.6.2",
     "svelte-common": "^6.19.33",
