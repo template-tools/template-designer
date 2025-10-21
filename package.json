@@ -39,7 +39,7 @@
     "repository-provider": "^35.7.2",
     "svelte-common": "^6.19.33",
     "svelte-guard-history-router": "^6.1.2",
-    "svelte-repository-provider": "^2.0.56",
+    "svelte-repository-provider": "^2.0.57",
     "svelte-session-manager": "^3.0.53"
   },
   "devDependencies": {
