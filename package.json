@@ -30,10 +30,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aggregation-repository-provider": "^7.0.46",
+    "aggregation-repository-provider": "^7.0.47",
     "bitbucket-repository-provider": "^6.3.5",
     "content-entry": "^14.2.5",
-    "gitea-repository-provider": "^4.4.5",
+    "gitea-repository-provider": "^4.4.6",
     "github-repository-provider": "^9.3.6",
     "mf-styling": "^3.2.14",
     "repository-provider": "^35.7.4",
@@ -58,7 +58,7 @@
   },
   "optionalDependencies": {
     "mf-hosting-cloudflare": "^1.0.8",
-    "mf-hosting-frontend": "^3.9.6"
+    "mf-hosting-frontend": "^3.9.7"
   },
   "repository": {
     "type": "git",
