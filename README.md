@@ -5,5 +5,4 @@
 [![downloads](http://img.shields.io/npm/dm/@template-tools/template-designer.svg?style=flat-square)](https://npmjs.org/package/@template-tools/template-designer)
 [![GitHub Issues](https://img.shields.io/github/issues/template-tools/template-designer.svg?style=flat-square)](https://github.com/template-tools/template-designer/issues)
 [![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Ftemplate-tools%2Ftemplate-designer%2Fbadge\&style=flat)](https://actions-badge.atrox.dev/template-tools/template-designer/goto)
-[![Coverage Status](https://coveralls.io/repos/template-tools/template-designer/badge.svg)](https://coveralls.io/github/template-tools/template-designer)
 [![Tested with TestCafe](https://img.shields.io/badge/tested%20with-TestCafe-2fa4cf.svg)](https://github.com/DevExpress/testcafe)
