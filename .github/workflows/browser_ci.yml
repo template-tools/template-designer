@@ -47,7 +47,6 @@ jobs:
       - uses: actions/setup-node@v6.1.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache-dependency-path: package-lock.json
       - uses: actions/upload-artifact@v5
         with:
           path: ${{ github.workspace }}/build/test/**/*
@@ -99,7 +98,6 @@ jobs:
       - uses: actions/setup-node@v6.1.0
         with:
           node-version: 22.7.0
-          cache-dependency-path: package-lock.json
       - run: npm ci
       - run: npx semantic-release
         env:
