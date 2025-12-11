@@ -10,5 +10,6 @@ doc
 .github
 *.map
 pkg
+vite.config.mts
 .stylelintrc.json
 dist
