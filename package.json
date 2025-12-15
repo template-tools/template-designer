@@ -31,14 +31,14 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^7.0.52",
-    "bitbucket-repository-provider": "^7.0.6",
+    "bitbucket-repository-provider": "^7.0.8",
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.4",
-    "github-repository-provider": "^10.0.6",
+    "github-repository-provider": "^10.0.8",
     "mf-styling": "^3.2.20",
-    "repository-provider": "^36.0.11",
+    "repository-provider": "^36.0.13",
     "svelte-common": "^6.19.40",
-    "svelte-guard-history-router": "^7.0.3",
+    "svelte-guard-history-router": "^7.0.4",
     "svelte-repository-provider": "^2.0.63",
     "svelte-session-manager": "^3.0.66"
   },
