@@ -35,12 +35,12 @@
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.5",
     "github-repository-provider": "^10.0.9",
-    "mf-styling": "^3.2.24",
+    "mf-styling": "^3.3.0",
     "repository-provider": "^36.0.13",
     "svelte-common": "^6.19.43",
     "svelte-guard-history-router": "^7.0.5",
     "svelte-repository-provider": "^2.0.64",
-    "svelte-session-manager": "^3.0.67"
+    "svelte-session-manager": "^3.0.68"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
