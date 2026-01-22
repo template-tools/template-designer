@@ -31,16 +31,16 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^7.0.52",
-    "bitbucket-repository-provider": "^7.0.13",
+    "bitbucket-repository-provider": "^7.0.14",
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.7",
-    "github-repository-provider": "^10.0.14",
+    "github-repository-provider": "^10.0.15",
     "mf-styling": "^3.3.3",
-    "repository-provider": "^36.0.23",
-    "svelte-common": "^6.19.54",
-    "svelte-guard-history-router": "^7.0.7",
-    "svelte-repository-provider": "^2.0.67",
-    "svelte-session-manager": "^3.0.73"
+    "repository-provider": "^36.0.24",
+    "svelte-common": "^6.19.55",
+    "svelte-guard-history-router": "^7.0.9",
+    "svelte-repository-provider": "^2.0.68",
+    "svelte-session-manager": "^3.0.75"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
