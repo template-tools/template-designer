@@ -37,7 +37,7 @@
     "github-repository-provider": "^10.0.14",
     "mf-styling": "^3.3.3",
     "repository-provider": "^36.0.23",
-    "svelte-common": "^6.19.53",
+    "svelte-common": "^6.19.54",
     "svelte-guard-history-router": "^7.0.7",
     "svelte-repository-provider": "^2.0.67",
     "svelte-session-manager": "^3.0.73"
