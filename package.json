@@ -31,15 +31,15 @@
   },
   "dependencies": {
     "aggregation-repository-provider": "^7.0.52",
-    "bitbucket-repository-provider": "^7.0.15",
+    "bitbucket-repository-provider": "^7.0.16",
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.7",
-    "github-repository-provider": "^10.0.15",
+    "github-repository-provider": "^10.0.16",
     "mf-styling": "^3.3.4",
     "repository-provider": "^36.0.26",
     "svelte-common": "^6.19.58",
     "svelte-guard-history-router": "^7.0.10",
-    "svelte-repository-provider": "^2.0.69",
+    "svelte-repository-provider": "^2.0.70",
     "svelte-session-manager": "^3.0.76"
   },
   "devDependencies": {
