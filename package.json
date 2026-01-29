@@ -37,10 +37,10 @@
     "github-repository-provider": "^10.0.16",
     "mf-styling": "^3.3.4",
     "repository-provider": "^36.0.27",
-    "svelte-common": "^6.19.59",
-    "svelte-guard-history-router": "^7.0.10",
-    "svelte-repository-provider": "^2.0.70",
-    "svelte-session-manager": "^3.0.76"
+    "svelte-common": "^6.19.60",
+    "svelte-guard-history-router": "^7.0.11",
+    "svelte-repository-provider": "^2.0.71",
+    "svelte-session-manager": "^3.0.77"
   },
   "devDependencies": {
     "@semantic-release/commit-analyzer": "^13.0.1",
