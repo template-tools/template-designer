@@ -36,7 +36,7 @@
     "gitea-repository-provider": "^5.0.7",
     "github-repository-provider": "^10.0.21",
     "mf-styling": "^3.3.4",
-    "repository-provider": "^36.1.0",
+    "repository-provider": "^36.1.1",
     "svelte-common": "^6.19.66",
     "svelte-guard-history-router": "^7.0.11",
     "svelte-repository-provider": "^2.0.73",
