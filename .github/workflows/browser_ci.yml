@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@v7.0.0
       - uses: actions/checkout@v7.0.0
       - name: prepare node
-        uses: actions/setup-node@v6.4.0
+        uses: actions/setup-node@v7.0.0
         with:
           node-version: ${{ matrix.node-version }}
       - name: install npm
@@ -76,7 +76,7 @@ jobs:
         uses: actions/checkout@v7.0.0
       - uses: actions/checkout@v7.0.0
       - name: prepare node
-        uses: actions/setup-node@v6.4.0
+        uses: actions/setup-node@v7.0.0
         with:
           node-version: 26.4.0
       - name: install
