@@ -34,8 +34,8 @@
     "bitbucket-repository-provider": "^7.0.29",
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.14",
-    "github-repository-provider": "^10.0.46",
-    "mf-styling": "^3.3.23",
+    "github-repository-provider": "^10.0.47",
+    "mf-styling": "^3.3.25",
     "repository-provider": "^37.1.7",
     "svelte-common": "^6.19.80",
     "svelte-guard-history-router": "^7.0.25",
@@ -57,8 +57,8 @@
     "vite": "^8.1.5"
   },
   "optionalDependencies": {
-    "mf-hosting-cloudflare": "^2.0.0",
-    "mf-hosting-frontend": "^4.0.8"
+    "mf-hosting-cloudflare": "^2.0.1",
+    "mf-hosting-frontend": "^4.0.9"
   },
   "repository": {
     "type": "git",
