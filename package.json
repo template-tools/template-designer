@@ -35,8 +35,8 @@
     "content-entry": "^14.2.7",
     "gitea-repository-provider": "^5.0.17",
     "github-repository-provider": "^10.0.48",
-    "mf-styling": "^3.3.29",
-    "repository-provider": "^37.1.9",
+    "mf-styling": "^3.3.30",
+    "repository-provider": "^37.1.10",
     "svelte-common": "^6.19.80",
     "svelte-guard-history-router": "^7.0.26",
     "svelte-repository-provider": "^2.0.104",
@@ -57,7 +57,7 @@
     "vite": "^8.2.0"
   },
   "optionalDependencies": {
-    "mf-hosting-cloudflare": "^2.0.2",
+    "mf-hosting-cloudflare": "^2.0.3",
     "mf-hosting-frontend": "^4.0.9"
   },
   "repository": {
